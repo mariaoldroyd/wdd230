@@ -1,0 +1,44 @@
+
+grid-container{
+    display:grid;
+    grid-template-columns: repeat(12,fr);
+    background-color:antiquewhite
+}
+body{
+    max-width:40%;
+    margin: 0 auto;
+}
+header {
+    font-family: 'Roboto', sans-serif;
+    background: tan;
+    padding: 2rem;
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  nav{
+    font-family: 'Roboto', sans-serif;
+    background: tan;
+    padding: 2rem; 
+    
+  }
+  li{
+    margin: 0 auto;       
+    max-width: 100%;
+    text-align:center;
+    text-decoration:none;
+    list-style-type:none;
+  }
+  
+  main{
+    font-family: 'Montserrat', sans-serif;
+    background:rgb(74, 166, 236);
+    padding:2rem;
+    grid-column:1/4;    
+  }
+
+a{
+text-decoration:none;
+}
+  
+  
