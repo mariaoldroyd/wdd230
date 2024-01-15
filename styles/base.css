@@ -2,7 +2,7 @@
 grid-container{
     display:grid;
     grid-template-columns: repeat(12,fr);
-    background-color:antiquewhite
+    
 }
 body{
     max-width:40%;
@@ -10,7 +10,8 @@ body{
 }
 header {
     font-family: 'Roboto', sans-serif;
-    background: tan;
+    
+    background: rgb(205, 245, 63);
     padding: 2rem;
     grid-column: 1 / 4;
     display: grid;
@@ -18,7 +19,7 @@ header {
   }
   nav{
     font-family: 'Roboto', sans-serif;
-    background: tan;
+    background: aqua;
     padding: 2rem; 
     
   }
@@ -32,7 +33,7 @@ header {
   
   main{
     font-family: 'Montserrat', sans-serif;
-    background:rgb(74, 166, 236);
+    background:rgb(74, 217, 236);
     padding:2rem;
     grid-column:1/4;    
   }
