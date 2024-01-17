@@ -89,7 +89,7 @@ header img {
 
 header img.icon {
   position: absolute;
-  bottom: 0; /* Align the icon to the bottom of the header */
+  bottom: center; /* Align the icon to the bottom of the header */
 }
 
   
