@@ -56,10 +56,8 @@ nav a:hover {
 }
 
 nav img.icon{
-  position: absolute;
-  bottom: 0;
-  left: 50;
-  transform: translateX(-50%);
+  display:block;
+  margin: 0 auto;
 }
 
 @media (min-width: 640px) {
@@ -101,10 +99,9 @@ header img {
 }
 
 header img.icon {
-  position: absolute;
-  bottom: 0;
-  left:50;
-  transform:translateX(-50%);
+  display: block;
+  margin: 0 auto;
+  
 }
 
   
