@@ -19,7 +19,7 @@ header {
     display: grid;
     grid-template-columns: auto auto;
   }
-  nav{
+nav{
     font-family: 'Roboto', sans-serif;
     background: rgb(164, 244, 244);
     padding: 2rem; 
@@ -27,25 +27,34 @@ header {
   }
   
   
-  nav ul{
+nav ul{
     margin: 0 auto;       
     max-width: 100%;
     text-align:center;
     text-decoration:none;
     list-style-type:none;
     }
-  nav a{
+nav a{
     display: block;
     text-align:center;
     padding: 1rem;
     text-decoration:none;
 
     }
-  nav a:hover {
+nav a:hover {
     border:1px white;
 
   }
-  main{
+  @media(min-width:640px){
+    nav ul{
+      display: flex;
+    }
+    nav ul li{
+      flex: 1 1 100%
+    }
+  }
+
+main{
     font-family: 'Montserrat', sans-serif;
     background:rgb(74, 217, 236);
     padding:2rem;
