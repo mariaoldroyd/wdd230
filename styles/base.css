@@ -102,7 +102,9 @@ header img {
 
 header img.icon {
   position: absolute;
-  bottom: center; /* Align the icon to the bottom of the header */
+  bottom: 0;
+  left:50;
+  transform:translateX(-50%);
 }
 
   
