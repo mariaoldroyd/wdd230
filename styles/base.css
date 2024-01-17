@@ -28,6 +28,11 @@ nav {
   padding: 2rem;
   margin: 0 auto;
   max-width: 800px;
+  position:relative;
+}
+
+nav img {
+    vertical-align:middle;
 }
 
 nav ul {
@@ -36,6 +41,7 @@ nav ul {
   text-align: center;
   text-decoration: none;
   list-style-type: none;
+  position: relative;
 }
 
 nav a {
@@ -47,6 +53,13 @@ nav a {
 
 nav a:hover {
   border: 1px solid white;
+}
+
+nav img.icon{
+  position: absolute;
+  bottom: 0;
+  left: 50;
+  transform: translateX(-50%);
 }
 
 @media (min-width: 640px) {
