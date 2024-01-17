@@ -7,10 +7,12 @@ grid-container{
 body{
     max-width:40%;
     margin: 0 auto;
+    h1{
+      color: black
+    }
 }
 header {
     font-family: 'Roboto', sans-serif;
-    
     background: rgb(205, 245, 63);
     padding: 2rem;
     grid-column: 1 / 4;
@@ -19,27 +21,47 @@ header {
   }
   nav{
     font-family: 'Roboto', sans-serif;
-    background: aqua;
+    background: rgb(164, 244, 244);
     padding: 2rem; 
-    
+    margin: 0 auto;
   }
-  li{
+  
+  
+  nav ul{
     margin: 0 auto;       
     max-width: 100%;
     text-align:center;
     text-decoration:none;
     list-style-type:none;
+    }
+  nav a{
+    display: block;
+    text-align:center;
+    padding: 1rem;
+    text-decoration:none;
+
+    }
+  nav a:hover {
+    border:1px white;
+
   }
-  
   main{
     font-family: 'Montserrat', sans-serif;
     background:rgb(74, 217, 236);
     padding:2rem;
-    grid-column:1/4;    
+    grid-column:1/4;
   }
+
+    h2{
+      color: black
+    }  
+    h3{
+      color: black
+    } 
 
 a{
 text-decoration:none;
+color:black
 }
   
   
