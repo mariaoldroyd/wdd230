@@ -29,6 +29,7 @@ nav {
   margin: 0 auto;
   max-width: 800px;
   position:relative;
+  flex: 1 1 auto;
 }
 
 nav img {
@@ -49,6 +50,7 @@ nav a {
   text-align: center;
   padding: 1rem;
   text-decoration: none;
+
 }
 
 nav a:hover {
