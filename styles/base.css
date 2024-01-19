@@ -75,6 +75,11 @@ main {
   grid-column: 1/4;
 }
 
+.card{
+  font-family:Montserrat', sans-serif;
+  color black;
+}
+
 h2 {
   color: black;
 }
