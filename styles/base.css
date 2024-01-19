@@ -1,4 +1,3 @@
-
 grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -19,7 +18,7 @@ header {
   padding: 2rem;
   display: grid;
   grid-template-columns: 250px 1fr;
-  align-items:center;
+  align-items: center;
 }
 
 nav {
@@ -28,12 +27,12 @@ nav {
   padding: 2rem;
   margin: 0 auto;
   max-width: 800px;
-  position:relative;
+  position: relative;
   flex: 1 1 auto;
 }
 
 nav img {
-    vertical-align:middle;
+  vertical-align: middle;
 }
 
 nav ul {
@@ -63,11 +62,11 @@ nav a:hover {
 
 @media (min-width: 640px) {
   nav ul {
-      display: flex;
+    display: flex;
   }
-  
+
   nav ul li {
-      flex: 1 1 auto;
+    flex: 1 1 auto;
   }
 }
 
@@ -79,8 +78,8 @@ main {
   grid-column: 1/4;
 }
 
-.card{
-  
+.card {
+
   color: black;
 }
 
@@ -96,19 +95,17 @@ a {
   text-decoration: none;
   color: black;
 }
+
 header {
   position: relative;
 }
 
 header img {
-  vertical-align: middle; 
+  vertical-align: middle;
 }
 
 header img.icon {
   display: block;
   margin: 0 auto;
-  
-}
 
-  
-  
+}
