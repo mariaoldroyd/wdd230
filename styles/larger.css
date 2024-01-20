@@ -1,6 +1,16 @@
 /* larger.css */
-@media screen and (min-width: 768px) {
+
+@media (min-width: 640px) {
     body {
-        font-size: 18px;
+        max-width: 100%;
+
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 auto;
     }
 }
