@@ -73,7 +73,7 @@ nav img.icon{
   nav ul {
       display: flex;
   }
-  
+}
   nav ul li {
       flex: 1 1 100%;
   }
@@ -120,7 +120,7 @@ header img {
 header img.icon {
   display: block;
   margin: 0 auto;
- horizontal-align: center;
+ 
 }
 
 footer {
@@ -129,4 +129,4 @@ footer {
     padding: .5rem 0;
     font-size: smaller;
     justify-items: left;
-  }
+}
