@@ -98,9 +98,7 @@ a {
   color: black;
 }
 
-/* header { */
-/* position: relative; */
-/* } */
+
 
 header img {
   justify-items: end;
@@ -114,4 +112,48 @@ header img.icon {
 
 footer {
   text-align: center;
+}
+
+/* Mobile View Styles */
+@media only screen and (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  menu-icon.active::before{
+    content:'❌'
+  }
+
+  li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .menu-icon {
+      display: block;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+  .menu-icon.active {
+    content: '❌'; /* Change to 'X' when active */
+  }
+}
+}
+
+nav ul li:has(ul)::after{
+  content:'⬇️';
+  margin-left: 5px;
+  color:#fff;
 }
