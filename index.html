@@ -21,21 +21,23 @@
     <meta property="og:title" content="WDD230 Web Frontend Development" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://mariaoldroyd.github.io/wdd230/" />
-    <img src="https://example.com/path/to/your/image.jpg" alt="My Hometown">
+
 
 </head>
 
 
 <body>
+    <div class="grid-container"></div>
     <header>
 
         <img src="images/photo.jpg" alt="picture of maria and husband" width="65" height="65">
         <h1>Maria Oldroyd</h1>
-        <div class=""menu-icon">&#8801;</div>
+
     </header>
+    <button id="menu"></button>
     <nav>
 
-        <ul>
+        <ul class="navigation">
             <li><a href="#">Home</a></li>
             <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
             <li><a href="chamber/">Chamber</a></li>
@@ -82,9 +84,20 @@
 
 
 
-    <footer>
-        <p id="year"></p>
-        <p id="lastModified"></p>
+    <footer class="grid-container">
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78214.11865413346!2d-96.32380054579606!3d29.96194192903759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86415246c5a0575d%3A0xfd0f8da70b79f82e!2sBellville%2C%20TX%2077418!5e0!3m2!1sen!2sus!4v1706109908754!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="image-container">
+            <img src="images\bellville.jpg" alt="My Hometown Bellvile, Texas">
+        </div>
+        <div class="additional-info">
+            <p id="year"></p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
     <script src="scripts/getdates.js">
     </script>
