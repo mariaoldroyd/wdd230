@@ -2,8 +2,25 @@
 
 @media (min-width: 640px) {
     body {
-        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+        grid-template-areas: "header"
+            "nav"
+            "main";
 
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    main {
+        grid-area: main;
     }
 
     nav ul {
@@ -12,5 +29,23 @@
 
     nav ul li {
         flex: 1 1 auto;
+    }
+}
+
+/* Styles for larger screens */
+@media (min-width: 769px) {
+
+    main {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card {
+        color: balck;
     }
 }

@@ -81,19 +81,27 @@ nav a:hover {
   border: 1px solid white;
 }
 
+/* small view navigation*/
+@media only screen and (max-width: 768px) {
+  main {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(74, 217, 236);
+    filter: contrast(100%);
+    padding: 2rem;
+    grid-column: 1/4;
+    text-align: center;
+    display: block;
+    flex-direction: column;
 
-main {
-  font-family: 'Montserrat', sans-serif;
-  background-color: rgb(74, 217, 236);
-  filter: contrast(100%);
-  padding: 2rem;
-  grid-column: 1/4;
-  text-align: center;
-}
+  }
 
-.card {
+  .card {
+    color: black;
+  }
 
-  color: black;
+  .card-container {
+    display: block;
+  }
 }
 
 h2 {
@@ -126,80 +134,80 @@ footer {
 }
 
 /* Mobile View Styles */
-@media only screen and (max-width: 768px) {
-  .navigation {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
+
+.navigation {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
 
 
-  }
-
-  /* small view navigation*/
-  #menu {
-    font-size: 1.5rem;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    padding: 0.25rem 0.75rem;
-    background-color: #eee;
-    color: #000;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    display: none;
-  }
-
-
-
-  #menu::before {
-    content: ☑️;
-  }
-
-  .navigation {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    background-color: #333;
-    color: #fff;
-  }
-
-  .navigation a:hover {
-    background-color: #bbb;
-    color: #333;
-    font-weight: 700;
-  }
-
-  .open a {
-    display: block;
-  }
-
-  .active::before {
-    content: "❤️"
-  }
-
-  li {
-    display: block;
-    text-align: center;
-    margin: 10px 0;
-  }
-
-
-  #menu {
-    display: block;
-    font-size: 24px;
-    cursor: pointer;
-  }
-
-  #menu.open {
-    content: '❌';
-    /* Change to 'X' when active */
-  }
 }
 
 
-.navigation ul li:has(ul)::after {
+#menu {
+  font-size: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 0.25rem 0.75rem;
+  background-color: #eee;
+  color: #000;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: none;
+}
+
+
+
+#menu::before {
+  content: "☰";
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: ;
+  color: #fff;
+}
+
+.navigation a:hover {
+  background-color: #bbb;
+  color: ;
+  font-weight: 700;
+}
+
+.open a {
+  display: block;
+}
+
+.active::before {
+  content: "❤️"
+}
+
+li {
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+}
+
+
+#menu {
+  display: block;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#menu.open {
+  content: '❌';
+  /* Change to 'X' when active */
+}
+}
+
+
+.navigation ul li:has::after {
   content: '⬇️';
   margin-left: 5px;
   color: #fff;
