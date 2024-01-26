@@ -169,13 +169,12 @@ footer {
   display: flex;
   flex-direction: column;
   list-style: none;
-  background-color: ;
   color: #fff;
 }
 
 .navigation a:hover {
   background-color: #bbb;
-  color: ;
+  color:white ;
   font-weight: 700;
 }
 
@@ -204,10 +203,10 @@ li {
   content: '❌';
   /* Change to 'X' when active */
 }
-}
 
 
-.navigation ul li:has::after {
+
+.navigation ul li::after {
   content: '⬇️';
   margin-left: 5px;
   color: #fff;
