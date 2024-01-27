@@ -1,51 +1,24 @@
-/* larger.css */
+@media(min-width: 640px) {
 
-@media (min-width: 640px) {
-    body {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto 1fr;
-        grid-template-areas: "header"
-            "nav"
-            "main";
-
-    }
-
-    header {
-        grid-area: header;
-    }
-
-    nav {
-        grid-area: nav;
-    }
-
-    main {
-        grid-area: main;
-    }
-
-    nav ul {
-        display: flex;
-    }
-
-    nav ul li {
-        flex: 1 1 auto;
-    }
-}
-
-/* Styles for larger screens */
-@media (min-width: 769px) {
-
-    main {
-        display: flex;
+    .navigation {
+        flex-direction: row;
         justify-content: space-around;
     }
 
-    .card-container {
-        display: flex;
+    .main-div {
         flex-direction: row;
+        justify-content: space-around;
     }
 
-    .card {
-        color: black;
+    #menu {
+        display: none;
+        /* hide hamburger button */
     }
+
+
+    .navigation a {
+        display: block;
+        
+    }
+
 }

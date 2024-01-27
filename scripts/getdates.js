@@ -7,7 +7,7 @@ const modified = document.querySelector("#lastModified");
 last_modified = document.lastModified;
 modified.innerHTML = `Last Modified: ${last_modified}`;
 
-
+// this is the code for the Hamburger menu
 
 const hamButton = document.querySelector('#menu');
 const nav = document.querySelector('.navigation');
@@ -17,12 +17,6 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
-// Corrected selector for navigation links
-document.querySelectorAll('.navigation a').forEach(item => {
-    item.addEventListener('click', () => {
-        nav.classList.remove('open');
-        hamButton.classList.remove('open');
-    });
-});
-});
+
+
 
