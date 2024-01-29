@@ -43,6 +43,7 @@ main h2 {
 .main-div {
   display: flex;
   flex-direction: column;
+  background-color: #B1EDE8;
 }
 
 .card {
