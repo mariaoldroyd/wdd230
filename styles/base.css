@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  background-color: rgb(205, 245, 63);
+  background-color: #E3F68D;
   padding: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -18,7 +18,7 @@ header h1 {
 
 .navigation {
   display: flex;
-  background-color: aqua;
+  background-color: #C7FAD6;
   flex-direction: column;
 }
 
@@ -31,6 +31,7 @@ header h1 {
 
 main {
   padding: 5px;
+  background-color: #B1EDE8;
 
 }
 
