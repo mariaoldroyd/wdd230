@@ -28,7 +28,7 @@ body {
   }
   
   main {
-    display: grid;
+    display: block;
     grid-template-columns: 1fr;
     max-width: 90%;
     text-align: center;
@@ -38,6 +38,6 @@ body {
   
   .card {
     border-style: solid;
-    border-color: black;
+    border-color: rgb(136,38,25);
     border-radius: 8px;
   }
