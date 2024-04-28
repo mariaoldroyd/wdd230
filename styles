@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/abrilfatface/v23/zOL64pLDlL1D99S8g8PtiKchq-dmjQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+nav{
+    font-family:"Lato", sans-serif;
+    font-weight: bold;
+    font: black;
+
+}
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgba(204, 204, 204);
+  
+  }
+  
+  header {
+    text-align: center;
+    background-color: blanchedalmond;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  
+  }
+  
+  .card {
+    border-style: solid;
+    border-color: black;
+    border-radius: 8px;
+    padding: 5px;
+  }
+  
+  h2 .card {
+    font: royal blue;
+    padding: 5px;
+  }
