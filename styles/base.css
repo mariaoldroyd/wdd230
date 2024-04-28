@@ -7,24 +7,24 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-
 nav{
     font-family:"Lato", sans-serif;
     font-weight: bold;
     font: black;
+    
 
 }
 body {
     max-width: 100%;
     margin: 0 auto;
     padding: 1rem;
-    background-color: rgba(204, 204, 204);
+    background-color: rgb(204, 204, 204);
   
   }
   
   header {
     text-align: center;
-    background-color: blanchedalmond;
+    background-color: white;
   }
   
   main {
@@ -35,9 +35,42 @@ body {
     margin: 0 auto;
   
   }
+   h2{
+    background-color:rgb(0, 110, 182);
+    font-family: "Merriweather";
+    color: white;
+   }
   
   .card {
     border-style: solid;
     border-color: rgb(136,38,25);
     border-radius: 8px;
+  }
+   
+  .info h3{
+    font-family: "Merriweather";
+    background-color: rgb(0, 110, 182);
+    text-align: center;
+    color: white;
+  }
+
+  .visits {
+    text-align: center;
+    border-color: rgb(136,38,25);
+    border-style: solid;
+    border-radius: 8px;
+    font-family: "Lato", san serif;
+    padding: 0px;
+  }
+
+  .card ul li{
+    text-align: left;
+    list-style-type: none;
+  }
+
+  .grid-container{
+    background-color: rgb(0,110, 182);
+    text-align: center;
+    font-family: "Lato", san serif;
+    color:white;
   }
