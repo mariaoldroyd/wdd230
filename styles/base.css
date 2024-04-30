@@ -28,7 +28,8 @@ body {
   
   header {
     text-align: center;
-    background-color: white;
+    background-color: rgb(0, 110, 182);
+    color: white;
   }
 
   .header-content{
@@ -60,8 +61,8 @@ body {
   
   .card {
     border-style: solid;
-    border-color: rgb(136,38,25);
-    border-radius: 8px;
+    border-color: white;
+    
   }
    
   .info h3{
@@ -73,9 +74,9 @@ body {
 
   .visits{
     text-align: center;
-    border-color: rgb(136,38,25);
+    border-color: white;
     border-style: solid;
-    border-radius: 8px;
+    border-radius: 0px;
     font-family: "Lato", san serif;
     padding: 0px;
   }
