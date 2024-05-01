@@ -13,25 +13,29 @@ img {
 
 
 nav{
+    
     font-family:"Lato", sans-serif;
     font-weight: bold;
-    color: black;
-    
+        
 }
 
 .navigation{
   display: flex;  
-      
+  text-align:center;   
   background-color: #33333379;
   padding: 10px;
+  
 }
+
 .navigation a{
   display:block;
   float: left;
   padding: 20px 20px;
-  
+  color:rgba(246, 246, 8, 0.712);
   width: 100%
-  
+}
+.navigation a:hover{
+  border: 1px solid #fff;
 }
 
 

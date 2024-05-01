@@ -1,5 +1,9 @@
-@media (min-width: 768px){
-    body{
-        font-size: 18px;
+@media (min-width: 640px){
+    .navigation ul{
+        display: flex;
+        
     }
+}
+.navigation ul li{
+    flex: 1 1 100%;
 }
