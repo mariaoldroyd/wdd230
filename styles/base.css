@@ -35,7 +35,7 @@ nav{
   width: 100%
 }
 .navigation a:hover{
-  border: 1px solid #fff;
+  border: 1px solid white;
 }
 
 
@@ -45,6 +45,7 @@ body {
     max-width: 100%;
     margin: 0 auto;
     padding: 1rem;
+    background-color: rgba(41, 72, 79, 0.024);
      
   }
   
@@ -83,7 +84,7 @@ body {
   
   .card {
     border-style: solid;
-    border-color: white;
+    border-color: black;
     
   }
    
@@ -96,7 +97,7 @@ body {
 
   .visits{
     text-align: center;
-    border-color: white;
+    border-color: black;
     border-style: solid;
     border-radius: 0px;
     font-family: "Lato", san serif;
@@ -106,6 +107,7 @@ body {
   .card ul li{
     text-align: left;
     list-style-type: none;
+    color:rgb(0 110, 182);
   }
 
   .grid-container {
