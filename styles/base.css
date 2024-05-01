@@ -31,7 +31,7 @@ nav{
   display:block;
   float: left;
   padding: 20px 20px;
-  color:rgba(246, 246, 8, 0.712);
+  color:rgba(246, 246, 8, 0.869);
   width: 100%
 }
 .navigation a:hover{
@@ -45,8 +45,7 @@ body {
     max-width: 100%;
     margin: 0 auto;
     padding: 1rem;
-    background-color: rgb(204, 204, 204);
-  
+     
   }
   
   header {
