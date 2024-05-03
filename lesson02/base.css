@@ -1,5 +1,5 @@
 body {
-    background-color: blanchedalmond;
+    background-color: rgba(249, 239, 226, 0.725);
   max-width: 100%;
   margin: 0 auto;
   padding: 1rem;
@@ -20,14 +20,25 @@ main {
 
 }
 
-.card {
-  border-style: solid;
-  border-color: black;
-  border-radius: 8px;
-  padding: 5px;
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-h2 .card {
-  font: royal blue;
-  padding: 5px;
+.card {
+    width: 400px;
+    height: auto;
+  border:  8px solid;
+  border-color: black;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  
+}
+
+h2  {
+  font: royal rgba(0, 0, 255, 0.991);
+  padding: 3px;
 }
