@@ -22,7 +22,7 @@ nav{
 .navigation{
   display: flex;  
   text-align:center;   
-  background-color: #33333379;
+  background-color: #33333342;
   padding: 10px;
   
 }
@@ -36,6 +36,16 @@ nav{
 }
 .navigation a:hover{
   border: 1px solid white;
+}
+
+@media (min-width: 640px){
+  .navigation ul{
+      display: flex;
+      
+  }
+}
+.navigation{
+  flex: 1 1 100%;
 }
 
 
@@ -107,7 +117,7 @@ body {
   .card ul li{
     text-align: left;
     list-style-type: none;
-    color:rgb(0 110, 182);
+    color:rgb(0, 110, 182);
   }
 
   .grid-container {

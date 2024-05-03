@@ -1,0 +1,32 @@
+body {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+
+}
+
+header {
+  text-align: center;
+  background-color: rgb(246, 154, 16);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 90%;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+.card {
+  border-style: solid;
+  border-color: black;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+h2 .card {
+  font: royal blue;
+  padding: 5px;
+}
