@@ -5,6 +5,9 @@ body {
   padding: 1rem;
 
 }
+h1{
+    font-family: "Cinzel";
+}
 
 header {
   text-align: center;
@@ -39,6 +42,20 @@ main {
 }
 
 h2  {
-  font: royal rgba(0, 0, 255, 0.991);
-  padding: 3px;
+    font-family: "Cinzel";
+    color: rgba(0, 0, 255, 0.991);
+    padding: 3px;
+}
+
+footer{
+    font-family: "Cinzel";
+    text-align: center;
+    font-weight: bold;
+
+}
+
+h3{
+    font-family: "helvetica";
+    text-align: center;
+    font-weight: 100;
 }
