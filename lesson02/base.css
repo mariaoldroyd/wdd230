@@ -40,6 +40,10 @@ main {
   margin: 20px;
   
 }
+.first-word{
+    font-weight:  bold;
+    
+}
 
 h2  {
     font-family: "Cinzel";
