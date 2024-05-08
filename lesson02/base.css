@@ -1,65 +1,92 @@
 body {
     background-color: rgba(249, 239, 226, 0.725);
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 1rem;
+    margin: 0;
+    padding: 1rem;
 
 }
-h1{
-    font-family: "Cinzel";
+
+h1, h2, h3 {
+    margin:0;
+    text-align: center;
+}
+
+h1, h2{
+    font-family: "Cinzel", sans-serif;   
+    color:rgb(0, 0, 255);
+    padding: 1rem;
 }
 
 header {
-  text-align: center;
+  
   background-color: rgb(246, 154, 16);
+  color:white;
+  padding: 1rem;
+}
+p{
+    text-align: center;
 }
 
-main {
-  display: block;
-  grid-template-columns: 1fr;
+main { 
   max-width: 90%;
-  text-align: center;
   margin: 0 auto;
 
 }
 
 .card-container{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
+    flex-direction: column;
 }
 
 .card {
-    width: 400px;
-    height: auto;
-  border:  8px solid;
-  border-color: black;
-  border-radius: 5px;
-  padding: 20px;
-  margin: 20px;
+    width: calc( 33.33% - 20px);
+    max-width: 400px;  
+    background-color: white;  
+    border:  8px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;   
+    box-sizing: border-box;
   
 }
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 .first-word{
     font-weight:  bold;
     
 }
 
-h2  {
-    font-family: "Cinzel";
-    color: rgba(0, 0, 255, 0.991);
-    padding: 3px;
-}
 
 footer{
-    font-family: "Cinzel";
+    font-family: "Cinzel" sans-serif;
     text-align: center;
     font-weight: bold;
+    margin-top: 20px;
 
 }
 
 h3{
-    font-family: "helvetica";
+    font-family: "helvetica", sans-serif;
     text-align: center;
     font-weight: 100;
+}
+
+ 
+/*Mobile styles*/
+@media(max-width:768px) {
+    .card-container{
+        flex-direction: column;
+    }
+    .card{
+        width: calc(100% - 20px);
+        margin-bottom: 20px;
+       
+    }
 }
