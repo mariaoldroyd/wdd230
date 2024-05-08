@@ -13,10 +13,10 @@
     const navigation = document.querySelector('.navigation');
 
     // Add event listener to the hamburger icon
-    hamburgerMenu.addEventListener('click' () ,{
+    hamburgerMenu.addEventListener('click', () =>{
         // Toggle the visibility of the main menu items
-        navigation,classList.toggle('show')
-        .hamburgerMenu.classList.toggle('show')
+        navigation.classList.toggle('show');
+        hamburgerMenu.classList.toggle('show');
     });
 
 
