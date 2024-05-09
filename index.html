@@ -17,12 +17,10 @@
     <meta name="description" content="Course Assignment portal WDD230 - Web Fronted Development">
     <meta name="author" content="Maria Oldroyd">
     <meta property="og:title" content="WDD230 Web Frontend Development">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="website WDD230">
     <meta property="og:url" content="https://mariaoldroyd.github.io/wdd230/">
     <meta property="og:image" content="images/web.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    
-    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">    
     <link rel="manifest" href="/site.webmanifest">
 
 
@@ -73,16 +71,26 @@
                 <section class="visits">
                     <h4>Houston, Texas</h4>
                     <h4>Current Weather:</h4>
-                    <h4>Number of Visits:</h4>
+                    
                 </section>
             </main>
             <footer>
-            <div class="grid-container">
+                <div class="grid-container">
+                    <div class="texas-info">
                 <p>&copy; <span id="currentYear">2024</span></p>
-                <p>Maria Oldroyd</p> 
-                          
+                <p>Maria Oldroyd</p>                           
                 <p>Texas<img src="txflag.png"  alt="Texas flag" width="45" height="45"></p>
+                    </div>
+                    <div class="additional-info">
+                    <p id="year">Last Modified</p>
+                    <p id="lastModified"></p>
                 </div>
+            <div class="visit-info">
+                <p>Number of Visits: <span id ="visitCount">0</span></p>
+                </div>
+            </div>
+                <script src="scripts/getdates.js"></script>
+                
             </footer>
             <script src="scripts/getdates.js"></script>
         
