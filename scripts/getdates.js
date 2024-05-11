@@ -3,9 +3,11 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Get the last modified date of the HTML file
     const lastModified = new Date(document.lastModified);
+const currentyear = new Date().getFullYear();
 
     
     document.getElementById("lastModified").innerText = formatDate(lastModified);
+    document.getElementById("currentYear").innerText = currentyear;
 
    // Function to increment and display the visit count
 function incrementVisitCount() {
@@ -40,6 +42,22 @@ function formatDate(date) {
     const options = { year: "numeric", month: "long", day: "numeric" };
     return date.toLocaleDateString("en-US", options);
 }
+
+const modeButton = document.querySelector("#darkMode");
+const main = document.querySelector("main");
+
+modeButton.addEventListener("click", () => {
+	if (modeButton.textContent.includes("🕶️")) {
+		main.style.background = "#000";
+		main.style.color = "#fff";
+		modeButton.textContent = "🔆";
+	} else {
+		main.style.background = "#eee";
+		main.style.color = "#000";
+		modeButton.textContent = "🕶️";
+	}
+});
+
 
 
 

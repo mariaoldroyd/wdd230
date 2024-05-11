@@ -6,50 +6,72 @@
     src: url(https://fonts.gstatic.com/s/abrilfatface/v23/zOL64pLDlL1D99S8g8PtiKchq-dmjQ.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 img {
   border-radius:50%;
 }
 
-
 nav{
+
+  margin: 1rem auto;
+  width: 100%;
+}
+
+
+nav .navigation{
+    background-color:#33333342;
     
-    font-family:"Lato", sans-serif;
-    font-weight: bold;
         
 }
 
 .navigation{
   display: flex;  
-  flex-direction:column;
+  flex-direction:row;
   align-items:center;   
   background-color: #33333342;
+  font-family:"Lato", sans-serif;
+  font-weight: bold;
   padding: 10px;
+  color: black;
   
+}
+
+.card {
+  padding: 1rem;
+  border-style: solid 3px;
+  border-color: red; /* Add a border color for visualization */
+  background-color: whitesmoke;
+  color: black;
+  width: 100%;
 }
 
 .navigation a{
   display:none;
-  float: left;
-  padding: 20px 20px;
-  color:rgba(12, 8, 246, 0.869);
-  width: 100%
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  color:#333;
+  padding: 1rem;
 }
 .navigation a:hover{
   border: 1px solid white;
+  background-color: #33333342;
+	color: #333;
+	font-weight: 700;
 }
 
-
-
-
-@media (min-width: 640px){
-  .navigation ul{
-      display: flex;
-      
-  }
+.open a {
+	display: block;
 }
 
-
+.active::before {
+	content: "❌"; /* just a wayfinding symbol for the user */
+}
 
 
 
@@ -57,7 +79,7 @@ body {
     max-width: 100%;
     margin: 0 auto;
     padding: 1rem;
-    background-color: rgba(41, 72, 79, 0.024);
+    background-color: white;
      
   }
 
@@ -67,6 +89,12 @@ body {
       padding: 1rem;
     }
   }
+  @media (max-width: 767px) {
+    .active::before {
+      content: "❌"; /* just a wayfinding symbol for the user */
+    }
+    
+  }
 
   h1{
     font-size: 1.5rem;
@@ -75,6 +103,7 @@ body {
   .navigation{
     flex-direction: column;
      align-items:center;
+     width: 100%;
   }
 
   .navigation a{
@@ -84,91 +113,118 @@ body {
 
   .card{
     padding: 1rem;
+    border-style: solid;
+    border-color: black;
+    background-color: whitesmoke;
+    color:black;
+    width: 100%;
+  }
+  .numbered-activities ul li{
+    text-align: left;
+    list-style-type: none;
+    color:rgb(0, 110, 182);
+
   }
 
   .visits{
     padding: 1rem;
+    background-color: whitesmoke;
+    color: black;
   }
 
   .grid-container {
     padding: 1rem;
   }
 
+
   /*Desktop styles*/
-  @media(min-width: 768px) {
+  @media(min-width: 37.5em) {
+
+    h1 {
+      font-size: 2.5rem;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    h2 {
+      background-color: rgb(0, 110, 182);
+      font-family: "Merriweather";
+      color: white;
+      font-size: 2rem;
+      text-align: center;
+      width: 100%;
+    }
+    #hamburger-menu {
+      display: none;
+    }
+
+    .navigation {
+      flex-direction: row;
+    }
+
+    .navigation a {
+      display: block;
+      flex: 1 1 100%;
+      
+    }
+  }
 
     main{
       display:grid;
-      grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
       align-items: start;
     }
-
-    .card{
-      padding: 2rem;
-    }
+  a.active{
+    color: cyan;
+  }
+    
 
     .info h3 {
       font-size: 1.5em;
     }
-
-    .visits{
-      padding: 2rem;
-    }
-
-  }
-
-
   
   header {
+    position: relative;
     text-align: center;
     background-color: rgb(0, 110, 182);
     color: white;
     padding: 1rem;
   }
 
-  .header-content{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  h1 {
-  display: block;
-    font-size: 2em;    
-    font-weight: bold;    
-  }
-   #hamburger-menu{
-    display: none;
-    font-size: 24px;
-    font-weight: bold;
-
-   }
-
-  
   
 
-  main {
+  #darkMode{
     display: block;
-    grid-template-columns: 1fr;
-    max-width: 90%;
-    text-align: center;
-    margin: 0 auto;
-  
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    color:  white;
   }
 
-   h2{
-    background-color:rgb(0, 110, 182);
-    font-family: "Merriweather";
-    color: white;
+ 
+   #hamburger-menu{
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 3px 7px 8px;
+    background-color: #eee;
+    color: #000;
+    position: absolute;
+    bottom: 1.5 rem;
+    left: 1rem;
+  }
+
+  #hamburger-menu::before {
+    content:  "&#8801";
+   }
+
+   #hamburger-menu::before {
+    content:  "❌";
    }
   
-  .card {
-    border-style: solid;
-    border-color: black;
-    
-  }
-   
+
+  
   .info h3{
     font-family: "Merriweather";
     background-color: rgb(0, 110, 182);
@@ -183,12 +239,17 @@ body {
     border-radius: 0px;
     font-family: "Lato", san serif;
     padding: 0px;
+    
+  }
+  .visits iframe{
+    width: 100%;
   }
 
   .card ul li{
     text-align: left;
     list-style-type: none;
     color:rgb(0, 110, 182);
+    
   }
 
   .grid-container {
@@ -210,6 +271,7 @@ body {
     padding: 1rem;
     margin-bottom: 1rem;
   }
+  
 
   .additional-info {
     text-align: center;
@@ -219,24 +281,68 @@ body {
     padding: 1rem;
   }
 
-  @media screen and (max-width: 768px) {
-    .hamburger-menu{
-      display: block;
-    }
-    .navigation{
-      display: none;
-    }
-    .navigation.show-menu a{
+  /*small view navigation*/
+  @media screen and (max-width: 767px) {
+    #hamburger-menu{
       display: block;
     }
   }
-@media screen and (max-width: 768px) {
-   #hamburger-menu {
-    display: block;
-  }
-  .navigation {
-    display:none;
-  }
+    #hamburger-menu {
+      font-size: 1.5rem;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      padding: 3px 7px 6px;
+      background-color: #eee;
+      color: #000;
+      position: absolute;
+      bottom: 1.5rem;
+      left: 1rem;
+    }
+    #hamburger-menu::before {
+      content: "☰";
+    }
+    
+    #hamburger-menu.open::before {
+      content: "❌";
+    }
+    
 
-}
+    
+    .navigation{
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      background-color:rgb(121, 115, 115);
+      color: black;
+    }
+
+    .navigation a{
+      display: row;
+	    padding: 1rem;
+	    text-align: center;
+	    text-decoration: none;
+	    color: black;
+    }
+
+    .navigation a:hover {
+      background-color: cyan;
+      color: #333;
+      font-weight: 700;
+    }
+
+    .open a {
+      display: block;
+    }
+
+    .active::before {
+      content: "❌";
+
+    }
+    
+
+
+
+    
+   
+  
+
   

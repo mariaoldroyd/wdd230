@@ -1,0 +1,9 @@
+@media (min-width: 640px){
+    .navigation ul{
+        display: flex;
+        
+    }
+}
+.navigation {
+    flex: 1 1 100%;
+}
