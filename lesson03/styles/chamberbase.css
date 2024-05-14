@@ -38,9 +38,18 @@ $red: rgba(255, 0, 0, 1);*/
     padding: 20px;
   }
 
+  img {
+    display: block;
+    border-radius: ;
+    height:30%;
+  }
+
   h1{
     font-family: "el messiri", serif;
     text-align:center;
+  }
+  h3{
+    font-family: "Ubuntu Sans", san-serif;
   }
 
   nav{
