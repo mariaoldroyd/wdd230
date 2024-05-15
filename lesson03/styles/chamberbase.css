@@ -25,6 +25,21 @@ $red: rgba(255, 0, 0, 1);*/
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
 
+  :root{
+    --primary-color: rgba(151, 171, 210, 1);
+    --secondary-color: rgba(42, 77, 135, 1);
+    --accent-color: rgba(255, 195, 0, 1);
+    --text-color: #000;
+    --border-color: #ccc;
+  }
+
+  body{
+    font-family: 'Ubuntu Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+  }
+
   *{
     margin: 0;
     padding: 0;
@@ -38,14 +53,14 @@ $red: rgba(255, 0, 0, 1);*/
     padding: 20px;
   }
 
-  img {
-    display: block;
-    border-radius: ;
-    height:30%;
+  header img {
+   width: 100%;
+   height: auto;
   }
 
-  h1{
+  header h1{
     font-family: "el messiri", serif;
+    margin: 0;
     text-align:center;
   }
   h3{
@@ -53,14 +68,16 @@ $red: rgba(255, 0, 0, 1);*/
   }
 
   nav{
-    background-color:rgba(151, 171, 210, 1);
-    color: black;
+    background-color:var(--primary-color);
+    color: var(--text-color);
     padding: 10px;
   }
 
   nav ul {
     list-style: none;
     text-align: center;
+    padding: 0;
+     margin: 0;
   }
 
   nav ul li {
@@ -68,44 +85,67 @@ $red: rgba(255, 0, 0, 1);*/
     margin-right: 20px;
   }
 
+  nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  
+  nav ul li a:hover {
+    color: var(--secondary-color);
+  }
+
   main {
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
-  }
-
-  .image-box {
-    flex: 1 0 25%;
-    padding: 20px;
-  }
-  .content-box {
-    flex: 1 0 25%;
-    padding: 20px;
-    background-color: rgba(151, 171, 210, 1);
-    border:  1px solid #ccc;
-  }
- 
-  
-
-  .social-icons {
-    display: flex;
-    padding: 20px;
-    font-size: 30px;
-    justify-content: center; 
     
   }
 
-  .social-icons a {
-    font-size: 30px;
+  .hero {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .cta {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .cta .join-button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
     text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .events, .weather, .spotlights{
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+   
+  .footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contact-info, .social-icons, .visit-info, .dev-info {
+    flex: 1 1 20%;
+    margin-bottom: 10px;
+  }
+  .social-icons a{
+    font-size: 30px;
     margin: 0 10px;
+    color: white;
+    
   }
 
   .social-icons a:hover {
-    opacity: 0.7;
+    opacity: 0.7
   }
-  
-   
+
   .fa-facebook {
     background: #3B5998;
     color: white;

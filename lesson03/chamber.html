@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamberbase.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="lesson03/images/favicon.ico">
 
     <title>Bellville Chamber of Commerce Site Plan</title>
     <meta name="description" content="The Greater Bellville Chamber of Commerce, founded in 2024 is an association of businesses organized to improve business in Southwest Texas">
@@ -25,14 +25,16 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">    
     <link rel="manifest" href="/site.webmanifest">
     <script src="https://kit.fontawesome.com/8d0c34bff4.js" crossorigin="anonymous"></script>
-
+    <script src="scripts/dates.js" defer></script>
     </head>
     <body>
         <header>
             <div class="header-content">
                 <img src="images/21TXBC-bluebonnets3-CANVA-1600X670.webp" alt="bluebonnets" width="100%" height="30%">
                 <h1>Bellville Chamber of Commerce Site Plan</h1>
-            
+                <section class="cta">
+                    <a href="#" class="join-button">Join the Chamber of Commerce</a>
+                </section>
             </div>
     </header>
     <nav>   
@@ -49,62 +51,54 @@
         <h3> The purpose of this website is to provide visitors and residents alike with information on current events.
             Provide Chamber members with business opportunities and develop fair policies for all. </h3>
 
-
-
-        <div class="Scenarios">
-                <h3>Events</h3>
-                <h3>Job opportunities</h3>
-                <h3>List of Members</h3>
+            <div class="hero">
+                <img src="images/bellville.jpg" alt="landscape" width="400" height="400">
     
-        </div>
+            </div>
 
-        <div class="image-box">
-            <img src="images/bellville.jpg" alt="landscape" width="400" height="400">
+           
+            <section class="events">
+                <h2>Current Events</h2>
+                <!-- Placeholder content -->
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <!-- Placeholder content -->
+            </section>
+            <section class="spotlights">
+                <h2>Company Spotlights</h2>
+                <!-- Placeholder content -->
+            </section>
 
-        </div>
-        <div class="content-box1">
-
-        </div>
-
-        <div class="content-box2">
-
-        </div>
         
-        <div class="content-box3">
-
-        </div>
-        
-        <div class="content-box4">
-
-        </div>
-
         </main>
 
         <footer>
-            <div class="grid-container">
-                <div class="texas-info">
+            <div class="footer-content">
+                <div class="contact-info">
             <p>&copy; <span id="currentYear">2024</span></p>
             <p>Bellvile Chamber of Commerce</p>                           
             <p>Bellville, Texas</p>
             
             </div>
                 <div class="social-icons">
-                    <div class="social-icons">
-                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/your-facebook-page-url" class="fa fa-facebook"></a>
-                        <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>    
-                        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-                    </div>
+                    <a href="https://twitter.com/" class="fab fa-twitter"></></a>
+                    <a href="https://www.facebook.com/your-facebook-page-url" class="fa fa-facebook"></a>
+                    <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>    
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
                 </div>
+            </div>
     
-            </di>
-        <div class="visit-info">
-            <p>Number of Visits: <span id ="visitCount">0</span></p>
+            
+            <div class="visit-info">
+                <p>Number of Visits: <span id ="visitCount">0</span></p>
             </div>
         </div>
-        
-
-        </footer>
+        <div class="dev-info">
+            <p>Maria Oldroyd - WDD230 Project</p>
+            <p> Last modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>        
     </body>
     </html>
 
