@@ -63,9 +63,15 @@ $red: rgba(255, 0, 0, 1);*/
     margin: 0;
     text-align:center;
   }
+
+  main h2{
+    font-family: "Ubuntu Sans", serif;
+    text-align: center;
+  }
+
   main h3{
     font-family: "Ubuntu Sans", san-serif;
-    text-align: center;
+    
   }
 
   nav{
@@ -121,9 +127,13 @@ $red: rgba(255, 0, 0, 1);*/
     border-radius: 5px;
   }
 
-  .events, .weather, .spotlights{
+  .events, .weather {
     flex: 1 1 100%;
     margin-bottom: 20px;
+  }
+
+  .spotlights {
+    display: flex ;
   }
    
   .footer-content{
@@ -176,3 +186,31 @@ $red: rgba(255, 0, 0, 1);*/
     padding: 20px;
     text-align: center;
   }
+
+  .hamburger-menu {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}

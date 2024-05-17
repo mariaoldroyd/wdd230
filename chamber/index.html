@@ -37,17 +37,21 @@
                 </section>
             </div>
     </header>
-    <nav>   
-        <ul>   
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Members</a></li>
-        <li><a href="#">Events</a></li>
+    <nav> 
+        <button class="hamburger-menu" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Members</a></li>
+            <li><a href="#">Events</a></li>
         </ul>  
+       
     </nav>   
        
     <main>
-        <h1>Welcome to The Bellville Chamber of Commerce</h1>
+        <h2>Welcome to The Bellville Chamber of Commerce</h2>
         <h3> The purpose of this website is to provide visitors and residents alike with information on current events.
             Provide Chamber members with business opportunities and develop fair policies for all. </h3>
 
@@ -58,22 +62,26 @@
 
            
             <section class="events">
-                <h2>Current Events</h2>
+                <h3>Current Events</h3>
                 <!-- Placeholder content -->
                 <p>Event datails coming soon!</p>
             </section>
             <section class="weather">
-                <h2>Weather</h2>
+                <h3>Weather</h3>
                 <!-- Placeholder content -->
                 <p>Weather deatils will be updated here.</p>
             </section>
             <section class="spotlights">
                 <h3>Company Spotlights</h3>
                 <!-- Placeholder content -->
-                <div clas="spotlight">Company1</div>
-                <div clas="spotlight">Company2</div>
-                <div clas="spotlight">Company3</div>
+                <div class="spotlight">Company1</div>
+                <div class="spotlight">Company2</div>
+                <div class="spotlight">Company3</div>
             </section>
+
+          
+
+       
 
         
         </main>
@@ -108,6 +116,7 @@
         document.getElementById("currentYear").textContent = new Date().getFullYear();
         document.getElementById("lastModified").textContent = document.lastModified;
     </script>    
+    <script src="chamber/scripts/get.dates.js"></script>
     </body>
     </html>
 
