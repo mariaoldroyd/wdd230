@@ -50,12 +50,20 @@ $red: rgba(255, 0, 0, 1);*/
     text-align: center;
     background-color:white;
     font-family: "El Messiri", serif;
-    padding: 20px;
+    padding: 0;
   }
 
-  header img {
-   width: 100%;
-   height: auto;
+  .header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+   .header-content img {
+    max-height: 300px;
+    height: auto;
+    width: 100%;
+
   }
 
   header h1{
@@ -64,12 +72,14 @@ $red: rgba(255, 0, 0, 1);*/
     text-align:center;
   }
 
+  
+
   main h2{
     font-family: "Ubuntu Sans", serif;
     text-align: center;
   }
 
-  main h3{
+  main p{
     font-family: "Ubuntu Sans", san-serif;
     
   }
@@ -102,15 +112,17 @@ $red: rgba(255, 0, 0, 1);*/
   }
 
   main {
-    padding: 20px;
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .hero {
-    width: 100%;
-    margin-bottom: 20px;
+   float: left;
+   margin-left: 0;
+   padding: 10px;
+   margin-bottom: 20px;
   }
 
   .cta {
@@ -124,16 +136,33 @@ $red: rgba(255, 0, 0, 1);*/
     color: white;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-right: 40px;
+    float:right;
+  
   }
 
   .events, .weather {
     flex: 1 1 100%;
     margin-bottom: 20px;
   }
+  
 
   .spotlights {
-    display: flex ;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .spotlight {
+    flex: 1;
+    margin-right: 10px;
+    background-color:var(--secondary-color);
+    padding: 30px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+
   }
    
   .footer-content{
