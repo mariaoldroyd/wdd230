@@ -25,17 +25,17 @@
     <link rel="manifest" href="/site.webmanifest">
     <script src="https://kit.fontawesome.com/8d0c34bff4.js" crossorigin="anonymous"></script>
     <script src="scripts/dates.js"></script>
-    </head>
-    <body>
-        <header>
-            <div class="header-content">
-                <img class="header-img" src="images/21TXBC-bluebonnets3-CANVA-1600X670.webp" alt="bluebonnets">
-                <h1>Bellville Chamber of Commerce Site Plan</h1>
-                <section class="cta">
-                    <h2>Join the Chamber of Commerce</h2>
-                    <a href="#" class="join-button">Join Now</a>
-                </section>
-            </div>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img class="header-img" src="images/21TXBC-bluebonnets3-CANVA-1600X670.webp" alt="bluebonnets">
+            <h1>Bellville Chamber of Commerce Site Plan</h1>
+            <section class="cta">
+                <h2>Join the Chamber of Commerce</h2>
+                <a href="#" class="join-button">Join Now</a>
+            </section>
+        </div>
     </header>
     <nav> 
         <button class="hamburger-menu" aria-label="Toggle navigation">
@@ -55,7 +55,7 @@
         <p> The purpose of this website is to provide visitors and residents alike with information on current events.
             Provide Chamber members with business opportunities and develop fair policies for all. </p>
 
-            <div class="content-container">
+        <div class="content-container">
             <div class="hero">
                 <img src="images/bellville.webp" alt="landscape" width="400" height="400">
     
@@ -73,7 +73,7 @@
             <section class="events">
                 <h3>Current Events</h3>
                 <!-- Placeholder content -->
-                <p>Event datails coming soon!</p>
+                <p>Event details coming soon!</p>
             </section>
             <section class="weather">
                 <h3>Weather</h3>
@@ -85,12 +85,12 @@
 
         <footer>
             <div class="footer-content">            
-            <div class="contact-info">
-                <h3>Contact Info</h3>
-                <p>123 Main St, Bellville, TX 77418</p>
-                <p>(123) 456-7890</p>
+                <div class="contact-info">
+                    <h3>Contact Info</h3>
+                    <p>123 Main St, Bellville, TX 77418</p>
+                    <p>(123) 456-7890</p>
                 </div>
-            <p>&copy; <span id="currentYear">2024</span>Bellvile Chamber of Commerce</p>
+                <p>&copy; <span id="currentYear">2024</span>Bellvile Chamber of Commerce</p>
                        
             </div>
             
@@ -103,20 +103,20 @@
             
     
             
-            <div class="visit-info">
-                <p>Number of Visits: <span id ="visitCount">0</span></p>
-            </div>
+                <div class="visit-info">
+                    <p>Number of Visits: <span id ="visitCount">0</span></p>
+                </div>
         
-        <div class="dev-info">
-            <p>Maria Oldroyd - WDD230 Project</p>
-            <p> Last modified: <span id="lastModified"></span></p>
-        </div>
-    </footer>   
-    <script>
-        document.getElementById("currentYear").textContent = new Date().getFullYear();
-        document.getElementById("lastModified").textContent = document.lastModified;
-    </script>    
-    <script src="chamber/scripts/get.dates.js"></script>
+                <div class="dev-info">
+                    <p>Maria Oldroyd - WDD230 Project</p>
+                    <p> Last modified: <span id="lastModified"></span></p>
+                </div>
+        </footer>   
+        <script>
+            document.getElementById("currentYear").textContent = new Date().getFullYear();
+            document.getElementById("lastModified").textContent = document.lastModified;
+        </script>    
+        <script src="chamber/scripts/get.dates.js"></script>
     </body>
     </html>
 
