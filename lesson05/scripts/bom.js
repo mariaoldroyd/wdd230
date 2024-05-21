@@ -1,6 +1,8 @@
-const list = document.getElementById('list');
-        const input = document.getElementById('favchapter');
-        const addButton = document.getElementById('submit');
+document.addEventListener('DOMContentLoaded', () => {
+    const list = document.getElementById('list');
+    const input = document.getElementById('favchapter');
+    const addButton = document.getElementById('submit');
+
         function addChapter() {
             const inputValue = input.value.trim();
             if (inputValue !== '') {
@@ -24,7 +26,6 @@ const list = document.getElementById('list');
 
           input.focus();
         }
-        
     }
       
     addButton.addEventListener('click', addChapter);
@@ -33,3 +34,4 @@ const list = document.getElementById('list');
             addChapter();
         }
     });
+});

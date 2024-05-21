@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="lesson05/base.css">
-    <link rel="stylesheet" href="lesson05/scripts/bom.js">
+    <link rel="stylesheet" href="styles/base.css">
+    
 
-    <title>Favorite Chapter</title>
+    <title>Book of Mormon Top 10</title>
     <meta name="description" content="Course Assignment portal WDD230 - Web Fronted Development">
     <meta name="author" content="Maria Oldroyd">
     <meta property="og:title" content="WDD230 Web Frontend Development">
@@ -24,6 +24,8 @@
         color: #666;
       }
     </style>
+  </head>
+  <body> 
 
     <h1>📖 Book of Mormon - Top 10</h1>
     <main>
@@ -32,48 +34,7 @@
       <button type="submit" id="submit">Add Chapter</button>
       <ul id="list"></ul>
     </main>  
-  </head>
-  <body> 
-
-    
-    <script>
-        /*const list = document.getElementById('list');
-        const input = document.getElementById('favchapter');
-        const addButton = document.getElementById('submit');
-        function addChapter() {
-            const inputValue = input.value.trim();
-            if (inputValue !== '') {
-                input.value= '';
-                const listItem = document.createElement('li');
-                const span = document.createElement('span');
-                const deleteButton = document.createElement('button');
-
-                span.textContent = inputValue;
-                deleteButton.textContent = 'Delete';
-                listItem.appendChild(span);
-                listItem.appendChild(deleteButton);
-
-          // Append the list item as a child of the list
-                list.appendChild(listItem);
-
-          // Attach an event handler to the delete button
-          deleteButton.addEventListener('click', () => {
-            list.removeChild(listItem);
-          });
-
-          input.focus();
-        }
-        
-    }
-      
-    addButton.addEventListener('click', addChapter);
-    input.addEventListener('keypress', function(event){
-        if (event.key === 'Enter') {
-            addChapter();
-        }
-    });*/
-        
-
-    </script>
+    <script src="scripts/bom.js"></script>  
+     
   </body>
 </html>
