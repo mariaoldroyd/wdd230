@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lesson05/base.css">
+   
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+
+      li button {
+        font-size: 12px;
+        margin-left: 20px;
+        color: #666;
+      }
+    </style>
+
+    <h1>📖 Book of Mormon - Top 10</h1>
+    <main>
+      <label for="favchapter">Enter Book and Chapter: </label>
+      <input type="text" id="favchapter" placeholder="Alma 5">
+      <button type="submit" id="submit">Add Chapter</button>
+      <ul id="list"></ul>
+    </main>  
+  </head>
+  <body> 
+
+    
+    <script>
+        const list = document.getElementById('list');
+        const input = document.getElementById('favchapter');
+        const addButton = document.getElementById('submit');
+        function addChapter() {
+            const inputValue = input.value.trim();
+            if (inputValue !== '') {
+                input.value= '';
+                const listItem = document.createElement('li');
+                const span = document.createElement('span');
+                const deleteButton = document.createElement('button');
+
+                span.textContent = inputValue;
+                deleteButton.textContent = 'Delete';
+                listItem.appendChild(span);
+                listItem.appendChild(deleteButton);
+
+          // Append the list item as a child of the list
+                list.appendChild(listItem);
+
+          // Attach an event handler to the delete button
+          deleteButton.addEventListener('click', () => {
+            list.removeChild(listItem);
+          });
+
+          input.focus();
+        }
+        
+    }
+      
+    addButton.addEventListener('click', addChapter);
+    input.addEventListener('keypress', function(event){
+        if (event.key === 'Enter') {
+            addChapter();
+        }
+    });
+        
+
+    </script>
+  </body>
+</html>
