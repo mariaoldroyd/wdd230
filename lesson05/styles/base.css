@@ -3,31 +3,61 @@
 	padding: 0;
 }
 
-body {
+body {	
+	background-color:blue; 
+	background-image: url("https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/fort-collins-colorado/2018/1280x800/Fort-Collins-Temple01.jpg");
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	
 	justify-content: center;
+	position:relative;
 	font-family: Acme, Arial, sans-serif;
+	
+	
 }
 
-h1 {
+
+
+ h1 {
+	display:flex;
 	font-size: 1.5rem;
+	background-color: grey;
+	border: solid black;
+	color: white;
+	align-content: center;
+	float: left;
+	margin-left: 75px;
+	margin-top: 26;
+		
 }
 
-main {
-	margin: 1rem auto;
+main{
+	
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 1rem;
-	background-color: #ddd;
+	background-color: #dddddd;
 	display: flex;
 	flex-direction: column;
+	margin-top: 38px;
+	margin-left: 10px;
+	float: left;
+	
 }
+
+
+
+
 
 input,
 button {
 	padding: 0.5rem;
+	border-color: black;
+}
+
+.ul{
+	border-color: black;
+
 }
 
 button {
@@ -64,6 +94,6 @@ li {
 	}
 
 	main {
-		width: 320px;
+		width: 520px;
 	}
 }
