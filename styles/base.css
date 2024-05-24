@@ -43,7 +43,7 @@ nav .navigation{
 
 .card {
   padding: 1rem;
-  border-style: solid 3px;
+  border-style: solid;
   border-color: red; /* Add a border color for visualization */
   background-color: whitesmoke;
   color: black;
