@@ -133,12 +133,13 @@ $red: rgba(255, 0, 0, 1);*/
 
   .cta .join-button {
     background-color: var(--accent-color);
-    color: white;
+    color: black;
     padding: 10px 20px;
-    text-decoration: none;
+    text-decoration: bold;
     border-radius: 10px;
     margin-top: 5px;
     float: right;
+    font-size: 1rem;
      
   }
 
