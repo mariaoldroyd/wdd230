@@ -316,7 +316,7 @@ body {
     }
 
     .navigation a{
-      display: row;
+      display: flex;
 	    padding: 1rem;
 	    text-align: center;
 	    text-decoration: none;
