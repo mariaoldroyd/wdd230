@@ -27,3 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburgerMenu.addEventListener('click', () => {
         navLinks.classList.toggle('active');
     });
+
+
+  

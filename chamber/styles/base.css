@@ -33,6 +33,11 @@ $red: rgba(255, 0, 0, 1);*/
     --border-color: #ccc;
   }
 
+  body.darkMode {
+    color: #ffffff;
+    background-color: #121212;
+  }
+
   body{
     font-family: 'Ubuntu Sans', sans-serif;
     margin: 0;
@@ -95,7 +100,7 @@ $red: rgba(255, 0, 0, 1);*/
     list-style: none;
     text-align: center;
     padding: 0;
-     margin: 0;
+    margin: 0;
   }
 
   nav ul li {
@@ -138,8 +143,7 @@ $red: rgba(255, 0, 0, 1);*/
   }
 
   .content-container {
-    display: flex;
-    justify-items: space-around;
+    display: flex;  
     width: 100px;
     max-width: 1200px;
     margin: 20px 0;
@@ -176,6 +180,7 @@ $red: rgba(255, 0, 0, 1);*/
     background-color: #f9f9f9;
     border: 1px solid var(--border-color);
     border-radius: 10px;
+    color: black;
   }
    
   .footer-content{
