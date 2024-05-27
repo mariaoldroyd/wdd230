@@ -12,6 +12,13 @@
   box-sizing: border-box;
 }
 
+body {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: white;
+}
+
 img {
   border-radius:50%;
 }
@@ -73,18 +80,21 @@ nav .navigation{
 	content: "❌"; /* just a wayfinding symbol for the user */
 }
 
+iframe {
+  width: 100%;
+   height: 350px;   
+  
+}
+.map {
+  max-width: 600px;
+  margin: 0 auto;
+}
 
 
-body {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-    background-color: white;
-     
-  }
+
 
   /* Mobile styles */
-  @media (max-width: 767px) {
+@media (max-width: 767px) {
     header{
       padding: 1rem;
     }
@@ -240,9 +250,6 @@ body {
     font-family: "Lato", san serif;
     padding: 0px;
     
-  }
-  .visits iframe{
-    width: 100%;
   }
 
   .card ul li{
