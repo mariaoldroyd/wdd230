@@ -261,13 +261,17 @@ iframe {
     font-size: 2rem;
     color:  white;
   }
+  #darkMode,
+   .herolabel{
+    color: rgb(255, 0, 21);
+  }
 
  
    #hamburger-menu{
     font-size: 1.5rem;
     border: 1px solid rgba(0, 0, 0, 0.3);
     padding: 3px 7px 8px;
-    background-color: #eee;
+    background-color: whitesmoke;
     color: #000;
     position: absolute;
     bottom: 1.5rem;
@@ -367,7 +371,7 @@ iframe {
       display: flex;
       flex-direction: column;
       list-style: none;
-      background-color:rgb(121, 115, 115);
+      background-color:rgba(121, 115, 115, 0.651);
       color: black;
     }
 
