@@ -61,8 +61,12 @@
         <p> The purpose of this website is to provide visitors and residents alike with information on current events.
             Provide Chamber members with business opportunities for growth and success and develop fair policies for all. We help buinesses connect with each other and residents tthrough community events</p>
 
-          
-        <img src="images/bellville.webp" alt="landscape" width="400" height="400">
+            <div class="hero-content">
+                <picture>
+                    <source srcset="images/wdd230-small-org.webp" media="(max-width: 500px)">
+                    <source srcset="images/wdd230-med-org.webp" media="(max-width: 1000px)">
+                    <img src="images/wdd230-large-org.webp" alt="3 individuals" width="2" height="1">
+        </picture>            
     
             
         <section class="spotlights">
@@ -79,10 +83,13 @@
                 <!-- Placeholder content -->
                 <p>Event details coming soon!</p>
             </section>
-            <section class="weather">
+            <div class="weather">
                 <h3>Weather</h3>
-                <!-- Placeholder content -->
-                <p>Weather details will be updated here.</p>
+                <br>
+
+                <p>Temperature: <span id="temprature">--</span>&#8457;</p>
+                <p>Wind Speed: <span id="windSpeed">--</span> mph</p>
+                <p>Wind Chill: <span id="windChill">N/A</span></p>
             </section> 
         </div>        
     </main>
@@ -121,6 +128,7 @@
     </script>    
     <script src="chamber/scripts/get.dates.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script> src="chamber/scripts/windchill.js"</script>
 </body>
 </html>
 
