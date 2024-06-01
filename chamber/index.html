@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,31 +19,23 @@
     <meta property="og:title" content="Bellville Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mariaoldroyd.github.io/wdd230/">
-    <meta property="og:image" content="http://127.0.0.1:5500/index.html#">
+    <meta property="og:image" content="images/21TXBC-bluebonnets3-CANVA-1600X670.webp">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">    
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="site.webmanifest">
     <script src="https://kit.fontawesome.com/8d0c34bff4.js" crossorigin="anonymous"></script>
-    <script src="scripts/dates.js"></script>
-    
+    <script src="scripts/get.dates.js"></script>    
 </head>
 <body>
     <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="toggle dark mode">
         <img src="images/night-mode.svg" alt="dark mode button">        
     </button>
     <header>
-        <div class="header-content">
-            <img class="header-img" src="images/21TXBC-bluebonnets3-CANVA-1600X670.webp" alt="bluebonnets">
+        <div class="header-content">           
+            <h1>Bellville Chamber of Commerce</h1>
             
-
-            <h1>Bellville Chamber of Commerce Site Plan</h1>
-            <div class="cta">
-                <h2>Join the Chamber of Commerce</h2>
-                <a href="#" class="join-button">Join Now</a>
-            </div>
-
         </div>
     </header>
-    <nav> 
+    <nav>  
         <button class="hamburger-menu" aria-label="Toggle navigation">
             <span class="fa fa-bars"></span>
         </button>
@@ -52,37 +44,40 @@
             <li><a href="#">Discover</a></li>
             <li><a href="#">Directory</a></li>
             <li><a href="#">Join</a></li>
-        </ul>  
-       
+        </ul>        
     </nav>   
        
     <main>
-        <h2>Welcome to The Bellville Chamber of Commerce Site Plan</h2>
-        <p> The purpose of this website is to provide visitors and residents alike with information on current events.
-            Provide Chamber members with business opportunities for growth and success and develop fair policies for all. We help buinesses connect with each other and residents tthrough community events</p>
-
-            <div class="hero-content">
-                <picture>
-                    <source srcset="images/wdd230-small-org.webp" media="(max-width: 500px)">
-                    <source srcset="images/wdd230-med-org.webp" media="(max-width: 1000px)">
-                    <img src="images/wdd230-large-org.webp" alt="3 individuals" width="2" height="1">
-        </picture>            
+        <h2>Welcome to The Bellville Chamber of Commerce</h2>
+        
     
-            
+        <div class="hero-content">           
+              <picture>
+                <source srcset="images/wdd230-small-org.webp" media="(max-width: 400px)">
+                <source srcset="images/wdd230-med.webp" media="(max-width: 800px)">
+                <img src="images/wdd230-large-org.webp" alt="3 individuals">                         
+            </picture>
+            <div class="cta">
+                <button class="join-button">Join the Chamber of Commerce</button>                
+            </div>
+            </div>
+                      
         <section class="spotlights">
             <h3>Company Spotlights</h3>
-            <!-- Placeholder content -->
+           
             <div class="spotlight">Company1</div>
             <div class="spotlight">Company2</div>
             <div class="spotlight">Company3</div>
         </section>
         
         <div class="content-container">  
-            <section class="events">
+            < class="events">
                 <h3>Current Events</h3>
                 <!-- Placeholder content -->
                 <p>Event details coming soon!</p>
+        </div>
             </section>
+            
             <div class="weather">
                 <h3>Weather</h3>
                 <br>
@@ -90,16 +85,15 @@
                 <p>Temperature: <span id="temprature">--</span>&#8457;</p>
                 <p>Wind Speed: <span id="windSpeed">--</span> mph</p>
                 <p>Wind Chill: <span id="windChill">N/A</span></p>
-            </section> 
+           </div> 
         </div>        
     </main>
    <footer>
         <div class="footer-content">            
             <div class="contact-info">
-                <h3>Contact Info</h3>
-                <p>123 Main St, Bellville, TX 77418</p>
-                <p>(123) 456-7890</p>
-                
+                <h3>Contact Information</h3>
+                <p>123 Main St. Bellville, TX 77418</p>
+                <p>(123) 456-7890</p>                
                 <p>&copy; <span id="currentYear">2024</span>Bellvile Chamber of Commerce</p> 
             </div>                      
         </div>
@@ -109,9 +103,7 @@
             <a href="https://www.facebook.com/your-facebook-page-url" aria-label="Link to facebook" class="fa fa-facebook"></a>
             <a href="https://www.linkedin.com/" aria-label="Link to linkedin" class="fa fa-linkedin"></a>    
             <a href="https://www.instagram.com/" aria-label="Link to instagram" class="fa fa-instagram"></a>
-        </div>
-            
-    
+        </div>    
             
         <div class="visit-info">
             <p>Number of Visits: <span id ="visitCount">0</span></p>
@@ -126,9 +118,10 @@
         document.getElementById("currentYear").textContent = new Date().getFullYear();
         document.getElementById("lastModified").textContent = document.lastModified;
     </script>    
-    <script src="chamber/scripts/get.dates.js"></script>
+    <script src="scripts/get.dates.js"></script>
+    <script src="scripts/windchill.js"></script> 
     <script src="scripts/darkmode.js"></script>
-    <script> src="chamber/scripts/windchill.js"</script>
+    
 </body>
 </html>
 

@@ -29,8 +29,11 @@ $red: rgba(255, 0, 0, 1);*/
     --primary-color: rgba(151, 171, 210, 1);
     --secondary-color: rgba(42, 77, 135, 1);
     --accent-color: rgba(255, 195, 0, 1);
+    --background-color: #FFFFFF;
     --text-color: #000;
     --border-color: #ccc;
+    --font-primary: 'El Messiri', sans-serif;
+    --font-secondary: 'Ubuntu Sans', sans-serif;
   }
 
   body.darkMode {
@@ -39,56 +42,70 @@ $red: rgba(255, 0, 0, 1);*/
   }
 
   body{
-    font-family: 'Ubuntu Sans', sans-serif;
+    font-family: var(--font-primary);
+    background-color: var(--background-color);
+    color: var(--text-color);
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;    
+    padding: 0;   
   }
 
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  h1, h2, h3 {
+    font-family: var(--font-secondary);
+}
+ h2 { 
+  text-align: center;
+}
 
-  header {
-    text-align: center;
-    background-color:white;
-    font-family: "El Messiri", serif;
-    padding: 0;
-  }
-
-  .header-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-   .header-content img {
-    max-height: 300px;
-    height: auto;
-    width: 100%;
-
-  }
-
-  header h1{
-    font-family: "el messiri", serif;
-    margin: 0;
-    text-align:center;
-  }
+header {
+  text-align: center;
+  background-color:white;
+  font-family: "El Messiri", serif;
+  padding: 0;
+}
 
   
 
-  main h2{
-    font-family: "Ubuntu Sans", serif;
+  
+
+  .header-content{
+    position: relative;
     text-align: center;
+    color: black;
   }
 
+  
   
   main p{
     font-family: "Ubuntu Sans", san-serif;
     
   }
+
+ 
+
+main {
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.hero-content {
+  position: relative;
+	text-align: center;  
+  max-width: 80%;
+  margin: 0 auto;	
+}
+ 
+.hero-content picture img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.hero-content picture {  
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}	
 
   nav{
     background-color:var(--primary-color);
@@ -117,30 +134,21 @@ $red: rgba(255, 0, 0, 1);*/
     color: var(--secondary-color);
   }
 
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
  
-  .cta {
-    width: 100%;
-    text-align: center;
-    margin: 20px 0;
-  }
+.cta{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
 
-  .cta .join-button {
+   .join-button {
     background-color: var(--accent-color);
     color: black;
     padding: 10px 20px;
     text-decoration: bold;
     border-radius: 10px;
-    margin-top: 5px;
-    float: right;
-    font-size: 1rem;
-     
+    margin-top: 5px;    
+    font-size: 1rem;    
   }
 
   .content-container {
