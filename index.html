@@ -15,7 +15,7 @@
     <link rel="icon" href="favicon.ico">
     
     <title>Maria Oldroyd - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="Course Assignment portal WDD 230 - Web Fronted Development">
+    <meta name="description" content="Course Assignment Portal WDD 230 - Web Fronted Development">
     <meta name="author" content="Maria Oldroyd">
     <meta property="og:title" content="WDD 230 Web Frontend Development">
     <meta property="og:type" content="website">
@@ -23,45 +23,34 @@
     <meta property="og:image" content="images/web.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">    
     <link rel="manifest" href="/site.webmanifest">
-
-
 </head>
 
-<body>
-  
-        <header>
-            
-            <img src="images/IMG_5734.webp" alt="picture of maria and husband" width="65" height="65">
-            <h1>Maria Oldroyd</h1>
-            <button id="darkMode">😎</button>
-            <button id="hamburger-menu">Menu</button>
-            
-    
-    </header>
-    
-   
+<body>  
+    <header>
+        <img src="images/IMG_5734.webp" alt="picture of maria and husband" width="65" height="65">
+        <h1>Maria Oldroyd</h1>
+        <button id="darkMode">😎</button>
+        <button id="hamburger-menu">Menu</button>
+    </header>   
        
-    <nav class="navigation">
-            
+    <nav class="navigation">            
                 <a href="Home">Home</a>
                 <a href="lesson03/chamber-site-plan.html">Site Plan</a>
                 <a href="chamber/">Chamber</a>
                 <a href="https://www.byui.edu/">BYU-Idaho</a>
                 <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p37#p37">Scripture</a>
-                
-    </nav>
+    </nav>    
 
-        <main>
-            <div class="hero">
-                <picture>
-                  <source srcset="lesson06/images/hero-small.webp" media="(max-width: 500px)">                  
-                  <img src="lesson06/images/hero-large.webp" alt="Tijuana Temple" width="1500" height="750">
-
-                </picture>
-                <div class="herolabel">
-                    <p>Tijuana Mexico Temple</p>
-                </div>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="lesson06/images/hero-small.webp" media="(max-width: 500px)">                  
+                <img src="lesson06/images/hero-large.webp" alt="Tijuana Temple" width="1500" height="750">
+            </picture>
+            <div class="herolabel">
+                <h2>Tijuana Mexico Temple</h2>
             </div>
+        </div>
 
             <h2>WDD 230: Web Frontend Development</h2>
             <section class="card">
@@ -91,11 +80,11 @@
                 </section>
                 <div class="info">
                     <h3>Information</h3>
+                    <p>Number of Visits: <span id="visitCount">0</span></p>
                 </div>
                 <section class="visits">
                     <h4>Houston, Texas</h4>
-                    <h4>Current Weather:</h4>
-                    
+                    <h4>Current Weather:</h4>                    
                 </section>
             </main>
             <div class="map">
@@ -106,14 +95,14 @@
             <footer>
                 <div class="grid-container">
                     <div class="texas-info">
-                <p>&copy; <span id="currentYear"></span></p> map
-                <p>Maria Oldroyd</p>                           
-                <p>Texas<img src="txflag.png"  alt="Texas flag" width="45" height="45"></p>
+                        <p>&copy; <span id="currentYear"></span></p>
+                        <p>Maria Oldroyd</p>                           
+                         <img src="txflag.png"  alt="Texas flag" width="25" height="25"><p>Texas</p>
                     </div>
                     <div class="additional-info">
-                    <p id="year">Last Modified</p>
-                    <p id="lastModified"></p>
-                </div>
+                        <p id="year">Last Modified</p>
+                        <p id="lastModified"></p>
+                    </div>
             <div class="visit-info">
                 <p>Number of Visits: <span id ="visitCount">0</span></p>
                 </div>
@@ -121,5 +110,6 @@
 
             </footer>
             <script src="scripts/getdates.js"></script>
-</body>
-</html>
+            <script src="scripts/visitCounter.js"></script>
+    </body>
+    </html>

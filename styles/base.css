@@ -397,6 +397,11 @@ iframe {
       content: "❌";
 
     }
+
+    .info {
+      background-color:rgb(0,110, 182);
+      color:white;
+    }
     
 
 
