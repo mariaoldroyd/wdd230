@@ -214,3 +214,41 @@ main {
         display: flex;
     }
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+}
+
+.sidebar {
+  background-color: #f4f4f4;
+  padding: 1rem;
+}
+
+.gallery {
+  display: grid;
+ 
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.gallery figure:hover img {
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+      grid-template-columns: 1fr;
+  }
+
+  .gallery figure:hover img {
+      transform: none;
+  }
+}
+

@@ -41,52 +41,45 @@
                 <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p37#p37">Scripture</a>
     </nav>    
 
-    <main>
-        <div class="hero">
-            <picture>
-                <source srcset="lesson06/images/hero-small.webp" media="(max-width: 500px)">                  
-                <img src="lesson06/images/hero-large.webp" alt="Tijuana Temple" width="1500" height="750">
-            </picture>
-            <div class="herolabel">
-                <h2>Tijuana Mexico Temple</h2>
-            </div>
-        </div>
-
-            <h2>WDD 230: Web Frontend Development</h2>
-            <section class="card">
-                <h3>Learning Activities</h3>
-                <ul class="numbered-activities">
-                    <li><a href="#">Lesson 01</a></li>
-                    <li><a href="lesson02/design-principles.html">Lesson 02 Design Principles</a></li>
-                    <li><a href="lesson02/images/combinators.png">Lesson 03 Combinators</a></li>
-                    <li><a href="https://codepen.io/mariaoldroyd/pen/wvOqQjG">CodePen</a></li>
-                    <li><a href="lesson03/images/chamber-site-plan.html">Chamber Site Plan</a></li>
-                    <li><a href="lesson03/images/landscape.webp">WebP</a></li>
-                    <li><a href="https://codepen.io/mariaoldroyd/pen/qBGdYmW" >Lesson 04 Code Pen</a></li>
-                    <li><a href="chamber/index.html" >Lesson 04 Chamber</a></li>
-                    <li><a href="lesson05/bom.html">Lesson 05</a>Book of Mormon</li>
-                    <li><a href="lesson06/images/landscape2.webp">Lesson 06</a></li>
-                    
-                    <li><a href="lesson06/responsive-images.html">Responsive Images</a></li>
-                    <li><a href="lesson07/lazyload.html">Lesson 07</a></li>
-                    <li><a href="#">Lesson 08</a></li>
-                    <li><a href="#">Lesson 09</a></li>
-                    <li><a href="#">Lesson 10</a></li>
-                    <li><a href="#">Lesson 11</a></li>
-                    <li><a href="#">Lesson 12</a></li>
-                    <li><a href="#">Lesson 13</a></li>
-                    <li><a href="#">Lesson 14-Project</a></li>
-                </ul>
-                </section>
-                <div class="info">
-                    <h3>Information</h3>
-                    <p>Number of Visits: <span id="visitCount">0</span></p>
-                </div>
-                <section class="visits">
-                    <h4>Houston, Texas</h4>
-                    <h4>Current Weather:</h4>                    
-                </section>
-            </main>
+    <main class="grid-container">
+        <aside class="sidebar">
+            <h3>Sidebar Content</h3>
+            <div id="visitMessage"></div>
+        </aside> 
+        <section class="gallery">
+            <h3>Local Photos of Interest</h3>   
+            
+                <figure>
+                    <img src="images/NewmansCastle-LakeJO4354.webp" alt="Castle" width="400" height="300" loading="lazy">
+                    <figcaption>Newmans Castle</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/texas-1739090066-1024x1024.webp" alt="Texas marker" width="400" height="300" loading="lazy">
+                    <figcaption>Texas </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/sanfelipedeaustin-statue-dms-mw_orig.webp" alt="Statue" width="400" height="300" loading="lazy">
+                    <figcaption>San Felipe de Austin</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Meat-Market-1080x720.webp" alt="Meat Market" width="400" height="300" loading="lazy">
+                    <figcaption>Bellville Meat Market</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/blacksmith.webp" alt="Store" width="400" height="300" loading="lazy">
+                    <figcaption>The Blacksmith Shop</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/bellville-austin-county-jail-ws-(1-of-1)-1664867690.webp" alt="Jail" width="400" height="300" loading="lazy">
+                    <figcaption>Austin County Jail</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/bellville.webp" alt="bicycle riders" width="400" height="300" loading="lazy">
+                    <figcaption>MS 150 Race</figcaption>
+                </figure>
+            </section>        
+       
+    </main>
             <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55315.35644642019!2d-96.30693497680642!3d29.944644042974804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86415246c5a0575d%3A0xfd0f8da70b79f82e!2sBellville%2C%20TX%2077418!5e0!3m2!1sen!2sus!4v1715286009195!5m2!1sen!2sus" width="100" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title= "map"></iframe>
         </div>
@@ -100,10 +93,13 @@
                          <img src="txflag.png"  alt="Texas flag" width="25" height="25"><p>Texas</p>
                     </div>
                     <div class="additional-info">
-                        <p id="year">Last Modified</p>
+                        <p id="year">Last Modified: </p>
                         <p id="lastModified"></p>
                     </div>
-          
+            <div class="visit-info">
+                <p>Number of Visits: <span id ="visitCount">0</span></p>
+                </div>
+            </div>
 
             </footer>
             <script src="scripts/getdates.js"></script>
