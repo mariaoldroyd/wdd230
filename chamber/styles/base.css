@@ -55,6 +55,16 @@ header, footer {
   text-align: center;
   padding: 1em 0;
 }
+
+header img {
+  border-radius:50%;
+  vertical-align: middle;
+}
+
+header h1  {
+  display: inline;
+  margin-left: 0.5em;
+}
   .header-content{
     position: relative;
     text-align: center;
@@ -83,6 +93,24 @@ main {
   height: auto;
   margin: 0 auto;
 }	
+
+button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1em;
+  margin-left: 1em;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 0 1em;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
   nav{
     background-color:var(--primary-color);
     color: var(--text-color);
@@ -224,8 +252,9 @@ main {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 1rem;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  padding: 10px;
 }
 
 .sidebar {
@@ -249,6 +278,7 @@ main {
   gap: 10px;
 }
 
+
 .gallery h3{
   text-align: center;
 }
@@ -267,16 +297,43 @@ main {
       grid-template-columns: 1fr;
   }
 
-  .gallery figure:hover img {
-      transform: none;
+  .map{
+    grid-column: 1fr;
+    width: 100%;
+    margin-top: 10px;
+}
+  }
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 
-  .map{
-    grid-column: span 1;
-  }
+  main .sidebar {
+    order: 2;
 }
- .map iframe {
- grid-column: span 2;
+
+main .gallery {
+    order: 1;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .map {
+        grid-column: span 1;
+    }
+
+    main {
+        flex-direction: column;
+    }
+}
+
+.map iframe {
+  grid-column: span 3;
   height: 400px;
   margin-top: 10px
  }
@@ -341,5 +398,22 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  background-color:var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
 }
+
+footer .grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.texas-info, .site-updated {
+  margin: 1em;
+  text-align: center;
+}
+
+
 
