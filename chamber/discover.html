@@ -17,10 +17,10 @@
     <title>Maria Oldroyd - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="Course Assignment Portal WDD 230 - Web Fronted Development">
     <meta name="author" content="Maria Oldroyd">
-    <meta property="og:title" content="WDD 230 Web Frontend Development">
+    <meta property="og:title" content="Chamber Of Commerce and Discover">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mariaoldroyd.github.io/wdd230/">
-    <meta property="og:image" content="images/web.png">
+    <meta property="og:image" content="images/21TXBC-bluebonnets3-CANVA-1600X670.webp">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">    
     <link rel="manifest" href="/site.webmanifest">
 </head>
@@ -28,26 +28,102 @@
 <body>  
     <header>
         <img src="images/IMG_5734.webp" alt="picture of maria and husband" width="65" height="65">
-        <h1>Maria Oldroyd</h1>
+        <h1>Bellvile Chamber Of Commerce</h1>
         <button id="darkMode">😎</button>
         <button id="hamburger-menu">Menu</button>
     </header>   
        
     <nav class="navigation">            
-                <a href="Home">Home</a>
-                <a href="lesson03/chamber-site-plan.html">Site Plan</a>
-                <a href="chamber/">Chamber</a>
-                <a href="https://www.byui.edu/">BYU-Idaho</a>
-                <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p37#p37">Scripture</a>
+        <a href="Home">Home</a>
+        <a href="lesson03/chamber-site-plan.html">Site Plan</a>
+        <a href="chamber/">Chamber</a>
+        <a href="https://www.byui.edu/">BYU-Idaho</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p37#p37">Scripture</a>
     </nav>    
-
-    <main class="grid-container">
+FIND THE DIV THAT IS MISSING fix footer and qucik Facts
+    <div class="grid-container">
         <aside class="sidebar">
             <h3>Sidebar Content</h3>
-            <div id="visitMessage"></div>
+            <div id="visitMessage">Welcome! Let us know if you have any questions.</div>
+            <div class="events">
+                <h4> Upcoming Events</h4>
+                <ul>
+                    <li>Cub Scouts David Crokett<br
+                        <span> June 6 - June 8</span></li>
+                    <li>Bellville Economic Meeting<br
+                        <span>June 6</span></li>
+                    <li>Austin Countty Home-Grown Vegetable Contest<br
+                        <span>June 8</span></li>
+                    <li>C.H.A.M.P Monday Night Bingo<br
+                        <span>June 10</span></li>
+                    <li>Advertising & Tourism Committee Meeting<br
+                        <span>June 12</span></li>
+                    <li>Austin County Jail Museum<br
+                        <span>June 8, 15, 22, 29</span></li>
+                </ul>
+            </div>
+            
+            <div class="calendar">                   
+                <ul class="calendar-header">
+                  <li class="prev">&#10094;</li>  
+                  <li clas="month-year">June  
+                    <span style="font-size:18px">2024</span></li>               
+                  <li class="next">&#10095;</li>                  
+                </ul>
+              </div>
+              
+              <ul class="weekdays">
+                <li>Su</li>
+                <li>Mo</li>
+                <li>Tu</li>
+                <li>We</li>
+                <li>Th</li>
+                <li>Fr</li>
+                <li>Sa</li>                
+              </ul>
+              
+              <ul class="days">  
+                <li></li> <!-- Sunday-->
+                <li></li> <!-- Monday -->
+                <li></li> <!-- Tuesday -->
+                <li></li> <!-- Wednesday -->
+                <li></li> <!-- Thursday -->
+                <li></li> <!-- Friday -->
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+            </ul>
+      
         </aside> 
         <section class="gallery">
-            <h3>Local Photos of Interest</h3>   
+            <h3>Local Points of Interest</h3>   
             
                 <figure>
                     <img src="images/NewmansCastle-LakeJO4354.webp" alt="Castle" width="400" height="300" loading="lazy">
@@ -79,30 +155,28 @@
                 </figure>
             </section>        
        
-    </main>
             <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55315.35644642019!2d-96.30693497680642!3d29.944644042974804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86415246c5a0575d%3A0xfd0f8da70b79f82e!2sBellville%2C%20TX%2077418!5e0!3m2!1sen!2sus!4v1715286009195!5m2!1sen!2sus" width="100" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title= "map"></iframe>
         </div>
+    </main>            
             
-            
-            <footer>
-                <div class="grid-container">
-                    <div class="texas-info">
-                        <p>&copy; <span id="currentYear"></span></p>
-                        <p>Maria Oldroyd</p>                           
-                         <img src="txflag.png"  alt="Texas flag" width="25" height="25"><p>Texas</p>
-                    </div>
-                    <div class="additional-info">
-                        <p id="year">Last Modified: </p>
-                        <p id="lastModified"></p>
-                    </div>
-            <div class="visit-info">
-                <p>Number of Visits: <span id ="visitCount">0</span></p>
+    <footer>
+        <div class="grid-container">
+            <div class="texas-info">
+                <h2>Quick Facts</h2>
+                <p>Republic of Texas was annexed in 1845.</p>
+                <p>Capitol Building Construction 1885</p>
+                <p>Highest Point: Guadalupe Peak</p>
+                <p>It is the 2nd largest state.</p>
                 </div>
-            </div>
-
-            </footer>
+                
+                <div class="site-updated">
+                    <p>&copy; 2023 | Maria Oldroyd | WDD 230 Project | Last Updated: <span id="lastModified"></span></p>
+                </div>
+            </div>    
+        </footer>
+             
             <script src="scripts/getdates.js"></script>
-            <script src="scripts/visitCounter.js"></script>
+            <script src="scripts/visitCount.js"></script>
     </body>
     </html>

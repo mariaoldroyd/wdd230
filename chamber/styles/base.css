@@ -48,6 +48,13 @@ header {
   font-family: "El Messiri", serif;
   padding: 0;
 }  
+
+header, footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
   .header-content{
     position: relative;
     text-align: center;
@@ -222,16 +229,29 @@ main {
 }
 
 .sidebar {
-  background-color: #f4f4f4;
+  background-color: rgba(135, 206, 250, 0.544);
   padding: 1rem;
+ 
+}
+.events ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.events li {
+  margin-bottom: 0.5rem;
+  color: black;
 }
 
 .gallery {
   display: grid;
- 
-  gap: 1rem;
+  grid-template-columns: 1fr; 
+  gap: 10px;
 }
 
+.gallery h3{
+  text-align: center;
+}
 .gallery img {
   width: 100%;
   height: auto;
@@ -250,5 +270,76 @@ main {
   .gallery figure:hover img {
       transform: none;
   }
+
+  .map{
+    grid-column: span 1;
+  }
+}
+ .map iframe {
+ grid-column: span 2;
+  height: 400px;
+  margin-top: 10px
+ }
+.calendar {
+  margin-top: 1rem;
+  text-align: center;
+  font-family: "merriweather", san-serif;
+  background-color: rgba(255, 195, 0, 1);;
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  text-align: center;
+}
+
+#calendar div {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+#calendar .header {
+  font-weight: bold;
+  background-color: #f4f4f4;
+  text-transform: uppercase;
+  
+ 
+}
+
+#calendar .day {
+  background-color: #fff;
+}
+
+#calendar .day.today {
+  background-color: #f0f8ff;
+}
+
+.weekdays, .days {
+  display: grid;
+  grid-template-columns: repeat(7, 2fr);
+  gap: 0.5rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.weekdays li, .days li {
+  padding: 0.5rem;
+  background-color: #f4f4f4;
+}
+
+.days li {
+  background-color: #fff;
+}
+
+.days li.active {
+  background-color: #f0f8ff;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
