@@ -1,23 +1,32 @@
-// Get the current visit count from localStorage
-let visitCount = localStorage.getItem('visitCount');
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('darkMode').addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+    });
 
-// If visitCount is null, initialize it to 0
-if (visitCount === null) {
-    visitCount = 0;
-} else {
-    // Convert visitCount to a number
-    visitCount = parseInt(visitCount);
-}
+    document.getElementById('hamburger-menu').addEventListener('click', function() {
+        document.querySelector('.navigation').classList.toggle('open');
+    });
 
-// Increment the visit count
-visitCount += 1;
+    // Get the current visit count from localStorage
+    let visitCount = localStorage.getItem('visitCount');
 
-// Update the visit count in localStorage
-localStorage.setItem('visitCount', visitCount);
+    // If visitCount is null, initialize it to 0
+    if (visitCount === null) {
+        visitCount = 0;
+    } else {
+        // Convert visitCount to a number
+        visitCount = parseInt(visitCount);
+    }
 
-// Display the visit count on the page
-document.getElementById('visitCount').textContent = visitCount;
-document.addEventListener('DOMContentLoaded', () => {
+    // Increment the visit count
+    visitCount += 1;
+
+    // Update the visit count in localStorage
+    localStorage.setItem('visitCount', visitCount);
+
+    // Display the visit count on the page
+    document.getElementById('visitCount').textContent = visitCount;
+
     const visitMessage = document.getElementById('visitMessage');
     const currentDate = Date.now();
     const lastVisit = localStorage.getItem('lastVisit');
@@ -37,8 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     localStorage.setItem('lastVisit', currentDate);
-});
-document.addEventListener('DOMContentLoaded', () => {
+
     const calendar = document.getElementById('calendar');
     const today = new Date();
     const month = today.getMonth();
@@ -87,6 +95,3 @@ document.addEventListener('DOMContentLoaded', () => {
         calendar.appendChild(dayCell);
     }
 });
-
-
-
