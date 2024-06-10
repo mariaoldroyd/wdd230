@@ -335,12 +335,19 @@ main .gallery {
 
 .map {
   display: grid;
-  grid-column: span 3;
-  
+  grid-column: span 1;  
   margin-top: 6px;
-  width: auto;
-  
+  width: 100%;  
  }
+
+ iframe{
+  display: block;
+  margin-left: 102%;
+  margin-top: 30px; 
+  width: 100%;
+ }
+
+
 .calendar {
   margin-top: 1rem;
   text-align: center;
@@ -365,8 +372,6 @@ li.month-year {
   list-style-type: none;
   font-size: 2rem;
   flex-direction: row;
-  justify-self: space-evenly;
-
 }
 
 
