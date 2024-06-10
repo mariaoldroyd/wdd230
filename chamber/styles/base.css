@@ -260,6 +260,7 @@ button {
 .sidebar {
   background-color: rgba(135, 206, 250, 0.544);
   padding: 1rem; 
+  text-align: center;
 }
 
 
@@ -332,11 +333,13 @@ main .gallery {
     }
 }
 
-.map iframe {
-  grid-column: span 1;
-  height: 800px;
+.map {
+  display: grid;
+  grid-column: span 3;
+  
   margin-top: 6px;
-  width: 600;
+  width: auto;
+  
  }
 .calendar {
   margin-top: 1rem;
@@ -448,6 +451,9 @@ footer .grid-container {
 .texas-info, .site-updated {
   margin: 1em;
   text-align: center;
+  font-size: 1.5rem;
+ 
+ 
 }
 
 
