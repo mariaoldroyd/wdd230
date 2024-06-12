@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="header">
-        <img src="images/maryRobert.webp" alt="picture of maria and husband" width="65" height="65">
+        <img src="week03/images/maryRobert.webp" alt="picture of maria and husband" width="65" height="65">
         <h1>Course Home Page</h1>
         <button id="darkMode">😎</button>
         <button id="hamburger-menu">Menu</button>
@@ -27,13 +27,13 @@
         <p>*️⃣Indicates a required field</p>
         <fieldset>
             <legend>Applicant Information</legend>
-            <label for="username">Username*️⃣<input type="text" id="username" name="username"required></label>
+            <label for="username">Username*️⃣<input type="text" id="username" name="username" required></label>
             <label for="password">Password*️⃣<input type="password"  id="password" name="password" pattern="[A-Za-z0-9]{8,}" required title="Password must be at least 8 characters long and only contain alphanumeric characters."></label>
             <label for="password-confirm">Confirm Password*️⃣<input type="password" id="password-confirm" name="password-confirm" required></label>
             <label for="email">Email*️⃣<input type="email" id="email" name="email" required pattern="^[a-zA-Z0-9._%+-]+@byui\.edu$" title="A valid byui.edu email address."></label>
-            <label for="ratingValue">Page Rating<input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="updateRating(this.value)" onchange="updateRating(this.value)"></label>
-            <span id="ratingValue">5</span>
-            <button type="submit">Page Rating</button>
+            <label for="ratingValue">Page Rating<span id="ratingValue">5</span><input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="updateRating(this.value)" onchange="updateRating(this.value)"></label>
+            
+            <button type="submit">Rate this page</button>
         </fieldset>
         </form>
     </main>
@@ -46,8 +46,8 @@
                  <img src="txflag.png"  alt="Texas flag" width="25" height="25"><p>Texas</p>
             </div>
             <div class="additional-info">
-                <p id="year">Last Modified</p>
-                <p id="lastModified"></p>
+                <p id="year">Last Modified: <span id="lastModified"> </span> </p>
+                
             </div>
         </div>
     </footer>    
@@ -58,12 +58,12 @@
 
         document.querySelector('form').addEventListener('submit', function(e) {
             const password = document.getElementById('password').value;
-            const confirmPassword = document.getElementById('password_confirm').value;
+            const confirmPassword = document.getElementById('password-confirm').value;
 
             if (password !== confirmPassword) {
                 alert('Passwords do not match. Please try again.');
                 document.getElementById('password').value = '';
-                document.getElementById('password_confirm').value = '';
+                document.getElementById('password-confirm').value = '';
                 document.getElementById('password').focus();
                 e.preventDefault();
             }
