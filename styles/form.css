@@ -31,9 +31,9 @@ body {
         text-align: center;
         padding: var(--main-padding);
         text-decoration: none;
-        color:#333;
+        color:#0c1cf8;
         justify-content: space-evenly;
-        background-color:#999;
+        background-color:#999999b4;
         
       }
 
@@ -93,6 +93,7 @@ form input, form button {
     margin-top: 7px;
     align-content: center;
     background-image: linear-gradient(90deg, white, hsla(216, 74%, 77%, 0.452));
+    color:#9c2c13;
 }
 
 #ratingValue {
