@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Course Home Page</title>
+    <link rel="stylesheet" href="styles/form.css">     
 </head>
 <body>
-    <header>
+    <header class="header">
         <img src="images/maryRobert.webp" alt="picture of maria and husband" width="65" height="65">
-        <h1>Maria Oldroyd</h1>
+        <h1>Course Home Page</h1>
         <button id="darkMode">😎</button>
         <button id="hamburger-menu">Menu</button>
     </header>   
        
-    <nav class="navigation">            
+    <nav class="navigation"> 
                 <a href="Home">Home</a>
                 <a href="lesson03/chamber-site-plan.html">Site Plan</a>
                 <a href="chamber/">Chamber</a>
@@ -21,7 +22,20 @@
                 <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p37#p37">Scripture</a>
     </nav>    
     <main>
-        
+        <h2>Register</h2>
+    <form method="get" action="record.html" class="wf2">
+        <p>*️⃣Indicates a required field</p>
+        <fieldset>
+            <legend>Applicant Information</legend>
+            <label for="username">Username*️⃣<input type="text" id="username" name="username"required></label>
+            <label for="password">Password*️⃣<input type="password"  id="password" name="password" pattern="[A-Za-z0-9]{8,}" required title="Password must be at least 8 characters long and only contain alphanumeric characters."></label>
+            <label for="password-confirm">Confirm Password*️⃣<input type="password" id="password-confirm" name="password-confirm" required></label>
+            <label for="email">Email*️⃣<input type="email" id="email" name="email" required pattern="^[a-zA-Z0-9._%+-]+@byui\.edu$" title="A valid byui.edu email address."></label>
+            <label for="ratingValue">Page Rating<input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="updateRating(this.value)" onchange="updateRating(this.value)"></label>
+            <span id="ratingValue">5</span>
+            <button type="submit">Page Rating</button>
+        </fieldset>
+        </form>
     </main>
 
     <footer>
@@ -35,11 +49,28 @@
                 <p id="year">Last Modified</p>
                 <p id="lastModified"></p>
             </div>
-  
+        </div>
+    </footer>    
+    <script>
+        function updateRating(value) {
+            document.getElementById('ratingValue').textContent = value;
+        }
 
-    </footer>
-    <script src="scripts/getdates.js"></script>
-    <script src="scripts/visitCounter.js"></script>
-    
+        document.querySelector('form').addEventListener('submit', function(e) {
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('password_confirm').value;
+
+            if (password !== confirmPassword) {
+                alert('Passwords do not match. Please try again.');
+                document.getElementById('password').value = '';
+                document.getElementById('password_confirm').value = '';
+                document.getElementById('password').focus();
+                e.preventDefault();
+            }
+        });
+
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
 </body>
 </html>
