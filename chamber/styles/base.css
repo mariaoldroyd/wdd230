@@ -25,9 +25,20 @@
     --font-primary: 'El Messiri', sans-serif;
     --font-secondary: 'Ubuntu Sans', sans-serif;
   }
+
+  :root {
+    --color-header: #618985;
+    --main-bg-color: #96BBBB;
+    --main-text-color: white;
+    --main-padding: 1rem;
+    --color: #414535;
+    --color:#f2e3bc96;
+  --color: #f86605;
+  }
+  
   .darkMode {
     color: #ffffff;
-    background-color: #121212;
+    background-color: #000;
   }
   body{
     font-family: var(--font-primary);
@@ -456,9 +467,158 @@ footer .grid-container {
 .texas-info, .site-updated {
   margin: 1em;
   text-align: center;
+  font-size: 1.5rem; 
+}
+
+body {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: white;
+}
+
+.join-header {
+  position: relative;
+  text-align: center;
+  background-color: #96BBBB;
+  color: white;
+  padding: 1rem;
+}
+.header h1 {
+  align-content: center;
+}
+.navigation{
+  display:none;
+  background-color: #96BBBB;
+}
+.navigation a {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  color: #333;
+  justify-content: space-evenly;
+  background-color: #96BBBB;;
+}
+.navigation a:hover {
+  border: 1px solid white;
+  background-color: #f86605;;
+  color: black;
+  font-weight: 700;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  max-width: 90%;
+  margin: auto;
+}
+form {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom:2rem;
+}
+
+.fieldset {
+  margin-bottom: 2rem;;
+  
+}
+label {
+  display: block;
+  margin-bottom: 1rem;
+  margin-right: 1.5rem;
+  color: #f86605;
+ 
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  max-width: 100%;
+  padding: .75rem;
+  margin-top: .5rem;
+  border: 1px solid #999;
+  border-radius: 6px;
+}
+input[type="submit"],
+button {
+  display: block;
+  width: 100%;
+  
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-left: .1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #96BBBB;
+  color: #f86605;;
   font-size: 1.5rem;
+}
+.benefits {
+  margin-top: 2rem;
+  background-color: white;
+  padding: 20px;
+}
+.benefits h3 {
+  margin-bottom: 1rem;
+  color:#f86605;
+  text-decoration: underline;
+  text-align: center;
+}
+.benefits p {
+  margin-bottom: 1rem;  
+}
+
+.map {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+}
+.map iframe{
+  width: 100%;
+  height: 100%;
+  border: o;
+}
+
+.container {
+  background-color: #96BBBB;
+  color: black;
+}
+
+.footer-content {
+  display: flex;
  
- 
+  justify-content: space-between;
+  
+}
+
+footer {
+  background-color: #f86605;
+}
+@media(min-width: 768px) {
+  main {
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 2rem;
+  }
+  form {
+      order: 1;
+  }
+  .benefits {
+      order: 2;
+  }
+.map{
+  order: 1;
+
+}
+
+.dark-mode {
+  background-color:#000;
+  color:#fff;
 }
 
 

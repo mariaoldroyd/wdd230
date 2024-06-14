@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://www.facebook.com/robert.oldroyd.923">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato&family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+    
+    <title>Maria Oldroyd - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Course Assignment Portal WDD 230 - Web Fronted Development">
+    <meta name="author" content="Maria Oldroyd">
+    <meta property="og:title" content="WDD 230 Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mariaoldroyd.github.io/wdd230/">
+    <meta property="og:image" content="images/web.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">    
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>  
+    <header class="join-header">
+        <img src="images/maryRobert.webp" alt="picture of maria and husband" width="140" height="127">
+        <h1>Maria Oldroyd</h1>
+        <button id="darkMode">😎</button>
+        <button id="hamburger-menu">menu</button>
+    </header>   
+       
+            <nav class="navigation">            
+                <a href="Home">Home</a>
+                <a href="lesson03/chamber-site-plan.html">Site Plan</a>
+                <a href="chamber/">Chamber</a>
+                <a href="https://www.byui.edu/">BYU-Idaho</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p37#p37">Scripture</a>
+            </nav>    
+
+            <main>
+                <form method="get" action="thankyou.html" class="wf3"></form>
+                <div class="fieldset">
+                    <fieldset>
+                        <legend>Applicant Information</legend>
+                        <label for="first-name">First Name*️⃣
+                          <input type="text" id="first-name" name="first-name" required>
+                        </label>
+                        <label for="last-name">Last Name*️⃣
+                         <input type="text" id="last-name" name="last-name" required>
+                        </label>
+                         <label for="title">Title/Position*️⃣
+                             <input type="text" id="title" name="title" required pattern="[A-Za-z\s-]{7,}" title="Only alpha characters, hyphens, and spaces are allowed, minimum of 7 characters.">
+                        </label>
+                        <label for="email">Email*️⃣
+                           <input type="email" id="email" name="email" required placeholder="someone@byui.edu">
+                        </label>
+                        <label for="phone">Mobile Phone*️⃣
+                            <input type="tel" id="phone" name="phone" required>
+                        </label>
+                        <label for="organization">Business/Organization*️⃣
+                           <input type="text" id="organization" name="organization" required>
+                        </label>
+                        <label for="membership-level">Membership Level*️⃣
+                            <select id="membership-level" name="membership-level" required>
+                                <option value="">Select Membership Level</option>
+                                <option value="np">NP Membership</option>
+                                <option value="bronze">Bronze Membership</option>
+                                 <option value="silver">Silver Membership</option>
+                                 <option value="gold">Gold Membership</option>
+                            </select>
+                        </label>
+                        <label for="description">Business/Organization Description
+                            <textarea id="description" name="description" rows="5"></textarea>
+                        </label>
+                        <input type="hidden" id="timestamp" name="timestamp">
+                        <button type="submit">Register</button>
+                    </fieldset>
+                 </div>
+            </form>
+
+            <div class="benefits">
+                <h3>Membership Level Benefits</h3>
+                <p><strong>NP Membership:</strong> No fee, access to basic events, and training sessions.</p>
+                <p><strong>Bronze Membership:</strong> Includes NP benefits plus featured spot in monthly newsletter, and 5% event discounts.</p>
+                <p><strong>Silver Membership:</strong> Includes Bronze benefits plus additional advertising on the home page, and 10% event discounts.</p>
+                <p><strong>Gold Membership:</strong> Includes Silver benefits plus premium advertising, special event invitations, and 20% event discounts.</p>
+            </div>        
+            <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55315.35644642019!2d-96.30693497680642!3d29.944644042974804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86415246c5a0575d%3A0xfd0f8da70b79f82e!2sBellville%2C%20TX%2077418!5e0!3m2!1sen!2sus!4v1715286009195!5m2!1sen!2sus" width="100" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title= "map"></iframe>
+        </div>
+    </main>
+                        
+    <footer class="footer">
+        <div class="container">
+                    <div class="texas-info">
+                        <p>&copy; <span id="currentYear"></span></p>
+                        <p>Maria Oldroyd</p>                           
+                         <img src="images/txflag.webp"  alt="Texas flag" width="110" height="61"><p>Texas</p>
+                    </div>
+                    <div class="info">
+                    <h3>Information</h3>
+                        <p id="year">Last Modified: <span id="lastModified"></span></p>                      
+                        <p>Number of Visits: <span id="visitCount">0</span></p>
+                    </div>
+            </footer>
+            <script src="scripts/main.js"></script>            
+    </body>
+    </html>
