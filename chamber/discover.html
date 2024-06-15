@@ -3,44 +3,48 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url" content="https://www.facebook.com/robert.oldroyd.923">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato&family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="favicon.ico">
-    
-    <title>Discover Bellvile Chamber of Commerce</title>
-    <meta name="description" content="Course Assignment Portal WDD 230 - Web Fronted Development">
+    <link rel="icon" href="images/favicon.ico">
+
+    <title>Bellville Chamber of Commerce Site Plan</title>
+    <meta name="description" content="The Greater Bellville Chamber of Commerce, founded in 2024 is an association of businesses organized to improve business in Southwest Texas">
     <meta name="author" content="Maria Oldroyd">
-    <meta property="og:title" content="Chamber Of Commerce and Discover">
+    <meta property="og:title" content="Bellville Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mariaoldroyd.github.io/wdd230/">
-    <meta property="og:image" content="https://mariaoldroyd.github.io/wdd230/">
+    <meta property="og:image" content="https://mariaoldroyd.github.io/wdd230/chamber/images/21TXBC-bluebonnets3-CANVA-1600X670.webp">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">    
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="site.webmanifest">    
+    <script src="scripts/get.dates.js"></script>    
 </head>
+<body>
 
-<body>  
+   
     <header>
-        <img src="images/maryRobert.webp" alt="picture of maria and husband" width="65" height="65">
-        <h1>Bellvile Chamber Of Commerce</h1>
-        <button id="darkMode">😎</button>
-        <button id="hamburger-menu">Menu</button>
-    </header>   
-
-    
-    
-    <nav class="navigation">            
-        <a href="Home">Home</a>
-        <a href="lesson03/chamber-site-plan.html">Site Plan</a>
-        <a href="chamber/">Chamber</a>
-        <a href="https://www.byui.edu/">BYU-Idaho</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p37#p37">Scripture</a>
+        <div class="header-content">           
+            <h1>Bellville Chamber of Commerce</h1>
+        </div>
+        <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="toggle dark mode">
+            <img src="images/night-mode.svg" alt="dark mode button">        
+        </button>
+    </header>
+    <nav>  
+        <button class="hamburger-menu" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>        
     </nav> 
     
     <div class="grid-container">
