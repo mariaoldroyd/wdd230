@@ -282,14 +282,7 @@ iframe {
     left: 1rem;
   }
 
-  #hamburger-menu::before {
-    content:  "&#8801";
-   }
-
-   #hamburger-menu::before {
-    content:  "❌";
-   }
-  
+ 
 
   
   .info h3{
