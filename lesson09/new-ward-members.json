@@ -1,0 +1,47 @@
+{
+    "wardInformation": {
+    "famlilyName": "Oldroyd",
+    "moveInDate": "2002-03-15",
+    "numberOfPeople": 3,
+    "visitedByBishopric": true,
+     "familyMembers": [
+    {
+      "name": "Robert Smith",
+      "gender": "Male",
+      "birthdate": "1959-02-17"
+    },
+    {
+      "name": "Maria Smith",
+      "gender": "Female",
+      "birthdate": "1961-05-04"
+    },
+    {
+      "name": "Joeseph Smith",
+      "gender": "Male",
+      "birthdate": "1993-03-26"
+    },
+    {
+      "name": "John Smith",
+      "gender": "Male",
+      "birthdate": "1995-01-27"
+    },
+    {
+      "name": "Megan Smith",
+      "gender": "Female",
+      "birthdate": "1995-01-27"
+    },
+    {
+      "name": "Frances Smith",
+      "gender": "Female",
+      "birthdate": "2018-09-18"
+    },
+    {
+      "name": "Elijah Smith",
+      "gender": "Male",
+      "birthdate": "2020-12-05"
+    }
+  ]
+  }
+}
+
+
