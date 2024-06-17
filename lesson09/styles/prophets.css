@@ -8,35 +8,48 @@ body {
 }
 
 header, footer {
-    background-color: #333;
+    background-color: blue;
     color: white;
     padding: 1em;
     width: 100%;
-    text-align: center;
+    text-align: center;    
 }
 
 main {
     width: 90%;
-    max-width: 1200px;
-    margin: 2em 0;
+    
+    margin: 2em auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1em;
 }
 
 section {
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border: 1px solid #ddd;    
     padding: 1em;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #a9a5a5;
 }
 
 h2 {
     font-size: 1.2em;
     margin: 0.5em 0;
+    color:blue;
 }
 
-img {
-    border-radius: 8px;
+p {
+    font-size: 1em;
+    margin: 0.5em 0;
+}
+
+img {   
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media query for larger screens */
+@media only screen and (min-width: 768px) {
+    main {
+      
+        grid-template-columns: repeat(4, 1fr); /* Four columns for desktop */
+    }
 }
