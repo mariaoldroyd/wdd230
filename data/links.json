@@ -1,0 +1,106 @@
+{
+    "lessons": [
+      {
+        "lesson": "02",
+        "links": [
+          {
+            "url":"lesson02/mediaquery.html",
+            "title":"Media Queries"
+          },
+          {
+            "url":"lesson02/design-principles.html",
+            "title":"Design Principles Document"
+          }
+        ]
+      },
+      {
+        "lessons": [
+          {
+            "lesson": "03",
+            "links": [
+              {
+                "url":"lesson03/images/chamber-site-plan.html",
+                "title":"hamber Site Plan"
+              },
+              {
+                "url":"lesson03/images/landscape.webp",
+                "title":"Webp Images"
+              }
+            ]
+          },
+          {
+            "lessons": [
+              {
+                "lesson": "04",
+                "links": [
+                  {
+                    "url":"chamber/index.html",
+                    "title":"Chamber"
+                  },
+                  {
+                    "url":"https://codepen.io/mariaoldroyd/pen/qBGdYmW",
+                    "title":"Codepen"
+                  }
+                ]
+              },
+              {
+                "lessons": [
+                  {
+                    "lesson": "05",
+                    "links": [
+                      {
+                        "url":"lesson05/bom.html",
+                        "title":"Book of Mormon Favorite Chapter"
+                      },
+                      {
+                        "url":"https://codepen.io/mariaoldroyd/pen/qBGdYmW",
+                        "title":"Design Principles Document"
+                      }
+                    ]
+                  },
+                  {
+                    "lessons": [
+                      {
+                        "lesson": "06",
+                        "links": [
+                          {
+                            "url":"lesson06/responsive-images.html",
+                            "title":"Responsive Images"
+                          },
+                          {
+                            "url":"lesson06/images/landscape2.webp",
+                            "title":"Home Page Enhancement"
+                          }
+                        ]
+                      },
+                      {
+                        "lessons": [
+                          {
+                            "lesson": "07",
+                            "links": [
+                              {
+                                "url":"lesson07/lazyload.html",
+                                "title":"Discover"
+                              },
+                              {
+                                "url":"lesson02/design-principles.html",
+                                "title":"Design Principles Document"
+                              }
+                            ]
+                          },
+                          {
+                            "lessons": [
+                              {
+                                "lesson": "08",
+                                "links": [
+                                  {
+                                    "url":"lesson08/tablebuild.html",
+                                    "title":"Form Build"
+                                  },
+                                  {
+                                    "url":"",
+                                    "title":""
+                                  }
+                                ]
+                              },
+                              
