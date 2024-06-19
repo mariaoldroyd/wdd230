@@ -1,0 +1,70 @@
+[
+    {
+      "name": "Marble Line",
+      "address": "123 McAllister Rd., Brookshire, Tx",
+      "phone": "(123)456-7890",
+      "website": "http://mline.com",
+      "image": "techinnovators.png",
+      "membershipLevel": "Gold"
+    },
+    
+    {
+        "name": "San Felipe de Austin Historic Site",
+        "address": "220 2nd St., San Felipe, Tx",
+        "phone": "(979)885-2161",
+        "website": "http://sanfelipehistoricsite.com",
+        "image": "creativesolutions.png",
+        "membershipLevel": "Silver"
+      },
+      {
+        "name": "Texas Premier Sporting Arms",
+        "address": "7311 Hwy 36 S, Sealy, Tx",
+        "phone": "(713)826-1981",
+        "website": "http://texaspremiersportingarms.com",
+        "image": "creativesolutions.png",
+        "membershipLevel": "Silver"
+      },
+      {
+        "name": "Phenix Knives",
+        "address": "305 E. Main St., Bellville, Tx",
+        "phone": "(713)724-6813",
+        "website": "https://www.phenixknives.com/",
+        "image": "creativesolutions.png",
+        "membershipLevel": "Gold"
+      },
+      {
+        "name": "J & G Sales, Inc.",
+        "address": "11195 Hwy 159 East, Bellville, Tx",
+        "phone": "(979)865-4300",
+        "website": "https://jgsalesinc.com/",
+        "image": "creativesolutions.png",
+        "membershipLevel": "Bronze"
+      },
+      {
+        "name": "Austin County Jail Museum",
+        "address": "36 S. Bell St., Bellville, Tx",
+        "phone": "(979)877-5642",
+        "website": "https://www.austincounty.com/page/austin.museum",
+        "image": "creativesolutions.png",
+        "membershipLevel": "Silver"
+      },
+
+      {
+        "name": "AIG Mirror & Glass",
+        "address": "201 w. Front St., Sealy, Tx",
+        "phone": "(281)995-3819",
+        "website": "https://www.aigmirrorandglass.com/",
+        "image": "creativesolutions.png",
+        "membershipLevel": "Bronze"
+      },
+      {
+        "name": "Hometown Hardware",
+        "address": "513 East Main, Bellville, Tx",
+        "phone": "(979)865-3674",
+        "website": "https://www.acehardware.com/store-details/08828",
+        "image": "creativesolutions.png",
+        "membershipLevel": "Silver"
+      },
+  ]
+}
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <title>Bellville Chamber of Commerce Site Plan</title>
+    <meta name="description" content="The Greater Bellville Chamber of Commerce, founded in 2024 is an association of businesses organized to improve business in Southwest Texas">
+    <meta name="author" content="Maria Oldroyd">
+    <meta property="og:title" content="Bellville Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mariaoldroyd.github.io/wdd230/">
+    <meta property="og:image" content="https://mariaoldroyd.github.io/wdd230/chamber/images/21TXBC-bluebonnets3-CANVA-1600X670.webp">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">    
+    <link rel="manifest" href="site.webmanifest">
+    <script src="https://kit.fontawesome.com/8d0c34bff4.js" crossorigin="anonymous"></script>
+     
+</head>
+<body>
+
+   
+    <header>
+        <div class="header-content">           
+            <h1>Bellville Chamber of Commerce</h1>
+        </div>
+        <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="toggle dark mode">
+            <img src="images/night-mode.svg" alt="dark mode button">        
+        </button>
+    </header>
+    <nav>  
+        <button class="hamburger-menu" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>        
+    </nav> 
+   <main>
+    <div class="view-toggle">
+        <button id="gridView">Grid View</button>
+        <button id="listView">List View</button>
+      </div>
+      <div id="membersContainer" class="grid-view">
+        <!-- Members will be dynamically inserted here -->
+      </div>
+               
+    </main>
+   <footer>
+        <div class="footer-content">            
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>123 Main St. Bellville, TX 77418</p>
+                <p>(123) 456-7890</p>                
+                <p>&copy; <span id="currentYear">2024</span>Bellvile Chamber of Commerce</p> 
+            </div>                      
+        </div>            
+        <div class="social-icons">
+            <a href="https://twitter.com/" aria-label="Link to Twitter" class="fab fa-twitter"></a>
+            <a href="https://www.facebook.com/your-facebook-page-url" aria-label="Link to facebook" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/" aria-label="Link to linkedin" class="fa fa-linkedin"></a>    
+            <a href="https://www.instagram.com/" aria-label="Link to instagram" class="fa fa-instagram"></a>
+        </div>              
+        <div class="visit-info">
+            <p>Number of Visits: <span id ="visitCount">0</span></p>
+        </div>        
+        <div class="dev-info">
+            <p>Maria Oldroyd - WDD230 Project</p>
+            <p> Last modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>   
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>    
+    <script src="scripts/get.dates.js"></script>
+    <script src="scripts/windchill.js"></script> 
+    <script src="scripts/darkmode.js"></script> 
+    <script src="scripts/members.js"></script> 
+</body>
+</html>
+
+
+    
+
