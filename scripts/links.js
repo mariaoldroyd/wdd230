@@ -9,3 +9,24 @@ async function getLinks() {
   }
   
   getLinks();
+
+  function displayLinks(weeks) {
+    const main = document.querySelector('main');
+    weeks.lessons = forEach(wwwek => {
+        let section = document.createElement('section');
+        let heading = document.createElement('h2');
+        heading.textContent = 'Lesson${week.lesson}';
+        section.appendChild(heading);
+        week.links.forEach(link => {
+            let linkElement = document.createElement('a');
+            linkElement.href = `${baseURL}${link.url}`;
+            linkElement.textContent = link.title;
+            section.appendChild(linkElement);
+
+            let br = document.createElement('br');
+            section.appendChild(br);
+        });
+
+        main.appendChild(section);
+    });
+}

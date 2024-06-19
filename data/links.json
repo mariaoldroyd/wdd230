@@ -1,35 +1,35 @@
 {
     "lessons": [
-      {
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson01/activity1.html",
+                    "title": "Activity 1 - Introduction"
+                },
+                {
+                    "url": "lesson01/activity2.html",
+                    "title": "Activity 2 - Basic HTML"
+                }
+            ]
+        },
+    
+        {
         "lesson": "02",
         "links": [
           {
             "url":"lesson02/mediaquery.html",
             "title":"Media Queries"
-          },
-          {
-            "url":"lesson02/design-principles.html",
-            "title":"Design Principles Document"
-          }
-        ]
-      },
-      {
-        "lessons": [
-          {
+          },       
+        {
             "lesson": "03",
             "links": [
-              {
+            {
                 "url":"lesson03/images/chamber-site-plan.html",
                 "title":"hamber Site Plan"
-              },
-              {
-                "url":"lesson03/images/landscape.webp",
-                "title":"Webp Images"
-              }
-            ]
-          },
-          {
-            "lessons": [
+            },              
+          
+         
               {
                 "lesson": "04",
                 "links": [
@@ -44,8 +44,7 @@
                 ]
               },
               {
-                "lessons": [
-                  {
+                
                     "lesson": "05",
                     "links": [
                       {
@@ -59,8 +58,7 @@
                     ]
                   },
                   {
-                    "lessons": [
-                      {
+                   
                         "lesson": "06",
                         "links": [
                           {
@@ -73,9 +71,8 @@
                           }
                         ]
                       },
-                      {
-                        "lessons": [
-                          {
+                     
+                       {
                             "lesson": "07",
                             "links": [
                               {
@@ -83,14 +80,12 @@
                                 "title":"Discover"
                               },
                               {
-                                "url":"lesson02/design-principles.html",
-                                "title":"Design Principles Document"
+                                "url":"",
+                                "title":""
                               }
                             ]
                           },
                           {
-                            "lessons": [
-                              {
                                 "lesson": "08",
                                 "links": [
                                   {
@@ -103,4 +98,34 @@
                                   }
                                 ]
                               },
+                              {
+                                "lesson": "09",
+                                "links": [
+                                    {
+                                        "url": "lesson09/activity1.html",
+                                        "title": "Activity 1 - JSON"
+                                    },
+                                    {
+                                        "url": "lesson09/activity2.html",
+                                        "title": "Activity 2 - Fetch API"
+                                    }
+                                ]
+                            },
+                            {
+                                "lesson": "10",
+                                "links": [
+                                    {
+                                        "url": "lesson10/activity1.html",
+                                        "title": "Activity 1 - Final Project Setup"
+                                    },
+                                    {
+                                        "url": "lesson10/activity2.html",
+                                        "title": "Activity 2 - Project Planning"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+
+
                               
