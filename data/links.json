@@ -1,131 +1,121 @@
 {
-    "lessons": [
+  "lessons": [
+    {
+      "lesson": "02",
+      "links": [
         {
-            "lesson": "01",
-            "links": [
-                {
-                    "url": "lesson01/activity1.html",
-                    "title": "Activity 1 - Introduction"
-                },
-                {
-                    "url": "lesson01/activity2.html",
-                    "title": "Activity 2 - Basic HTML"
-                }
-            ]
+          "url": "lesson02/design-principles.html",
+          "title": "Design Principles Document"
         },
-    
         {
-        "lesson": "02",
-        "links": [
-          {
-            "url":"lesson02/mediaquery.html",
-            "title":"Media Queries"
-          },       
+          "url": "lesson02/images/combinators.png",
+          "title": "Combinators"
+        }
+      ]
+    },
+    {
+      "lesson": "03",
+      "links": [
         {
-            "lesson": "03",
-            "links": [
-            {
-                "url":"lesson03/images/chamber-site-plan.html",
-                "title":"hamber Site Plan"
-            },              
-          
-         
-              {
-                "lesson": "04",
-                "links": [
-                  {
-                    "url":"chamber/index.html",
-                    "title":"Chamber"
-                  },
-                  {
-                    "url":"https://codepen.io/mariaoldroyd/pen/qBGdYmW",
-                    "title":"Codepen"
-                  }
-                ]
-              },
-              {
-                
-                    "lesson": "05",
-                    "links": [
-                      {
-                        "url":"lesson05/bom.html",
-                        "title":"Book of Mormon Favorite Chapter"
-                      },
-                      {
-                        "url":"https://codepen.io/mariaoldroyd/pen/qBGdYmW",
-                        "title":"Design Principles Document"
-                      }
-                    ]
-                  },
-                  {
-                   
-                        "lesson": "06",
-                        "links": [
-                          {
-                            "url":"lesson06/responsive-images.html",
-                            "title":"Responsive Images"
-                          },
-                          {
-                            "url":"lesson06/images/landscape2.webp",
-                            "title":"Home Page Enhancement"
-                          }
-                        ]
-                      },
-                     
-                       {
-                            "lesson": "07",
-                            "links": [
-                              {
-                                "url":"lesson07/lazyload.html",
-                                "title":"Discover"
-                              },
-                              {
-                                "url":"",
-                                "title":""
-                              }
-                            ]
-                          },
-                          {
-                                "lesson": "08",
-                                "links": [
-                                  {
-                                    "url":"lesson08/tablebuild.html",
-                                    "title":"Form Build"
-                                  },
-                                  {
-                                    "url":"",
-                                    "title":""
-                                  }
-                                ]
-                              },
-                              {
-                                "lesson": "09",
-                                "links": [
-                                    {
-                                        "url": "lesson09/activity1.html",
-                                        "title": "Activity 1 - JSON"
-                                    },
-                                    {
-                                        "url": "lesson09/activity2.html",
-                                        "title": "Activity 2 - Fetch API"
-                                    }
-                                ]
-                            },
-                            {
-                                "lesson": "10",
-                                "links": [
-                                    {
-                                        "url": "lesson10/activity1.html",
-                                        "title": "Activity 1 - Final Project Setup"
-                                    },
-                                    {
-                                        "url": "lesson10/activity2.html",
-                                        "title": "Activity 2 - Project Planning"
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-
-
-                              
+          "url": "lesson03/images/chamber-site-plan.html",
+          "title": "Chamber Site Plan"
+        },
+        {
+          "url": "lesson03/images/landscape.webp",
+          "title": "Webp"
+        }
+      ]
+    },
+    {
+      "lesson": "04",
+      "links": [
+        {
+          "url": "chamber/index.html",
+          "title": "Chamber"
+        },
+        {
+          "url": "https://codepen.io/mariaoldroyd/pen/qBGdYmW",
+          "title": "Codepen"
+        }
+      ]
+    },
+    {
+      "lesson": "05",
+      "links": [
+        {
+          "url": "lesson05/bom.html",
+          "title": "Book of Mormon Favorite Chapter"
+        },
+        {
+          "url": "",
+          "title": ""
+        }
+      ]
+    },
+    {
+      "lesson": "06",
+      "links": [
+        {
+          "url": "lesson06/images/landscape2.webp",
+          "title": "Images"
+        },
+        {
+          "url": "lesson06/responsive-images.html",
+          "title": "Responsive Images"
+        }
+      ]
+    },
+    {
+      "lesson": "07",
+      "links": [
+        {
+          "url": "lesson07/lazyload.html",
+          "title": "Lazy Load"
+        },
+        {
+          "url": "",
+          "title": ""
+        }
+      ]
+    },
+    {
+      "lesson": "08",
+      "links": [
+        {
+          "url": "lesson08/tablebuild.html",
+          "title": "Table Build"
+        },
+        {
+          "url": "lesson08/index.html",
+          "title": "Form Build"
+        }
+      ]
+    },
+    {
+      "lesson": "09",
+      "links": [
+        {
+          "url": "lesson09/activity1.html",
+          "title": "JSON"
+        },
+        {
+          "url": "",
+          "title": ""
+        }
+      ]
+    },
+    {
+      "lesson": "10",
+      "links": [
+        {
+          "url": "",
+          "title": ""
+        },
+        {
+          "url": "",
+          "title": ""
+        }
+      ]
+    }
+  ]
+}
