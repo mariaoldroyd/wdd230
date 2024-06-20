@@ -631,8 +631,14 @@ footer {
 }
  /* CSS styles for directory*/
 .view-toggle {
-  text-align: center;
-  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  width: 100%;
+  border: 1px solid #9f9fa8;
+  padding: 0.5rem;  
+  background-color: var(--main-bg-color);
+  text-align: center;  
 }
 
 #membersContainer {
@@ -664,11 +670,9 @@ footer {
 }
  #gridView,
  #listView {
-  display: block;
-  width: 100%;  
+  display: inline-block;   
   padding: 1rem;
-  margin-top: 1rem;
-  margin-left: .1rem;
+  margin: 0 0.5rem;  
   border: none;
   border-radius: 3px;
   background-color: rgba(255, 195, 0, 1);
@@ -676,6 +680,17 @@ footer {
   font-size: 1rem;
   font-weight: bold;
  }
+
+ body {
+  font-family: var(--font-primary);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-secondary);
 
 
 
