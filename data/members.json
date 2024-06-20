@@ -4,7 +4,7 @@
       "address": "123 McAllister Rd., Brookshire, Tx",
       "phone": "(123)456-7890",
       "website": "http://mline.com",
-      "image": "techinnovators.png",
+      "image": "images/MemLogo_marble line logo.webp",
       "membershipLevel": "Gold"
     },
     
@@ -13,7 +13,7 @@
         "address": "220 2nd St., San Felipe, Tx",
         "phone": "(979)885-2161",
         "website": "http://sanfelipehistoricsite.com",
-        "image": "creativesolutions.png",
+        "image": "images/MemLogo_LOGOSanFelipederAustinStHistoricSite072522_250722-021702.webp",
         "membershipLevel": "Silver"
       },
       {
@@ -21,7 +21,7 @@
         "address": "7311 Hwy 36 S, Sealy, Tx",
         "phone": "(713)826-1981",
         "website": "http://texaspremiersportingarms.com",
-        "image": "creativesolutions.png",
+        "image": "images/MemLogo_TEXAS PREMIER SPORTING ARMS.webp",
         "membershipLevel": "Silver"
       },
       {
@@ -29,7 +29,7 @@
         "address": "305 E. Main St., Bellville, Tx",
         "phone": "(713)724-6813",
         "website": "https://www.phenixknives.com/",
-        "image": "creativesolutions.png",
+        "image": "images/MemLogo_PhenixKnivesLogo.webp",
         "membershipLevel": "Gold"
       },
       {
@@ -37,7 +37,7 @@
         "address": "11195 Hwy 159 East, Bellville, Tx",
         "phone": "(979)865-4300",
         "website": "https://jgsalesinc.com/",
-        "image": "creativesolutions.png",
+        "image": "images/JandG_Logo_PNG_from_RAO_Company_square.webp",
         "membershipLevel": "Bronze"
       },
       {
@@ -45,7 +45,7 @@
         "address": "36 S. Bell St., Bellville, Tx",
         "phone": "(979)877-5642",
         "website": "https://www.austincounty.com/page/austin.museum",
-        "image": "creativesolutions.png",
+        "image": "images/MemLogo_jail musem.webp",
         "membershipLevel": "Silver"
       },
 
@@ -54,7 +54,7 @@
         "address": "201 w. Front St., Sealy, Tx",
         "phone": "(281)995-3819",
         "website": "https://www.aigmirrorandglass.com/",
-        "image": "creativesolutions.png",
+        "image": "images/MemLogo_AIG Mirror and Glass Logo.webp",
         "membershipLevel": "Bronze"
       },
       {
@@ -62,7 +62,7 @@
         "address": "513 East Main, Bellville, Tx",
         "phone": "(979)865-3674",
         "website": "https://www.acehardware.com/store-details/08828",
-        "image": "creativesolutions.png",
+        "image": "images/HTHardware_LOGO1.webp",
         "membershipLevel": "Silver"
       }
       ]

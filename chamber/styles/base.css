@@ -629,6 +629,39 @@ footer {
   color:#fff;
 }
 }
+ /* CSS styles for directory*/
+.view-toggle {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#membersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.member-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-view .member-card {
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+.list-view .member-card {
+  flex: 1 1 100%;
+}
+
+.member-card img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 
