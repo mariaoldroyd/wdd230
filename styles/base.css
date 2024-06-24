@@ -16,12 +16,6 @@
   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
-
-
-
-
-
-
 main {
 	max-width: 670px;
 	margin: 0 auto;
@@ -47,8 +41,7 @@ main {
 	border: 1px solid rgba(0,0,0,.75);
 	padding: 1px;
 	box-shadow: 0 0 3rem #fff;
-	opacity: 0.75;
-	
+	opacity: 0.75;	
 }
 
 .herolabel p {
@@ -58,8 +51,6 @@ main {
 	font-size: 1.5rem;
 	font-family:"Marcellus SC", serif;
 }
-
-
 
 *{
   margin: 0;
@@ -86,9 +77,7 @@ nav{
 
 
 nav .navigation{
-    background-color:#33333342;
-    
-        
+    background-color:#33333342;        
 }
 
 .navigation{
@@ -96,7 +85,7 @@ nav .navigation{
   flex-direction:row;
   align-items:center;   
   background-color: #33333342;
-  font-family:"Lato", sans-serif;
+  font-family:"Abril fatface", sans-serif;
   font-weight: bold;
   padding: 10px;
   color: black;
@@ -137,29 +126,25 @@ nav .navigation{
 
 iframe {
   width: 100%;
-   height: 350px;   
-  
+   height: 350px;     
 }
+
 .map {
   max-width: 600px;
   margin: 0 auto;
 }
-
-
-
 
   /* Mobile styles */
 @media (max-width: 767px) {
     header{
       padding: 1rem;
     }
-  }
-  @media (max-width: 767px) {
+ 
     .active::before {
       content: "❌"; /* just a wayfinding symbol for the user */
     }
     
-  }
+
 
   h1{
     font-size: 1.5rem;
@@ -188,7 +173,6 @@ iframe {
     text-align: left;
     list-style-type: none;
     color:rgb(0, 110, 182);
-
   }
 
   .visits{
@@ -196,16 +180,15 @@ iframe {
     padding: 1rem;
     background-color: rgba(121, 115, 115, 0.651);
     color: black;    
-    text-align: center;
-    
+    text-align: center;    
     border-radius: 0px;
-    font-family: "Lato", san serif;
+    font-family: "Merriweather", san serif;
   }
 
   .grid-container {
     padding: 1rem;
   }
-
+}
 
   /*Desktop styles*/
   @media(min-width: 37.5em) {
@@ -235,8 +218,7 @@ iframe {
       flex: 1 1 100%;
       
     }
-  }
-
+ 
     main{
       display:grid;
       gap: 1rem;
@@ -244,8 +226,7 @@ iframe {
     }
   a.active{
     color: cyan;
-  }
-    
+  }    
 
     .info h3 {
       font-size: 1.5em;
@@ -257,9 +238,7 @@ iframe {
     background-color: rgb(0, 110, 182);
     color: white;
     padding: 1rem;
-  }
-
-  
+  }  
 
   #darkMode{
     display: block;
@@ -270,7 +249,7 @@ iframe {
     font-size: 2rem;
     color:  white;
   }
-  #darkMode,
+  
    .herolabel{
     color: rgb(255, 0, 21);
   }
@@ -286,11 +265,8 @@ iframe {
     bottom: 1.5rem;
     left: 1rem;
   }
-
- 
-
   
-  .info h3{
+  .info  {
     font-family: "Merriweather";
     background-color: rgb(0, 110, 182);
     text-align: center;
@@ -301,8 +277,7 @@ iframe {
   .card ul li{
     text-align: left;
     list-style-type: none;
-    color:rgb(0, 110, 182);
-    
+    color:rgb(0, 110, 182);    
   }
 
   .grid-container {
@@ -339,7 +314,7 @@ iframe {
     #hamburger-menu{
       display: block;
     }
-  }
+  
     #hamburger-menu {
       font-size: 1.5rem;
       border: 1px solid rgba(0, 0, 0, 0.3);
@@ -357,9 +332,7 @@ iframe {
     #hamburger-menu.open::before {
       content: "❌";
     }
-    
 
-    
     .navigation{
       display: flex;
       flex-direction: column;
@@ -388,14 +361,25 @@ iframe {
 
     .active::before {
       content: "❌";
-
     }
 
-    .info {
+     .info  {
       background-color:rgb(0,110, 182);
       color:white;
     }
-    
+  }
+}
+    .visits {
+      display: block;
+      background-color: rgb(0,110, 182);
+      color:white;
+      margin: 1px;
+      text-align: center;
+      padding-top: 1rem;
+      margin-bottom: 1.5rem;
+      
+   
+    }
 
 
 
