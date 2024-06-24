@@ -22,12 +22,12 @@
     <meta property="og:url" content="https://mariaoldroyd.github.io/wdd230/">
     <meta property="og:image" content="images/web.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">    
-    <link rel="manifest" href="/site.webmanifest">
+   
 </head>
 
 <body>  
     <header>
-        <img src="images/IMG_5734.webp" alt="picture of maria and husband" width="65" height="65">
+        <img src="images/IMG_5734.webp" alt="picture of maria and husband" width="140" height="127">
         <h1>Maria Oldroyd</h1>
         <button id="darkMode">😎</button>
         <button id="hamburger-menu">Menu</button>
@@ -64,7 +64,7 @@
                     <li><a href="lesson03/images/landscape.webp"> WebP</a></li>
                     <li>Lesson 04<a href="https://codepen.io/mariaoldroyd/pen/qBGdYmW" > Code Pen</a></li>
                     <li><a href="chamber/index.html"> Chamber</a></li>
-                    <li>Lesson 05<a href="lesson05/bom.html"></a> Book of Mormon</li>
+                    <li>Lesson 05<a href="lesson05/bom.html"> Book Of Mormon</a></li>
                     <li>Lesson 06<a href="lesson06/images/landscape2.webp"> Images</a></li>
                     
                     <li><a href="lesson06/responsive-images.html"> Responsive Images</a></li>
@@ -73,10 +73,11 @@
                     <li><a href="lesson08/index.html">Forms</a></li>
                     <li>Lesson 09<a href="lesson09new-ward-members.json"> Json </a></li>
                     <li><a href="lesson09/prophets.html">Fetch API</a></li>
-                    <li><a href="lesson10/weather.html">Lesson 10</a></li>
-                    <li><a href="#">Lesson 11</a></li>
-                    <li><a href="#">Lesson 12</a></li>
-                    <li><a href="#">Lesson 14-Project</a></li>
+                    <li>Lesson 10<a href="lesson10/weather.html"> Consuming a Weather API</a> </li>
+                    <li>Lesson 11<a href="#"></a></li>
+                    <li>Lesson 12<a href="#"></a></li>
+                    <li>Lesson 13<a href="#"></a></li>
+                    <li>Lesson 14-Project<a href="#"></a></li>
                 </ul>
                 </section>
                 <div class="info">
@@ -84,14 +85,18 @@
                     <p>Number of Visits: <span id="visitCount">0</span></p>
                 </div>
                 <section class="visits">
-                    <h4>Houston, Texas</h4>
-                    <h4>Current Weather:</h4>                    
+                    <h4>Weather Information</h4>
+                    <p>The current temperature in Bellvile, Texas is <span id="current-temp"> </span> &#8457;</p>
+                    <figure>
+                        <img id="weather-icon" src="" alt="weather icon">
+                        <figcaption></figcaption>            
+                    </figure>
+                                    
                 </section>
             </main>
             <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55315.35644642019!2d-96.30693497680642!3d29.944644042974804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86415246c5a0575d%3A0xfd0f8da70b79f82e!2sBellville%2C%20TX%2077418!5e0!3m2!1sen!2sus!4v1715286009195!5m2!1sen!2sus" width="100" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title= "map"></iframe>
-        </div>            
-            
+        </div>             
             <footer>
                 <div class="grid-container">
                     <div class="texas-info">
@@ -108,5 +113,6 @@
             <script src="scripts/getdates.js"></script>
             <script src="scripts/visitCounter.js"></script>
             <script src="scripts/links.js"></script>
+            <script src="scripts/bellweather.js"></script>
     </body>
     </html>
