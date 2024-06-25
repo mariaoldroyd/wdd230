@@ -47,9 +47,7 @@
     margin: 0;
     padding: 0;   
   }
-  h1, h2, h3 {
-    font-family: var(--font-secondary);
-}
+
  h2 { 
   text-align: center;
 }
@@ -689,8 +687,34 @@ footer {
   padding: 0;
 }
 
-h1, h2, h3 {
+h1, 
+h2,
+h3 {
   font-family: var(--font-secondary);
 
-
+  .banner {
+    background-color: #ffd700;
+    color: #333;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .banner p {
+    margin: 0;
+  }
+  
+  .close-banner {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+  }
 
