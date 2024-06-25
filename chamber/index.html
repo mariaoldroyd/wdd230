@@ -8,9 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/normalize.css">   
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="images/favicon.ico">
 
     <title>Bellville Chamber of Commerce Site Plan</title>
@@ -21,20 +22,15 @@
     <meta property="og:url" content="https://mariaoldroyd.github.io/wdd230/">
     <meta property="og:image" content="https://mariaoldroyd.github.io/wdd230/chamber/images/21TXBC-bluebonnets3-CANVA-1600X670.webp">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">    
-    <link rel="manifest" href="site.webmanifest">
-    <script src="https://kit.fontawesome.com/8d0c34bff4.js" crossorigin="anonymous"></script>
+    <link rel="manifest" href="site.webmanifest">    
     <script src="scripts/get.dates.js"></script>    
 </head>
-<body>
-
-   
+<body>   
     <header>
         <div class="header-content">           
             <h1>Bellville Chamber of Commerce</h1>
         </div>
-        <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="toggle dark mode">
-            <img src="images/night-mode.svg" alt="dark mode button">        
-        </button>
+        <button onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">😎</button>
     </header>
     <nav>  
         <button class="hamburger-menu" aria-label="Toggle navigation">
@@ -48,7 +44,7 @@
         </ul>        
     </nav> 
     <main>        
-    
+        <div id="banner-container"></div>
         <h2>Welcome to The Bellville Chamber of Commerce</h2>     
         <div class="hero-content">           
               <picture>
@@ -60,18 +56,21 @@
                 <button class="join-button">Join Now</button>                
             </div>
         </div>                      
-        <section class="spotlights">
-            <h3>Company Spotlights</h3>           
+        <section class="spotlights-container">
+           
+            <h3>Company Spotlights</h3>
+            <div class="spotlights">           
             <div class="spotlight">Company1</div>
             <div class="spotlight">Company2</div>
             <div class="spotlight">Company3</div>
-        </section>        
-        <div class="content-container">  
+            </div>
+                
+        
             <div class="events">
                 <h3>Current Events</h3>                
                 <p>Event details coming soon!</p>
-            </div>
-        </div>            
+            </div>   
+        </section>                
             <div class="weather">
                 <h3>Weather</h3>
                 <br>
@@ -79,9 +78,10 @@
                 <p>Description: <span id="weatherDescription">--</span></p>
                 <p>Wind Speed: <span id="windSpeed">--</span> mph</p>
                 <p>Wind Chill: <span id="windChill">N/A</span></p>
+                <p>Three Day Forecast</p>
                 <div id="forecast" class="forecast"></div>
             </div> 
-               
+            </di>               
     </main>
    <footer>
         <div class="footer-content">            
@@ -106,14 +106,15 @@
             <p> Last modified: <span id="lastModified"></span></p>
         </div>
     </footer>   
+   
+    <script src="scripts/get.dates.js"></script>
+    <script src="scripts/weather.js"></script> 
+    <script src="scripts/darkmode.js"></script>     
+    <script src="scripts/banner.js"></script>   
     <script>
         document.getElementById("currentYear").textContent = new Date().getFullYear();
         document.getElementById("lastModified").textContent = document.lastModified;
     </script>    
-    <script src="scripts/get.dates.js"></script>
-    <script src="scripts/windchill.js"></script> 
-    <script src="scripts/darkmode.js"></script>     
-    <script src="scripts/banner.js"></script>   
 </body>
 </html>
 

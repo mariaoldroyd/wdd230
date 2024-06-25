@@ -73,6 +73,7 @@ header img {
 header h1  {
   display: inline;
   margin-left: 0.5em;
+  
 }
   .header-content{
     position: relative;
@@ -186,6 +187,7 @@ button {
     border: 1px solid var(--border-color);
     border-radius: 10px;
     color: black;
+    width: 50%;
   }   
   .footer-content{
     display: flex;
@@ -687,10 +689,6 @@ footer {
   padding: 0;
 }
 
-h1, 
-h2,
-h3 {
-  font-family: var(--font-secondary);
 
   .banner {
     background-color: #ffd700;

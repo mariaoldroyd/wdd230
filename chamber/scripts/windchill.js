@@ -1,29 +1,17 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const tempElement = document.getElementById("temperature");
-    const windSpeedElement = document.getElementById("windSpeed");
-    const windChillElement = document.getElementById("windChill");
-  
-    const temperature = parseFloat(tempElement.textContent);
-    const windSpeed = parseFloat(windSpeedElement.textContent);
-  
-    if (temperature <= 50 && windSpeed > 3) {
-      const windChill = calculateWindChill(temperature, windSpeed);
-      windChillElement.textContent = windChill.toFixed(2) + "°F";
-    } else {
-      windChillElement.textContent = "N/A";
-    }
-  });
-  
-  function calculateWindChill(temp, speed) {
-    return (
-      35.74 +
-      0.6215 * temp -
-      35.75 * Math.pow(speed, 0.16) +
-      0.4275 * temp * Math.pow(speed, 0.16)
-    );
+document.addEventListener('DOMContentLoaded', function () {
+  var weatherInfo = document.getElementById('weather-info');
+  var temperature = 25; // Example temperature in Celsius
+  var windSpeed = 15; // Example wind speed in km/h
+  var windChill = calculateWindChill(temperature, windSpeed);
+
+  weatherInfo.innerHTML = 'Temperature: ' + temperature + '°C<br>Wind Speed: ' + windSpeed + ' km/h<br>Wind Chill: ' + windChill + '°C';
+
+  function calculateWindChill(temp, wind) {
+      return (13.12 + 0.6215 * temp - 11.37 * Math.pow(wind, 0.16) + 0.3965 * temp * Math.pow(wind, 0.16)).toFixed(2);
   }
+});
    //  current weather
-   const apiKey = 'YOUR_API_KEY';
+   const apiKey = 'c0cb079a4e04faed4261f749a330f5eb';
 const city = 'Bellville';
 const units = 'imperial'; // Use 'metric' for Celsius
 
@@ -62,3 +50,4 @@ async function getWeatherData() {
 }
 
 getWeatherData();
+
