@@ -9,13 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Increment and display the visit count
     incrementVisitCount();
 
-    // Hamburger Menu functionality
-    const hamburgerMenu = document.getElementById("hamburger-menu");
-    const navigation = document.querySelector(".navigation");
-
-    hamburgerMenu.addEventListener("click", () => {
-        navigation.classList.toggle("show-menu");
-    });
+   
 
     // Dark mode functionality
     const modeButton = document.querySelector("#darkMode");

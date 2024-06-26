@@ -4,7 +4,7 @@ const linksURL = "https://mariaoldroyd.github.io/wdd230/data/links.json";
 async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    console.log(data);
+    //console.log(data);
     displayLinks(data);
   }
   
@@ -12,7 +12,7 @@ async function getLinks() {
 
   function displayLinks(weeks) {
     const main = document.querySelector('main');
-    weeks.lessons = forEach(week => {
+    weeks.forEach(week => {
         let section = document.createElement('section');
         let heading = document.createElement('h2');
         heading.textContent = 'Lesson${week.lesson}';
