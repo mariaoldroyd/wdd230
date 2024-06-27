@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('darkMode').addEventListener('click', function() {
-        document.body.classList.toggle('dark-mode');
+        document.body.classList.toggle('darkMode');
     });
 
     document.getElementById('hamburger-menu').addEventListener('click', function() {

@@ -157,16 +157,12 @@ nav {
     }
 }
 
-.weather {
+.weather  {
     width: 100%;
     background-color: rgba(151, 171, 210, 1);
+    text-align: center
 }
 
-.weather, p {
-    font-size: 1rem;
-
-}
- 
 
 footer {
     background-color: var(--secondary-color);
@@ -247,3 +243,4 @@ footer {
     cursor: pointer;
     color: var(--text-color);
 }
+ 

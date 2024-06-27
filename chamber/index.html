@@ -11,9 +11,8 @@
     <link rel="stylesheet" href="styles/normalize.css">   
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/style.css">
+    
     <link rel="icon" href="images/favicon.ico">
-
     <title>Bellville Chamber of Commerce Site Plan</title>
     <meta name="description" content="The Greater Bellville Chamber of Commerce, founded in 2024 is an association of businesses organized to improve business in Southwest Texas">
     <meta name="author" content="Maria Oldroyd">
@@ -29,8 +28,11 @@
     <header>
         <div class="header-content">           
             <h1>Bellville Chamber of Commerce</h1>
-        </div>
-        <button id="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">😎</button>
+        
+        <div id="darkMode">
+        <button  onclick="DarkMode()" aria-label="Toggle Dark Mode">😎</button>
+       </div>
+    </div>
     </header>
     <nav>  
         <button class="hamburger-menu" aria-label="Toggle navigation">
@@ -44,8 +46,13 @@
         </ul>        
     </nav> 
     <main>        
-        <div id="banner-container"></div>
-        <h2>Welcome to The Bellville Chamber of Commerce</h2>     
+        <div id="banner-container">
+        <div class="banner">
+        <p>Join us for the Chamber of Commerce meet and greet on Wednesday at &:00 p.m.</p>     
+        <button class="close-banner" aria-label="Close banner">❌</button>
+    </div>
+    </div>
+
         <div class="hero-content">           
               <picture>
                 <source srcset="images/wdd230-small-org.webp" media="(max-width: 400px)">
@@ -56,62 +63,75 @@
                 <button class="join-button">Join Now</button>                
             </div>
         </div>                      
-        <section class="spotlights-container">
-           
+        <section class="spotlights-container">           
             <h3>Company Spotlights</h3>
             <div class="spotlights">           
             <div class="spotlight">Company1</div>
             <div class="spotlight">Company2</div>
             <div class="spotlight">Company3</div>
-            </div>
-                
+            </div>                
         
             <div class="events">
                 <h3>Current Events</h3>                
                 <p>Event details coming soon!</p>
             </div>   
-        </section>                
-            <div class="weather">
-                <h3>Weather</h3>
-                <br>
-                <p>Temperature: <span id="temperature">--</span>&#8457;</p>
-                <p>Description: <span id="weatherDescription">--</span></p>
-                <p>Wind Speed: <span id="windSpeed">--</span> mph</p>
-                <p>Wind Chill: <span id="windChill">N/A</span></p>
-                <p>Three Day Forecast</p>
-                <div id="forecast" class="forecast"></div>
+        </section>
+        <div id="weather">
+            <div class="weather-container">
+                <div class="weather-icon-container">
+                    <figure>
+                        <img id="weather-icon" src="https://openweathermap.org/img/wn/04d@2x.png" alt="weather icon">
+                        <figcaption></figcaption>
+                    </figure>
+                   
+                </div>
+                <div class="weather-details">
+                    <h2>Weather</h2>
+                    <p><strong>Temperature:</strong> <span id="temperature">--</span>&#8457;</p>
+                    <p>Description: <span id="weatherDescription">--</span></p>
+                    <p>Wind Speed: <span id="windSpeed">--</span> mph</p>
+                    <p>Wind Chill: <span id="windChill">N/A</span></p>
+                </div>
+                <div id="forecast" class="forecast">
+                    <h3>Three Day Forecast</h3>                         
             </div> 
-            </di>               
+        </div>  
+    </div>                         
     </main>
    <footer>
         <div class="footer-content">            
             <div class="contact-info">
-                <h3>Contact Information</h3>
-                <p>123 Main St. Bellville, TX 77418</p>
-                <p>(123) 456-7890</p>                
-                <p>&copy; <span id="currentYear">2024</span>Bellvile Chamber of Commerce</p> 
-            </div>                      
-        </div>            
+                <h3>Contact us:</h3> 
+                <p>Email: <a href="mailto:bellvillechamber@gmail.com">bellvillechamber@gmail.com</a></p>           
+                <p>Phone: <a href="tel:+19793882047">(979) 388-2047</a></p>
+                <p>Address: 111 West Main Street Bellville, TX 77418</p>           
+                
+             <p>&copy; <span id="currentYear">2024</span> Bellvile Chamber of Commerce</p>                
+            
+            </div> 
+            <div class="visit-info">
+                <p> Website by Maria Oldroyd - WDD-230 Project</p>
+                <p>Number of Visits: <span id ="visitCount">0</span></p>           
+                <p> Last modified: <span id="lastModified"></span></p>      
+            </div>
+                   
         <div class="social-icons">
-            <a href="https://twitter.com/" aria-label="Link to Twitter" class="fab fa-twitter"></a>
+            <a href="https://twitter.com/" aria-label="Link to Twitter" class="fa fa-twitter"></a>
             <a href="https://www.facebook.com/your-facebook-page-url" aria-label="Link to facebook" class="fa fa-facebook"></a>
             <a href="https://www.linkedin.com/" aria-label="Link to linkedin" class="fa fa-linkedin"></a>    
             <a href="https://www.instagram.com/" aria-label="Link to instagram" class="fa fa-instagram"></a>
         </div>              
-        <div class="visit-info">
-            <p>Number of Visits: <span id ="visitCount">0</span></p>
-        </div>        
-        <div class="dev-info">
-            <p>Maria Oldroyd - WDD230 Project</p>
-            <p> Last modified: <span id="lastModified"></span></p>
+       
         </div>
+       
     </footer>   
    
     <script src="scripts/get.dates.js"></script>
     <script src="scripts/weather.js"></script> 
     <script src="scripts/darkmode.js"></script>     
     <script src="scripts/banner.js"></script> 
-    <script>src="scripts/links.js"</script>  
+    <script>src="scripts/links.js"</script> 
+    <script>src="scripts/bellweather.js"</script> 
     <script>
         document.getElementById("currentYear").textContent = new Date().getFullYear();
         document.getElementById("lastModified").textContent = document.lastModified;
