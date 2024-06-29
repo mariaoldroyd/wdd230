@@ -33,3 +33,20 @@ $red: rgba(255, 0, 0, 1);*/
     --text-color: #000;
     --border-color: #ccc;
   }
+
+  @media (max-width: 600px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+
+    .grid-container {
+      grid-template-columns: 1fr;
+  }
+  }

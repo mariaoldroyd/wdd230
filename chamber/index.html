@@ -21,14 +21,12 @@
     <meta property="og:url" content="https://mariaoldroyd.github.io/wdd230/">
     <meta property="og:image" content="https://mariaoldroyd.github.io/wdd230/chamber/images/21TXBC-bluebonnets3-CANVA-1600X670.webp">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">    
-        
-       
 </head>
+
 <body>   
     <header>
         <div class="header-content">           
-            <h1>Bellville Chamber of Commerce</h1>
-        
+            <h1>Bellville Chamber of Commerce</h1>        
         <div id="darkMode">
         <button  onclick="DarkMode()" aria-label="Toggle Dark Mode">😎</button>
        </div>
@@ -48,7 +46,7 @@
     <main>        
         <div id="banner-container">
         <div class="banner">
-        <p>Join us for the Chamber of Commerce meet and greet on Wednesday at &:00 p.m.</p>     
+        <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 8:00 p.m.</p>     
         <button class="close-banner" aria-label="Close banner">❌</button>
     </div>
     </div>
@@ -63,40 +61,86 @@
                 <button class="join-button">Join Now</button>                
             </div>
         </div>                      
-        <section class="spotlights-container">           
-            <h3>Company Spotlights</h3>
-            <div class="spotlights">           
-            <div class="spotlight">Company1</div>
-            <div class="spotlight">Company2</div>
-            <div class="spotlight">Company3</div>
-            </div>                
         
-            <div class="events">
+            
+                <section class="events">
                 <h3>Current Events</h3>                
-                <p>Event details coming soon!</p>
-            </div>   
-        </section>
-        <div id="weather">
-            <div class="weather">
+                <div class="events-container">
+                    <div id="eventsWrapper">
+                        
+                        <ul>
+                            <span><strong>July 1</strong></span>
+                            <li>Farmers Market Day</li>
+                            <br>
+                            <br>
+                            <span><strong>July 4</strong></span>
+                            <li>Red White and Free Fireworks Festival</li>
+                            <br>
+                            <br>
+                            <span><strong>July 6</strong></span>
+                            <li>Austin County Livestock association Meeting</li>
+                            <br>
+                            <br>
+                            <span><strong>July 8</strong></span>
+                            <li>C.H.A.M.P Bingo at Sealy American Legion Hall</li>
+                            <br>
+                            <br>
+                            <span><strong>July 11</strong></span>
+                            <li>BCOC Lunch and Learn</li>
+                            <br>
+                            <br>
+                            <span><strong>July 13</strong></span>
+                            <li>Bellville Summer Series</li>
+                            <br>
+                            <br>
+                            <span><strong>July 18</strong></span>                            
+                            <li>Austin County Back To School Fair</li>
+                            <br>
+                            <br>
+                            <span><strong>July 21</strong></span>
+                            <li>C.H.A.M.P Bingo at Sealy American Legion Hall</li>
+                            <br>
+                            <br>
+                            <span><strong>July 26</strong></span>
+                            <li>Feathers, Furs, and Farming Grazing</li>
+                            <br>
+                            <br>
+                            <span><strong>July 28</strong></span>
+                            <li>C.H.A.M.P Bingo at Sealy American Legion Hall</li>
+                        </ul>                  
+                        </div>
+                        </div>                   
+                </section>
+        
+        
+            <section class="weather">
                 <div class="weather-icon-container">
                     <figure>
                         <img id="weather-icon" src="https://openweathermap.org/img/wn/04d@2x.png" alt="weather icon">
-                        <figcaption></figcaption>
-                    </figure>
-                   
+                    </figure>                   
                 </div>
                 <div class="weather-details">
-                    <h2>Weather</h2>
-                    <p><strong>Temperature:</strong> <span id="temperature">--</span>&#8457;</p>
-                    <p>Description: <span id="weatherDescription">--</span></p>
-                    <p>Wind Speed: <span id="windSpeed">--</span> mph</p>
-                    <p>Wind Chill: <span id="windChill">N/A</span></p>
-                </div>
-                <div id="forecast" class="forecast">
-                    <h3>Three Day Forecast</h3>                         
-            </div> 
-        </div>  
-    </div>                         
+                    <h2>Current Weather</h2>
+                    <p><strong>Temperature: </strong><span id="temperature">--</span>&#8457;</p>
+                    <p><strong>Description: </strong><span id="weatherDescription">--</span></p>
+                    <p><strong>Wind Speed: </strong><span id="windSpeed">--</span> mph</p>
+                    <p><strong>Wind Chill: </strong><span id="windChill">N/A</span></p>
+                <div class="three-day"><h3>Three Day Forecast</h3></div>
+                <div  class="forecast" id="forecast">
+                    
+                </div> 
+        </section>  
+      
+  
+<section class="spotlights-container">           
+    <h3>Company Spotlights</h3>
+    <div class="spotlights">           
+    <div class="spotlight">Company1</div>
+    <div class="spotlight">Company2</div>
+    <div class="spotlight">Company3</div>
+    </div>  
+    </section>              
+<section>                    
     </main>
    <footer>
         <div class="footer-content">            
@@ -105,9 +149,7 @@
                 <p>Email: <a href="mailto:bellvillechamber@gmail.com">bellvillechamber@gmail.com</a></p>           
                 <p>Phone: <a href="tel:+19793882047">(979) 388-2047</a></p>
                 <p>Address: 111 West Main Street Bellville, TX 77418</p>           
-                
-             <p>&copy; <span id="currentYear">2024</span> Bellvile Chamber of Commerce</p>                
-            
+                <p>&copy; <span id="currentYear">2024</span> Bellvile Chamber of Commerce</p>                
             </div> 
             <div class="visit-info">
                 <p> Website by Maria Oldroyd - WDD-230 Project</p>
@@ -120,10 +162,8 @@
             <a href="https://www.facebook.com/your-facebook-page-url" aria-label="Link to facebook" class="fa fa-facebook"></a>
             <a href="https://www.linkedin.com/" aria-label="Link to linkedin" class="fa fa-linkedin"></a>    
             <a href="https://www.instagram.com/" aria-label="Link to instagram" class="fa fa-instagram"></a>
-        </div>              
-       
-        </div>
-       
+        </div>       
+        </div>       
     </footer>   
    
     <script src="scripts/get.dates.js"></script>

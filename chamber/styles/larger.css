@@ -33,3 +33,13 @@ $red: rgba(255, 0, 0, 1);*/
     --text-color: #000;
     --border-color: #ccc;
   }
+
+  @media (max-width: 800px) {
+    .spotlights, .events {
+        max-width: 100%;
+    }
+  
+    .spotlights-container {
+        flex-direction: column;
+    }
+  }

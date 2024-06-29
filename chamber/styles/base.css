@@ -28,9 +28,10 @@
 }
 
 body {
-  font-family: var(--font-primary); 
+  font-family: var(--font-secondary); 
   background-color: var(--background-color);
   color: var(--text-color);
+  line-height: 1.6;
   margin: 0;
   padding: 0;
 }
@@ -39,8 +40,15 @@ header {
   background-color: var(--primary-color);
   font-family: "El Messiri", serif;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 0;
   position: relative;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
 }
 
 header img {
@@ -71,6 +79,24 @@ header button {
   color: var(--text-color);
 }
 
+.darkMode {
+  background-color: #333;
+  color: white;
+}
+
+.darkMode nav {
+  background-color: #444;
+}
+
+.darkMode .navigation a {
+  color: #ddd;
+}
+
+.darkMode footer {
+  background-color: #444;
+}
+
+
 nav {
   background-color: var(--secondary-color);
   padding: 1rem;
@@ -85,6 +111,28 @@ nav {
   justify-content: center;
 }
 
+
+.nav-links li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: rgba(255, 195, 0, 1);
+}
+
+.nav-links li a {
+  color: white;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+}  
+
 .navigation li {
   margin: 0 1rem;
   
@@ -97,7 +145,34 @@ nav {
 }
 
 .main {
-  padding: 2rem;
+  padding: 1rem;
+}
+
+.banner {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  padding: 3.8rem;
+  text-align: center;
+  position: relative;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin: .5rem 0;
+}
+
+.banner p {
+  margin: 0;
+}
+
+.close-banner {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-color);
+  z-index: 1000; 
 }
 
 .hero-content {
@@ -119,92 +194,109 @@ nav {
 
 .join-button {
   background-color: var(--accent-color);
+  border: none;
   color: white;
   padding: 1rem 2rem;
-  text-decoration: none;
+  cursor: pointer;
   font-size: 1.5rem;
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
-.content-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.spotlights-container {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-}
-
-.spotlights-container h3 {      
-  text-align: center;
-  margin: 0;
-  width: 100%;
-}
-
-.spotlights {
-  display: flex;
-  
-  justify-content: space-between;
-  grid-gap: 10px;
-  padding: 1rem;
-  margin: 1rem;
-}
-
-
-
 .events {
-  flex: 1;
-  margin: 0 20px;
-  padding: 20px;
+  margin: 0px;
+  padding: 10px;
   background-color: #f9f9f9;
   border: 1px solid var(--border-color);
   border-radius: 10px;
   color: black;
-  width: 50%;
-}   
+  box-sizing: border-box;
+  width: 100%;
+}  
 
-.spotlights, .events {
-  max-width: 45%;
+.events-container {
+  overflow: hidden;
+  margin: 0 auto;
+  max-width:80%;
+  height: 200px; /* Adjust the height as needed */
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 10px;
 }
 
-@media (max-width: 800px) {
-  .spotlights, .events {
-      max-width: 100%;
-  }
 
-  .spotlights-container {
-      flex-direction: column;
-  }
+#eventsWrapper {
+  max-width: 80%;
+}
+
+.events ul {
+  list-style-type: none;
+  padding: 0;
+  
+}
+.events li {
+  margin-bottom: 0.5rem;
+  color: black;
 }
 
 .weather {
   width: 50%;
   background-color: rgba(151, 171, 210, 1);
   text-align: center;
+  font-family: var(--font-secondary);
+  text-transform: capitalize;
 }
 
-#weather {
-  text-transform: capitalize;
-  
+.weather-icon-container {
+  text-align: center;
+  margin-bottom: 1rem;
 }
+
+.weather-details {
+  text-align: left;
+}
+
+.three-day {
+  text-align: center;
+}
+
+#forecast {
+  text-align: center;
+
+
+}
+
+.spotlights-container {
+  margin-top: 2rem;
+}
+.spotlights {
+  max-width: 45%;
+}
+
+.spotlight {
+  display: flex;
+  flex: 1;
+  background: #f4f4f4;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0 1rem;
+  text-align: center;
+} 
+
 
 
 footer {
   background-color: var(--secondary-color);
   color: white;
   text-align: center;
-  padding: 2rem 1rem;
-  
+  padding: 1rem 0;  
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 1rem;
 }
 
 .footer-content div {
@@ -253,49 +345,6 @@ footer {
   color: white;
 }
 
-.darkMode {
-  background-color: #333;
-  color: white;
-}
-
-.darkMode nav {
-  background-color: #444;
-}
-
-.darkMode .navigation a {
-  color: #ddd;
-}
-
-.darkMode footer {
-  background-color: #444;
-}
-
-.banner {
-  background-color: var(--accent-color);
-  color: var(--text-color);
-  padding: 3.8rem;
-  text-align: center;
-  position: relative;
-  border: 1px solid var(--border-color);
-  border-radius: 5px;
-  margin: .5rem 0;
-}
-
-.banner p {
-  margin: 0;
-}
-
-.close-banner {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: var(--text-color);
-}
-
 .hamburger-menu {
   display: none;
   font-size: 1.5rem;
@@ -304,34 +353,7 @@ footer {
   cursor: pointer;
 }
 
-.nav-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  color: rgba(255, 195, 0, 1);
-}
 
-.nav-links li a {
-  color: white;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: var(--text-color);
-}  
-
-@media (max-width: 600px) {
-  .nav-links {
-      display: none;
-      flex-direction: column;
-  }
-  .hamburger-menu {
-      display: block;
-  }
-  .nav-links.active {
-      display: flex;
-  }
-}
 
 .grid-container {
   display: grid;
@@ -344,16 +366,6 @@ nav ul li a {
   background-color: rgba(135, 206, 250, 0.544);
   padding: 1rem;
   text-align: center;
-}
-
-.events ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.events li {
-  margin-bottom: 0.5rem;
-  color: black;
 }
 
 .gallery {
@@ -374,12 +386,6 @@ nav ul li a {
 
 .gallery figure:hover img {
   transform: scale(1.1);
-}
-
-@media (max-width: 600px) {
-  .grid-container {
-      grid-template-columns: 1fr;
-  }
 }
 
 map {
@@ -422,7 +428,6 @@ map {
   margin: 0;
   list-style: none;
   text-align: center;
-
 }
 
 .weekdays {
@@ -452,21 +457,21 @@ map {
 .social-icons {
   text-align: right;
   padding-top: 50px;
-  
-
+  color: #fff;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
-
 
 footer .social-icons a{
   font-size: 1.5rem;
   margin: 0 10px;
-  color: white; 
-   
+  color: white;    
 }
+
 .social-icons a:hover {
   opacity: 0.7
 }
-
 
 .member-card {
   border: 2px solid #210bcb;
@@ -485,11 +490,11 @@ footer .social-icons a{
   flex: 1 1 100%;
 }
 
-
 .member-card img {
   max-width: 100%;
   height: auto;
 }
+
  #gridView,
  #listView {
   display: inline-block;   
