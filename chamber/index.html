@@ -44,12 +44,11 @@
         </ul>        
     </nav> 
     <main>        
-        <div id="banner-container">
-            <div class="banner">
+        <div id="banner-container"></div>
+        <div class="banner">
             <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 8:00 p.m.</p>     
             <button class="close-banner" aria-label="Close banner">❌</button>
         </div>
-    </div>
 
     <div class="hero-content">           
         <picture>
@@ -67,34 +66,44 @@
         <div class="events-container">
             <div id="eventsWrapper">
                     <ul>
-                        <li><div class="event-date"><strong>July 1</strong></div>
+                        <li>
+                            <div class="event-date"><strong>July 1</strong></div>
                             <div class="event-name">Farmers Market Day</div>
                         </li>
-                        <li><div class="event-date"><strong>July 4</strong></div>
+                        <li>
+                            <div class="event-date"><strong>July 4</strong></div>
                             <div class="event-name">Red White and Free Fireworks Festival</div>
                         </li>
-                        <li><div class="event-date"><strong>July 6</strong></div>
+                        <li>
+                            <div class="event-date"><strong>July 6</strong></div>
                             <div class="event-name">Austin County Livestock Association Meeting</div>
                         </li>
-                        <li><div class="event-date"><strong>July 8</strong></div>
+                        <li>
+                            <div class="event-date"><strong>July 8</strong></div>
                             <div class="event-name">C.H.A.M.P Bingo at Sealy American Legion Hall</div>
                         </li>
-                        <li><div class="event-date"><strong>July 11</strong></div>
+                        <li>
+                            <div class="event-date"><strong>July 11</strong></div>
                             <div class="event-name">BCOC Lunch and Learn</div>
                         </li>
-                        <li><div class="event-date"><strong>July 13</strong></div>
+                        <li>
+                            <div class="event-date"><strong>July 13</strong></div>
                             <div class="event-name">Bellville Summer Series</div>
                         </li>
-                        <li><div class="event-date"><strong>July 18</strong></div>
+                        <li>
+                            <div class="event-date"><strong>July 18</strong></div>
                             <div class="event-name">Austin County Back To School Fair</div>
                         </li>
-                        <li><div class="event-date"><strong>July 21</strong></div>
+                        <li>
+                            <div class="event-date"><strong>July 21</strong></div>
                             <div class="event-name">C.H.A.M.P Bingo at Sealy American Legion Hall</div>
                         </li>
-                        <li><div class="event-date"><strong>July 26</strong></div>
+                        <li>
+                            <div class="event-date"><strong>July 26</strong></div>
                             <div class="event-name">Feathers, Furs, and Farming Grazing</div>
                         </li>
-                        <li><div class="event-date"><strong>July 28</strong></div>
+                        <li>
+                            <div class="event-date"><strong>July 28</strong></div>
                             <div class="event-name">C.H.A.M.P Bingo at Sealy American Legion Hall</div>
                         </li>
                     </ul>
@@ -116,7 +125,9 @@
                     <p><strong>Description: </strong><span id="weatherDescription">--</span></p>
                     <p><strong>Wind Speed: </strong><span id="windSpeed">--</span> mph</p>
                     <p><strong>Wind Chill: </strong><span id="windChill">N/A</span></p>
-                <div class="three-day"><h3>Three Day Forecast</h3></div>
+                <div class="three-day">
+                    <h3>Three Day Forecast</h3>
+                </div>
                 <div  class="forecast" id="forecast"></div>   
                 </div> 
         </section>  
@@ -160,8 +171,9 @@
     <script src="scripts/weather.js"></script> 
     <script src="scripts/darkmode.js"></script>     
     <script src="scripts/banner.js"></script> 
-    <script>src="scripts/links.js"</script> 
-    <script>src="scripts/bellweather.js"</script> 
+    <script src="scripts/links.js"></script> 
+    <script src="scripts/bellweather.js"></script> 
+    <script src="scripts/scroll.js"></script>
     <script>
         document.getElementById("currentYear").textContent = new Date().getFullYear();
         document.getElementById("lastModified").textContent = document.lastModified;

@@ -151,7 +151,7 @@ nav ul li a {
 .banner {
   background-color: var(--accent-color);
   color: var(--text-color);
-  padding: 3.8rem;
+  padding: 10px;
   text-align: center;
   position: relative;
   border: 1px solid var(--border-color);
@@ -172,7 +172,7 @@ nav ul li a {
   font-size: 1.5rem;
   cursor: pointer;
   color: var(--text-color);
-  z-index: 1000; 
+  
 }
 
 .hero-content {
