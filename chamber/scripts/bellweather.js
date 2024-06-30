@@ -1,85 +1,58 @@
-// Select HTML elements in the document
-const currentTemp = document.querySelector('#temperature');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
-
 const apiKey = 'c0cb079a4e04faed4261f749a330f5eb';
-const lat = 29.9446; // Latitude for Bellville, Texas
-const lon = -96.2575; // Longitude for Bellville, Texas
-const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
-const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
+const city = 'Bellville';
+const units = 'imperial'; // Use 'metric' for Celsius
 
-// Async function to fetch the weather data
-async function apiFetch(url) {
+async function getWeatherData() {
     try {
-        const response = await fetch(url);
-        if (response.ok) {
-            const data = await response.json();
-            //console.log(data); // For testing only
-            return data;
+        const currentWeatherResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=${apiKey}`);
+        const currentWeatherData = await currentWeatherResponse.json();
+        console.log('Current weather data:', currentWeatherData);
+
+        const forecastResponse = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=${units}&appid=${apiKey}`);
+        const forecastData = await forecastResponse.json();
+        console.log('Forecast data:', forecastData);
+
+        // Display current weather
+        if (currentWeatherData.main) {
+            document.getElementById('temperature').textContent = currentWeatherData.main.temp.toFixed(1);
+            document.getElementById('weatherDescription').textContent = currentWeatherData.weather[0].description;
+            document.getElementById('windSpeed').textContent = currentWeatherData.wind.speed.toFixed(1);
+
+            const windChill = calculateWindChill(currentWeatherData.main.temp, currentWeatherData.wind.speed);
+            document.getElementById('windChill').textContent = windChill + '°F';
         } else {
-            throw Error(await response.text());
+            console.error('Error: main data not found in currentWeatherData:', currentWeatherData);
         }
+
+        // Display 3-day forecast
+        const forecastContainer = document.getElementById('forecast');
+        forecastContainer.innerHTML = '';
+
+        const daysDisplayed = new Set();
+
+        forecastData.list.forEach(forecast => {
+            const date = new Date(forecast.dt * 1000);
+            const day = date.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+
+            if (!daysDisplayed.has(day) && daysDisplayed.size < 3) {
+                daysDisplayed.add(day);
+
+                const temp = forecast.main.temp.toFixed(1);
+                const desc = forecast.weather[0].description;
+
+                const forecastItem = document.createElement('div');
+                forecastItem.className = 'forecast-item';
+                forecastItem.innerHTML = `<p>${day}</p><p>${temp}&#8457;</p><p>${desc}</p>`;
+                forecastContainer.appendChild(forecastItem);
+            }
+        });
     } catch (error) {
-        console.log(error);
+        console.error('Error fetching weather data:', error);
     }
 }
 
-// Function to display the results
-function displayCurrentWeather(data) {
-    const temp = data.main.temp.toFixed(0); // Format to zero decimal points
-    const desc = data.weather[0].description.split(' ')
-                    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-                    .join(' '); 
-    const icon = data.weather[0].icon; // Get the weather icon code
-
-    currentTemp.textContent = temp;
-    weatherIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`; // Construct the icon URL
-    weatherIcon.alt = desc;
-    captionDesc.textContent = desc;
+function calculateWindChill(temp, wind) {
+    return (35.74 + 0.6215 * temp - 35.75 * Math.pow(wind, 0.16) + 0.4275 * temp * Math.pow(wind, 0.16)).toFixed(1);
 }
 
-// Function to display the three-day forecast
-function displayForecast(data) {
-    const forecastContainer = document.querySelector('#forecast');
-    forecastContainer.innerHTML = ''; // Clear existing content
-
-    // Filter data to get forecasts at 12:00 PM for the next 3 days
-    const filteredData = data.list.filter(item => {
-        const date = new Date(item.dt_txt);
-        const today = new Date();
-        return date.getDate() > today.getDate(); // Adjust logic as per API response structure
-    }).slice(0, 3);
-
-    filteredData.forEach(forecast => {
-        const date = new Date(forecast.dt_txt).toLocaleDateString(undefined, { weekday: 'long' });
-        const temp = forecast.main.temp.toFixed(0);
-        const desc = forecast.weather[0].description.split(' ')
-            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-            .join(' ');
-        const icon = forecast.weather[0].icon;
-
-        const forecastElement = document.createElement('div');
-        forecastElement.classList.add('forecast-item');
-        forecastElement.innerHTML = `
-            <h4>${date}</h4>
-            <img src="https://openweathermap.org/img/wn/${icon}.png" alt="${desc}">
-            <p>${temp}&#8457;</p>
-            <p>${desc}</p>
-        `;
-
-        forecastContainer.appendChild(forecastElement);
-    });
-}
-
-// Fetch and display the weather data
-async function displayWeather() {
-    const currentWeatherData = await apiFetch(currentWeatherUrl);
-    displayCurrentWeather(currentWeatherData);
-
-    const forecastData = await apiFetch(forecastUrl);
-    displayForecast(forecastData);
-}
-
-// Call the displayWeather function
-displayWeather();
+document.addEventListener('DOMContentLoaded', getWeatherData);

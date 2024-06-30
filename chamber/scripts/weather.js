@@ -22,7 +22,7 @@ async function getWeatherData() {
         const forecastContainer = document.getElementById('forecast');
         forecastContainer.innerHTML = '';
 
-        for (let i = 0; i < forecastData.list.length; i += 8) {
+        for (let i = 0; i < forecastData.list.length; i += 3) {
             const forecast = forecastData.list[i];
             const date = new Date(forecast.dt * 1000).toLocaleDateString('en-US', {
                 weekday: 'short', month: 'short', day: 'numeric'

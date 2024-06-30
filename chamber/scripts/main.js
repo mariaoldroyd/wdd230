@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const modeButton = document.querySelector("#darkMode");
     const main = document.querySelector("main");
 
+    if (modeButton) {
     modeButton.addEventListener("click", () => {
         if (modeButton.textContent.includes("😎")) {
             main.style.background = "#000";
@@ -26,7 +27,11 @@ document.addEventListener("DOMContentLoaded", function() {
             modeButton.textContent = "😎";
         }
     });
+}else {
+    console.error("Dark mode button not found");
+}
 
+    
     // Display visit message
     displayVisitMessage();
 });
@@ -72,9 +77,9 @@ function setCookie(name, value, days) {
 function getCookie(name) {
     const nameEQ = name + "=";
     const ca = document.cookie.split(';');
-    for(let i=0;i < ca.length;i++) {
+    for(let i=0; i < ca.length; i++) {
         let c = ca[i];
-        while (c.charAt(0) == ' ') c = c.substring(1,c.length);
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
         if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
     }
     return null;

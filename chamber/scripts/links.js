@@ -2,13 +2,23 @@ const baseURL = "https://mariaoldroyd.github.io/wdd230/";
 const linksURL = "https://mariaoldroyd.github.io/wdd230/data/links.json";
 
 async function getLinks() {
-    const response = await fetch(linksURL);
-    const data = await response.json();
-    //console.log(data);
-    displayLinks(data);
-  }
-  
-  getLinks();
+    try {
+        const response = await fetch(linksURL);
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        console.log('Fetched data:', data);
+        if (Array.isArray(data)) {
+            displayLinks(data);
+        } else {
+            console.error('Fetched data is not an array:', data);
+        }
+    } catch (error) {
+        console.error('Error fetching links:', error);
+    }
+}
+
 
   function displayLinks(weeks) {
     const main = document.querySelector('main');
@@ -30,3 +40,4 @@ async function getLinks() {
         main.appendChild(section);
     });
 }
+getLinks();
