@@ -50,3 +50,8 @@ $red: rgba(255, 0, 0, 1);*/
       grid-template-columns: 1fr;
   }
   }
+
+  @media (min-width: 601px) and (max-width: 1200px) {
+    .spotlights {
+        grid-template-columns: repeat(2, 1fr);
+    }

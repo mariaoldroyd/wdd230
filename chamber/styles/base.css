@@ -40,7 +40,7 @@ header {
   background-color: var(--primary-color);
   font-family: "El Messiri", serif;
   text-align: center;
-  padding: 1rem 0;
+  padding: 2rem 0;
   position: relative;
 }
 
@@ -318,6 +318,7 @@ p {
   gap: 1rem;
   width: 100%;
   margin-top: 2rem;
+  padding: 20px;
 }
 .spotlights-container h3 {
   background-color:#70b5ea;
@@ -326,7 +327,8 @@ p {
 }
 .spotlights {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
   
 }
 
@@ -334,10 +336,26 @@ p {
   display: flex;  
   background: #f4f4f4;
   border-radius: 5px;
-  padding: 1rem;
+  padding: 10px;
   margin: 0 1rem;
   text-align: center;
 } 
+
+.spotlight img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.spotlight h4 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.spotlight p {
+  font-size: 1em;
+  color: #666;
+}
 
 
 
@@ -589,3 +607,9 @@ footer .social-icons a{
  text-align: center;
 
  }
+
+ @media (max-width: 600px) {
+  .spotlights {
+      grid-template-columns: 1fr;
+  }
+}

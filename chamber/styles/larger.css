@@ -34,12 +34,8 @@ $red: rgba(255, 0, 0, 1);*/
     --border-color: #ccc;
   }
 
-  @media (max-width: 800px) {
-    .spotlights, .events {
-        max-width: 100%;
+  @media (min-width: 1201px) {
+    .spotlights {
+        grid-template-columns: repeat(3, 1fr);
     }
-  
-    .spotlights-container {
-        flex-direction: column;
-    }
-  }
+}
