@@ -29,7 +29,7 @@
 
 body {
   font-family: var(--font-secondary); 
-  background-color: var(--background-color);
+  
   color: var(--text-color);
   line-height: 1.6;
   margin: 0;
@@ -115,6 +115,11 @@ nav {
 .nav-links li {
   display: inline;
   margin: 0 1rem;
+  
+}
+
+.nav-links a {
+  color:rgba(255, 195, 0, 1);
 }
 
 .nav-links {
@@ -124,8 +129,9 @@ nav {
   color: rgba(255, 195, 0, 1);
 }
 
-.nav-links li a {
+.nav-links li a:hover {
   color: white;
+  
 }
 
 nav ul li a {
@@ -149,7 +155,7 @@ nav ul li a {
 }
 
 .banner {
-  background-color: var(--accent-color);
+  
   color: var(--text-color);
   padding: 10px;
   text-align: center;
@@ -159,17 +165,21 @@ nav ul li a {
   margin: .5rem 0;
 }
 
+#banner-container {
+  background-color: var(--accent-color);
+}
+
 .banner p {
   margin: 0;
 }
 
-.close-banner {
+.close-banner:hover {
   position: absolute;
   top: 10px;
   right: 10px;
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   cursor: pointer;
   color: var(--text-color);
   
@@ -250,28 +260,37 @@ nav ul li a {
 }
 
 .event-name {
-  margin-left: 20px; /* Optional: Adds indentation to event name */
+  margin-left: 20px; /* Adds indentation to event name */
 }
 
-.weather {
-  width: 80%;
-  background-color: rgba(151, 171, 210, 1);
-  text-align: center;
+.weather  {
+  background: linear-gradient rgb(180deg, rgb(128, 192, 255),  rgb(255, 213, 128));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   font-family: var(--font-secondary);
   text-transform: capitalize;
-  margin-left: 140px; 
+  padding: 1rem;
+  border-radius: 10px; 
+}
+
+
+
+.weather-details h2 {
+  align-items:center;
 }
 
 .weather-icon-container {
-  text-align: center;
+  align-items: center;
   margin-bottom: 1rem;
 }
 
-.weather-details {
-  text-align: center;
-  width: 80%;
-  height: 100%;
-  
+
+p {
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 
@@ -280,21 +299,28 @@ nav ul li a {
 }
 
 #forecast {
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+  
 }
 
-
-
 .spotlights-container {
+  
+  gap: 1rem;
+  width: 100%;
   margin-top: 2rem;
 }
 .spotlights {
-  max-width: 45%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
 }
 
 .spotlight {
   display: flex;
-  flex: 1;
+  
   background: #f4f4f4;
   border-radius: 5px;
   padding: 1rem;
@@ -309,6 +335,10 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem 0;  
+}
+
+footer p {
+  margin: 0;
 }
 
 .footer-content {

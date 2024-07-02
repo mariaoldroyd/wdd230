@@ -46,10 +46,7 @@
     <main>        
         <div id="banner-container"></div>
         <div class="banner">
-            <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 8:00 p.m.</p>     
-            <button class="close-banner" aria-label="Close banner">❌</button>
-        </div>
-
+            
     <div class="hero-content">           
         <picture>
             <source srcset="images/wdd230-small-org.webp" media="(max-width: 400px)">
@@ -112,24 +109,30 @@
         </section>
         
         
-            <section class="weather">
-                <h2>Current Weather</h2>
-                <div class="weather-icon-container">                   
-                    <figure>
+            <div class="weather">
+                <div class="weather-details">
+                <h2>Current Weather </h2>
+                <div class="weather-icon-container">                    
                         <img id="weather-icon" src="https://openweathermap.org/img/wn/04d@2x.png" alt="weather icon">
-                    </figure>                   
                 </div>
-                <div class="weather-details">                    
+                <div class="weather-details"> 
+                    <h2>Bellville</h2>                   
                     <p><strong>Temperature: </strong><span id="temperature">--</span>&#8457;</p>
                     <p><strong>Description: </strong><span id="weatherDescription">--</span></p>
                     <p><strong>Wind Speed: </strong><span id="windSpeed">--</span> mph</p>
                     <p><strong>Wind Chill: </strong><span id="windChill">N/A</span></p>
-                <div class="three-day">
+                </div>    
+                    <div class="three-day">
                     <h3>Three Day Forecast</h3>
                 </div>
-                <div  class="forecast" id="forecast"></div>   
-                </div> 
-        </section>  
+                <div id="forecast">   
+                    <!-- Three day forecast content will go here -->         
+            </div>
+          </div>
+        </div>
+      
+                
+        
       
   
         <section class="spotlights-container">           
