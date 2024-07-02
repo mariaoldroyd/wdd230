@@ -44,7 +44,7 @@
         </ul>        
     </nav> 
     <main>        
-        <div id="banner-container"></div>
+        <div id="banner-container">
         <div class="banner">
             
     <div class="hero-content">           
@@ -54,9 +54,11 @@
             <img src="images/wdd230-large-org.webp" alt="3 individuals" loading="lazy">                         
         </picture>
         <div class="cta">
-            <button class="join-button">Join Now</button>                
+            <button class="join-button" onclick="window.location.href='join.html'">Join Now</button>
         </div>
-    </div>        
+    </div>  
+</div>   
+</div>   
             
     <section class="events">
         <h3>Current Events</h3>
@@ -129,19 +131,13 @@
                     <!-- Three day forecast content will go here -->         
             </div>
           </div>
-        </div>
-      
-                
-        
-      
+        </div>      
   
         <section class="spotlights-container">           
             <h3>Company Spotlights</h3>
-            <div class="spotlights">           
-            <div class="spotlight">Company1</div>
-            <div class="spotlight">Company2</div>
-            <div class="spotlight">Company3</div>
-            </div>  
+            <div  id="spotlights" class="spotlights">   
+            <!--Companies will be inserted here-->
+            </div>
         </section>              
                   
     </main>

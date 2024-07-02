@@ -232,7 +232,7 @@ nav ul li a {
   border: 1px solid var(--border-color);
   border-radius: 5px;
   padding: 10px;
-  background-color:grey;
+  background-color:rgba(196, 190, 190, 0.096);
 }
 
 .events h3 {
@@ -280,6 +280,8 @@ nav ul li a {
 
 .weather-details h2 {
   align-items:center;
+  color:#210bcb;
+  font-weight: bold;
 }
 
 .weather-icon-container {
@@ -294,8 +296,11 @@ p {
 }
 
 
-.three-day {
+.three-day  {
   text-align: center;
+  color: blue;
+  font-weight: bold;
+  
 }
 
 #forecast {
@@ -306,11 +311,13 @@ p {
   
 }
 
-.spotlights-container {
-  
+.spotlights-container {  
   gap: 1rem;
   width: 100%;
   margin-top: 2rem;
+}
+.spotlights-container h3 {
+  background-color:#70b5ea
 }
 .spotlights {
   display: grid;
@@ -319,8 +326,7 @@ p {
 }
 
 .spotlight {
-  display: flex;
-  
+  display: flex;  
   background: #f4f4f4;
   border-radius: 5px;
   padding: 1rem;

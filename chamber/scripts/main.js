@@ -84,4 +84,10 @@ function getCookie(name) {
     }
     return null;
 }
- 
+
+ // Event listener for Join Now button
+ document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector(".join-button").addEventListener("click", function() {
+        window.location.href = "join.html";
+    });
+});

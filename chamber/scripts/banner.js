@@ -35,3 +35,27 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+ 
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Fetch company data
+    fetch('data/members.json')
+        .then(response => response.json())
+        .then(data => {
+            const spotlightsContainer = document.getElementById('spotlights');
+            // Select first three companies
+            const companies = data.slice(0, 3);
+            // Create HTML for each company and append to spotlights container
+            companies.forEach(company => {
+                const spotlightDiv = document.createElement('div');
+                spotlightDiv.classList.add('spotlight');
+                spotlightDiv.innerHTML = `
+                    <img src="${company.image}" alt="${company.name}">
+                    <h4>${company.name}</h4>
+                    <p>${company.description}</p>
+                `;
+                spotlightsContainer.appendChild(spotlightDiv);
+            });
+        })
+        .catch(error => console.error('Error fetching company data:', error));
+});
