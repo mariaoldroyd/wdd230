@@ -270,6 +270,7 @@ nav ul li a {
     justify-content: center;
     text-align: center;
     padding: 20px; 
+    background-image: linear-gradient(180deg,hsla(210, 76%, 69%, 0.708), rgba(255, 166, 0, 0.796));
 }
 
 
@@ -279,12 +280,14 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .weather-icon-container {
   align-items: center;
   margin-bottom: 1rem;
   margin-left: 110px;
+  
 }
 
 .weather-icon-container img {
