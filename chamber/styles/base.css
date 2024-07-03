@@ -28,8 +28,7 @@
 }
 
 body {
-  font-family: var(--font-secondary); 
-  
+  font-family: var(--font-secondary);   
   color: var(--text-color);
   line-height: 1.6;
   margin: 0;
@@ -355,10 +354,7 @@ p {
   font-size: 1.2em;
 }
 
-.spotlight p {
-  font-size: 1em;
-  color: #666;
-}
+
 
 
 
