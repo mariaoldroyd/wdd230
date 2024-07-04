@@ -22,28 +22,30 @@
     <meta property="og:image" content="https://mariaoldroyd.github.io/wdd230/chamber/images/21TXBC-bluebonnets3-CANVA-1600X670.webp">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">    
 </head>
+<nav>  
+    <button class="hamburger-menu" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span>
+    </button>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+    </ul>        
+</nav> 
 
-<div>   
+   
+    
     <header>
         <div class="header-content">           
-            <h1>Bellville Chamber of Commerce</h1>        
-        <div id="darkMode">
+                    
+            <div id="darkMode">
         <button  onclick="DarkMode()" aria-label="Toggle Dark Mode">😎</button>
        </div>
     </div>
     </header>
     
-    <nav>  
-        <button class="hamburger-menu" aria-label="Toggle navigation">
-            <span class="fa fa-bars"></span>
-        </button>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
-        </ul>        
-    </nav> 
+   
     <main>        
         <div id="banner-container">
         <div class="banner">
@@ -52,17 +54,28 @@
         <picture>
             <source srcset="images/wdd230-small-org.webp" media="(max-width: 400px)">
             <source srcset="images/wdd230-med.webp" media="(max-width: 800px)">
-            <img src="images/wdd230-large-org.webp" alt="3 individuals" loading="lazy">                         
+            <img src="images/21TXBC-bluebonnets3-CANVA-1600X670.webp" alt="blue bonnet field" loading="lazy">                         
         </picture>
         <div class="cta">
             <button class="join-button" onclick="window.location.href='join.html'">Join Now</button>
         </div>
     </div>  
+
+    <div class="hero-overlay">
+        <img src="images/Chamber1.webp" alt="Bellville Chamber of Commerce Logo" class="hero-logo">
+        <div class="hero-text">
+            <h3 class="discover">Discover</h3>
+            <h1 class="town">BELLVILLE</h1>  
+            <h2 class="state">Texas</h2>
+        </div>
+    </div>  
 </div>   
 </div>   
+   
             
-    <section class="events">
-        <h2>Current Events</h2>
+    <section class="events"> 
+        <h2>Upcoming Events</h2>
+       
         <div class="events-container">
             <div id="eventsWrapper">
                     <ul>
@@ -132,7 +145,13 @@
                     <!-- Three day forecast content will go here -->         
             </div>
           </div>
-        </div>      
+        </d>  
+        <section class="spotlights-container">           
+            <h3>Member Spotlights</h3>
+            <div  id="spotlights" class="spotlights">   
+            <!--Companies will be inserted here-->
+            </div>
+        </section>                  
   
          
     </main>
