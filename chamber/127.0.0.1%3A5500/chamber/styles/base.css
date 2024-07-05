@@ -299,6 +299,7 @@ nav ul li a {
 p {
   font-size: 1rem;
   font-weight: bold;
+  background: border-box;
 }
 
 
