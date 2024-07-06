@@ -51,10 +51,10 @@ header {
   
 }
 
-/*header img {
+header img {
   width: 30%;
   height: 50%;
-}*/
+}
 
 header h1 {
   position: absolute;
@@ -101,8 +101,9 @@ nav {
   background-color: var(--secondary-color);
   padding: 1rem;
   display: flex;
-  justify-content: right;
-  align-items: center;  
+  justify-content: space-between;
+  align-items: center;
+  
 }
 
 .navigation {
@@ -110,7 +111,7 @@ nav {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: right;
+  justify-content: center;
 }
 
 
@@ -130,15 +131,14 @@ nav {
 }
 
 .nav-links a {
-  color: white;
+  color:rgba(255, 195, 0, 1);
   text-decoration: none;
-  font-size: 1.5rem;
 }
 
 
 
 .nav-links li a:hover {
-  color: yellow;
+  color: white;
   
 }
 
@@ -193,61 +193,45 @@ nav ul li a {
 }
 
 .hero-content img {
-  width: 80%;
-  
+  width: 100%;
+  height: auto;
 }
 
 .hero-overlay {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  transform: translate(-50%, -50%);
   text-align: center;
   color: white;
   z-index: 1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
 }
 
-.hero-overlay img {
-  display: grid;
-  width: 15cap;
-  height: 15cap;
-  margin-right: 1020px;
-  
-  margin-bottom: 78px;
+.hero-logo {
+  max-height: 120px;
+  padding-top: 63px;
 }
 
-
-
-.hero-text { 
-  position: absolute;
- 
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  padding: 10px;
-  font-size: 2rem;
-  color: rgb(246, 238, 6);
+.hero-text h3{ 
   font-family: 'El Messiri', sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+.discover h3{
+  text-align: center;
+}
 
-
-/*.hero-text h3, .hero-text h1, .hero-text h2 {
-  margin: 5px 0;
+.hero-text h3, .hero-text h1, .hero-text h2 {
+  /* margin: 5px 0; */
   color: rgb(246, 238, 6);
- padding-bottom: 340px;
- text-align: center;
- padding-left: 968px;
-}*/
+  padding-left: 30px;
+}
+.hero-text h3{
+  font-size: 3rem;
+}
 
-
-
+.hero-text {
+  font-size: 2rem;
+}
 
 .cta {
   position: absolute;
@@ -276,9 +260,9 @@ nav ul li a {
 .events {
   margin: 0px;
   padding: 10px;
- /* background-color: whitesmoke;
+  background-color: whitesmoke;
   border: 3px solid blue;
-  border-radius: 10px;*/
+  border-radius: 10px;
   color: black;
   box-sizing: border-box;
   width: 100%;
@@ -347,16 +331,7 @@ nav ul li a {
   
 }
 
-.weather p {
-  margin: 0.3rem 0;
-}
-
-.weather img {
-  width: 50px;
-  height: 50px;
-}
-
-/*.weather-icon-container {
+.weather-icon-container {
   align-items: center;
   margin-bottom: 1rem;
   margin-left: 110px;
@@ -371,9 +346,7 @@ nav ul li a {
 p {
   font-size: 1rem;
   font-weight: bold;
-}*/
-
-
+}
 
 
 .three-day  {
@@ -388,7 +361,8 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  width: 100%;  
+  width: 100%;
+  
 }
 
 .spotlights-container {  
@@ -458,7 +432,8 @@ p {
   box-sizing: border-box; /* Ensures padding and border don't affect width */
   justify-content: space-between;
   margin-left: 360px;
-  padding: 20px;  
+  padding: 20px;
+  
   border: solid 10px rgba(0,0, 255, 0.466);
 }
 
@@ -499,7 +474,7 @@ form textarea {
 .member-box {
   background-color: white;
   border: solid 6px rgba(0, 0, 255, 0.466);
-  padding: 10px;
+ padding: 10px;
  
 }
 
@@ -507,6 +482,9 @@ form textarea {
   text-align: center;
   
 }
+
+
+
 
 .footer-content {
   display: flex;
@@ -522,6 +500,9 @@ form textarea {
 .social-icons a {
   margin: 0 0.5rem;
 }
+
+
+
 
 footer {
   background-color: var(--secondary-color);
@@ -595,6 +576,8 @@ footer p {
   cursor: pointer;
 }
 
+
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -633,7 +616,6 @@ map {
   grid-column: span 4;
   margin-top: 6px;
   width: 100%;
-  border: solid 8px;
 }
 
 .map iframe {
