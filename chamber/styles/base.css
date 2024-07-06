@@ -165,6 +165,9 @@ nav ul li a {
   position: relative; 
   border-radius: 5px;
   margin: .5rem 0;
+  background-color:#70b5ea;
+  color:black;
+  font-size: 1.5rem;
 }
 
 #banner-container {
@@ -527,7 +530,7 @@ footer {
   background-color: var(--secondary-color);
   color: white;
   text-align: center;
-  padding: 20;  
+  padding: 20px;  
 }
 
 footer p {
