@@ -51,10 +51,6 @@ header {
   
 }
 
-/*header img {
-  width: 30%;
-  height: 50%;
-}*/
 
 header h1 {
   position: absolute;
@@ -241,17 +237,6 @@ nav ul li a {
 }
 
 
-/*.hero-text h3, .hero-text h1, .hero-text h2 {
-  margin: 5px 0;
-  color: rgb(246, 238, 6);
- padding-bottom: 340px;
- text-align: center;
- padding-left: 968px;
-}*/
-
-
-
-
 .cta {
   position: absolute;
   bottom: 20px;
@@ -358,25 +343,6 @@ nav ul li a {
   width: 50px;
   height: 50px;
 }
-
-/*.weather-icon-container {
-  align-items: center;
-  margin-bottom: 1rem;
-  margin-left: 110px;
-  
-}
-
-.weather-icon-container img {
-  margin-bottom: 20px;
-}
-
-
-p {
-  font-size: 1rem;
-  font-weight: bold;
-}*/
-
-
 
 
 .three-day  {
@@ -537,12 +503,12 @@ footer p {
   margin: 0;
 }
 
-.footer-content {
+/*.footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
-}
+}*/
 
 .footer-content div {
   flex: 1;
@@ -745,7 +711,7 @@ footer .social-icons a{
 }
 
 .member-card img {
-  flex: 11 100%;
+  flex: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -798,4 +764,13 @@ footer .social-icons a{
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+  }
 }
