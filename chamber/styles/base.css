@@ -632,8 +632,7 @@ footer p {
 }
 
 map {
-  display: grid;
-  grid-column: span 4;
+ 
   margin-top: 6px;
   width: 100%;
   border: solid 8px;
@@ -769,7 +768,7 @@ footer .social-icons a{
  }
 
  .texas-info  li{
- width: 275%;
+ 
  text-align: center;
  padding: 10px;
 
