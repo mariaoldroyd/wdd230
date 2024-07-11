@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentals | ~Scoots~</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/rentals.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/logoScoots.webp" alt="Scoots Logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rentals.html" class="active">Rentals</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Our Rentals</h1>
+        <section class="rental-options">
+            <!-- Rental options will be populated here -->
+        </section>
+
+        <h2>Max Rental Pricing</h2>
+        <table id="pricing-table" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Rental Type</th>
+                    <th>Max Persons</th>
+                    <th>Half Day (3 hrs)</th>
+                    <th>Full Day</th>
+                    <th>Rental Type</th>
+                    <th>Max Persons</th>
+                    <th>Half Day (3 hrs)</th>
+                    <th>Full Day</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data populated from JSON -->
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 ~Scoots~ | Cozumel, Mexico</p>
+            <div class="social-icons">
+                <a href="https://twitter.com/" aria-label="Link to Twitter" class="fa fa-twitter"></a>
+                <a href="https://www.facebook.com/your-facebook-page-url" aria-label="Link to facebook" class="fa fa-facebook"></a>
+                <a href="https://www.linkedin.com/" aria-label="Link to linkedin" class="fa fa-linkedin"></a>    
+                <a href="https://www.instagram.com/" aria-label="Link to instagram" class="fa fa-instagram"></a>
+            </div>       
+        </div>
+    </footer>
+
+    <script src="scripts/pricing.js"></script>
+</body>
+
+</html>
