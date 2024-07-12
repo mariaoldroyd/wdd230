@@ -1,44 +1,105 @@
 {
-    "Reservation": [
-      {
-        "Reservation": "Price",
-        "image": "images/2024-pcx-matte_brown_metallic-650x380.webp",
-        "name": "~ Honda Metro Scooter",
-        "Max Persons": "1"
-      },
-      {
-        "Reservation": "Price",
-        "image": "images/Honda-Dio-Scooter-Mileage.webp",
-        "name": "~ Honda Dio Scooter",
-        "Max Persons": "2"        
-      },
-      {
-        "Reservation": "Price",
-        "image": "images/honda-pcx150-.webp",
-        "name": "~ Honda PCX150 Scooter",
-        "Max Persons": "2"       
-      },
-      {
-        "Reservation": "Price",
-        "image": "images/Honda-Pioneer.webp",
-        "name": "Honda Pioneer ATV",
-        "Max Persons": "4"        
-      },
-      {
-        "Reservation": "Price",
-        "image": "images/yellowjeep(1).webp",
-        "name": "Jeep Wrangler 4 door with a/c",
-        "Max Persons": "5"         
-      },
-      {
-        "Reservation": "Price",
-        "image": "images/tealJeep1.webp",
-        "name": "Jeep Wrangler 2 door with a/c",
-        "Max Persons": "4"
-      }
-    
-    ]
-  }
-    
+  "Reservation": [
+    {
+      "Reservation": "Price",
+      "image": "images/2024-pcx-matte_brown_metallic-650x380.webp",
+      "name": "~ Honda Metro Scooter",
+      "Max Persons": "1",
+      "Half Day (3 hrs)": "$20",
+      "Full Day": "$30"
+    },
+    {
+      "Reservation": "Price",
+      "image": "images/Honda-Dio-Scooter-Mileage.webp",
+      "name": "~ Honda Dio Scooter",
+      "Max Persons": "2",
+      "Half Day (3 hrs)": "$30",
+      "Full Day": "$40"
+    },
+    {
+      "Reservation": "Price",
+      "image": "images/honda-pcx150-.webp",
+      "name": "~ Honda PCX150 Scooter",
+      "Max Persons": "2",
+      "Half Day (3 hrs)": "$40",
+      "Full Day": "$50"
+    },
+    {
+      "Reservation": "Price",
+      "image": "images/Honda-Pioneer.webp",
+      "name": "Honda Pioneer ATV",
+      "Max Persons": "4",
+      "Half Day (3 hrs)": "$50",
+      "Full Day": "$70"
+    },
+    {
+      "Reservation": "Price",
+      "image": "images/yellowjeep(1).webp",
+      "name": "Jeep Wrangler 4 door with a/c",
+      "Max Persons": "5",
+      "Half Day (3 hrs)": "$70",
+      "Full Day": "$100"
+    },
+    {
+      "Reservation": "Price",
+      "image": "images/tealJeep1.webp",
+      "name": "Jeep Wrangler 2 door with a/c",
+      "Max Persons": "4",
+      "Half Day (3 hrs)": "$60",
+      "Full Day": "$85"
+    }
+  ],
+  "Walk-In": [
+    {
+      "Walk-In": "Price",
+      "image": "",
+      "name": "~ Honda Metro Scooter",
+      "Max Persons": "1",
+      "Half Day (3 hrs)": "$25",
+      "Full Day": "$35"
+    },
+    {
+      "Walk-In": "Price",
+      "image": "",
+      "name": "~ Honda Dio Scooter",
+      "Max Persons": "2",
+      "Half Day (3 hrs)": "$35",
+      "Full Day": "$45"
+    },
+    {
+      "Walk-In": "Price",
+      "image": "",
+      "name": "~ Honda PCX150 Scooter",
+      "Max Persons": "2",
+      "Half Day (3 hrs)": "$45",
+      "Full Day": "$55"
+    },
+    {
+      "Walk-In": "Price",
+      "image": "",
+      "name": "Honda Pioneer ATV",
+      "Max Persons": "4",
+      "Half Day (3 hrs)": "$60",
+      "Full Day": "$80"
+    },
+    {
+      "Walk-In": "Price",
+      "image": "",
+      "name": "Jeep Wrangler 4 door with a/c",
+      "Max Persons": "5",
+      "Half Day (3 hrs)": "$85",
+      "Full Day": "$125"
+    },
+    {
+      "Walk-In": "Price",
+      "image": "",
+      "name": "Jeep Wrangler 2 door with a/c",
+      "Max Persons": "4",
+      "Half Day (3 hrs)": "$70",
+      "Full Day": "$90"
+    }
+  ]
+}
+
    
   
