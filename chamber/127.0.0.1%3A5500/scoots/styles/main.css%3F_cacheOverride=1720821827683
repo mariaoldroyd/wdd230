@@ -48,8 +48,8 @@
     --gradient-bg: linear-gradient(135deg, #61835d, #60a1a9, #dedcda, #b1cfd5);
 }
   
-  /* SCSS Gradient */
-  $gradient-top: linear-gradient(0deg, #61835dff, #60a1a9ff, #dedcdaff, #b1cfd5ff);
+    /* SCSS Gradient */
+ /* $gradient-top: linear-gradient(0deg, #61835dff, #60a1a9ff, #dedcdaff, #b1cfd5ff);
   $gradient-right: linear-gradient(90deg, #61835dff, #60a1a9ff, #dedcdaff, #b1cfd5ff);
   $gradient-bottom: linear-gradient(180deg, #61835dff, #60a1a9ff, #dedcdaff, #b1cfd5ff);
   $gradient-left: linear-gradient(270deg, #61835dff, #60a1a9ff, #dedcdaff, #b1cfd5ff);
@@ -57,12 +57,12 @@
   $gradient-bottom-right: linear-gradient(135deg, #61835dff, #60a1a9ff, #dedcdaff, #b1cfd5ff);
   $gradient-top-left: linear-gradient(225deg, #61835dff, #60a1a9ff, #dedcdaff, #b1cfd5ff);
   $gradient-bottom-left: linear-gradient(315deg, #61835dff, #60a1a9ff, #dedcdaff, #b1cfd5ff);
-  $gradient-radial: radial-gradient(#61835dff, #60a1a9ff, #dedcdaff, #b1cfd5ff);
+  $gradient-radial: radial-gradient(#61835dff, #60a1a9ff, #dedcdaff, #b1cfd5ff);*/
   
   body {
     font-family: 'Roboto Flex', sans-serif;
-    color: #F3D3BD;
-    background: gradient-bottom-right ( #dedcdaff, #b1cfd5ff);
+ 
+    background: linear-gradient (135deg #dedcdaff, #b1cfd5ff);
     margin: 0;
     padding: 0;
   }
@@ -70,37 +70,59 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Serif', serif;
     color: rgba(97, 131, 93, 1);;
+    font-weight: bold;
   }
   
   header {
-    background-color: var(--reseda-green);
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
+    display: flex;  
+    align-items: center;
 }
 
 .header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color:black;    
 }
 
-nav ul {
+.header-content img{  
+  font-family: "robotoflex";
+  display: grid;  
+  margin-right: 1020px;  
+  margin-bottom: 78px;
+}
+
+.navigation ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
+    
 }
 
-nav ul li {
-    margin: 0 10px;
+.navigation ul li {
+    margin: 0 5px;
+    font-size: 1.5rem;
+    color: black;
 }
 
-nav ul li a {
-    color: white;
+.navigation ul li a {
+    color: black;
     text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    
 }
 
-nav ul li a.active {
+.navigation ul li a.active {
     font-weight: bold;
+}
+ .navigation a:hover {
+  color:orangered;
 }
 
 .hero {
@@ -122,6 +144,26 @@ nav ul li a.active {
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
 }
+.hero-text h1 {
+  text-decoration: underline;
+  color:yellow;
+}
+.hero-text p {
+  font-size: 1.5rem;
+}
+.hero-text button{
+  padding: 15px;
+  border: solid lightskyblue 8px;
+  color: black;
+  font-size: 1rem;
+}
+
+.hero-text button:hover{
+  padding: 15px;
+  border: solid lightskyblue 8px;
+  color: orangered;
+  font-size: 1rem;
+}
 
 .rentals-summary {
     text-align: center;
@@ -132,10 +174,15 @@ nav ul li a.active {
     display: flex;
     justify-content: space-around;
     padding: 20px;
+    margin: 5px;
 }
 
 .rental-type {
     text-align: center;
+}
+.rentals-summary p{
+  color:blue;
+  font-weight: bold;
 }
 
 .rental-type img {
@@ -143,29 +190,38 @@ nav ul li a.active {
     height: auto;
 }
 
+
 .weather {
     text-align: center;
     padding: 20px;
+    background-color: #60a1a9;
 }
-
+ #weather-info p {
+  color:white;
+  
+ }
 footer {
     background-color: var(--reseda-green);
-    padding: 4;
+    padding: 10px 40px;
     color: white;
     text-align: center;
 }
 
-.social-links {
+.social-icons {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
-.social-links a {
+.social-icons a {
     color: white;
     margin: 0 10px;
     text-decoration: none;
     font-size: 24px;
+}
+
+.social-icons a:hover {
+  opacity: 0.7;
 }
 
 /* Closeable message for high temperature */
@@ -174,54 +230,121 @@ footer {
     color: white;
     padding: 10px;
     text-align: center;
+    font-size: 2rem;
 }
 
 #high-temp-message button {
-    background-color: transparent;
+    /* background-color: transparent; */
     border: none;
     color: white;
     cursor: pointer;
-}
-  
-  .button {
-    background-color: rgba(97, 131, 93, 1);;
-    color: white;
-    padding: 0.5em 1em;
-    border: none;
-    border-radius: 0.25em;
-    cursor: pointer;
-    font-size: 1em;
+
+    #high-temp-message
+    button:hover {
+      background-color: lightskyblue;
+    font-size: 1.5rem;
+  }
     
-    &:hover {
-      background-color: rgba(96, 161, 169, 1);
+  
+  .hero
+    button {    
+    color: white;
+    padding: 0.1em 2em;
+    border: none;
+    border-radius: 0.35em;
+    cursor: pointer;
+    font-size: 1.8rem;
+    background-color:lightskyblue;
+  }  
+    .hero
+    button:hover {
+      background-color: orangered;
     }
   }
   
   .footer {
     background-color: rgba(222, 220, 218, 1);
     color:  rgba(97, 131, 93, 1);
-    padding: 1em;
+    padding: 2.5rem;
     text-align: center;
     position: fixed;
     width: 100%;
     bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  }
+  footer p {
+    margin: 0;
   }
    
-  social-icons {
-    text-align: right;
-    padding-top: 50px;
-    color: #fff;
-    margin: 0 0.5rem;
-    text-decoration: none;
+  
+/*CSS for Reservations*/
+
+.reservation-container {
+  display: flex;
+  gap: 20px;
+  padding: 20%;
+  background-color:lightblue;
+  
+}
+
+.agreement,
+.form-container {
+  flex: 1;
+  background-color: linear-gradient(135deg, #61835d, #60a1a9, #dedcda, #b1cfd5);
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: solid 8px #dedcda;
+}
+
+.agreement ul {
+  padding-left: 20px;
+}
+
+.agreement li {
+  font-size: 1.5rem;
+  padding: 8px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.form-group button {
+  padding: 20px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: solid black 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: #0056b3;
+}
+#pricing-table {
+  table, th, td {
+    border:3px solid var(--moonstone);
+    text-align: center;
     font-size: 1.5rem;
   }
-  
-  footer .social-icons a{
-    font-size: .5rem;
-    margin: 0 10px;
-    color: white;
-  }
-  
-  .social-icons a:hover {
-    opacity: 0.7
-  }
+}
+
+h1, h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color:navy;
+}

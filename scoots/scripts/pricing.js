@@ -46,40 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .catch(error => console.error('Error fetching data:', error));
 });
 
-const pricingData = {
-  "rentalTypes": [
-      {
-          "type": "Honda Metro Scooter",
-          "maxPersons": 1     
-       
-      },
-      {
-          "type": "Honda Dio Scooter",
-          "maxPersons": 2
-       
-      },
-      {
-          "type": "Honda PCX150 Scooter",
-          "maxPersons": 2
-          
-      },
-      {
-          "type": "Honda Pioneer ATV",
-          "maxPersons": 4
-         
-      },
-      {
-          "type": "Jeep Wrangler - 4 door with A/C",
-          "maxPersons": 5
-          
-      },
-      {
-          "type": "Jeep Wrangler - 2 door",
-          "maxPersons": 4
-         
-      }
-  ]
-};
+
 
 // Populate pricing table
 document.addEventListener('DOMContentLoaded', () => {
@@ -105,5 +72,111 @@ document.addEventListener('DOMContentLoaded', () => {
       row.appendChild(fullDayCell);
       
       tableBody.appendChild(row);
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const reservationData = {
+      "Reservation": [
+          {
+              "image": "images/2024-pcx-matte_brown_metallic-650x380.webp",
+              "name": "~ Honda Metro Scooter",
+              "Max Persons": "1",
+              "Half Day (3 hrs)": "$20",
+              "Full Day": "$30"
+          },
+          {
+              "image": "images/Honda-Dio-Scooter-Mileage.webp",
+              "name": "~ Honda Dio Scooter",
+              "Max Persons": "2",
+              "Half Day (3 hrs)": "$30",
+              "Full Day": "$40"
+          },
+          {
+              "image": "images/honda-pcx150-.webp",
+              "name": "~ Honda PCX150 Scooter",
+              "Max Persons": "2",
+              "Half Day (3 hrs)": "$40",
+              "Full Day": "$50"
+          },
+          {
+              "image": "images/Honda-Pioneer.webp",
+              "name": "Honda Pioneer ATV",
+              "Max Persons": "4",
+              "Half Day (3 hrs)": "$50",
+              "Full Day": "$70"
+          },
+          {
+              "image": "images/yellowjeep(1).webp",
+              "name": "Jeep Wrangler 4 door with a/c",
+              "Max Persons": "5",
+              "Half Day (3 hrs)": "$70",
+              "Full Day": "$100"
+          },
+          {
+              "image": "images/tealJeep1.webp",
+              "name": "Jeep Wrangler 2 door with a/c",
+              "Max Persons": "4",
+              "Half Day (3 hrs)": "$60",
+              "Full Day": "$85"
+          }
+      ],
+      "Walk-In": [
+          {
+              "name": "~ Honda Metro Scooter",
+              "Max Persons": "1",
+              "Half Day (3 hrs)": "$25",
+              "Full Day": "$35"
+          },
+          {
+              "name": "~ Honda Dio Scooter",
+              "Max Persons": "2",
+              "Half Day (3 hrs)": "$35",
+              "Full Day": "$45"
+          },
+          {
+              "name": "~ Honda PCX150 Scooter",
+              "Max Persons": "2",
+              "Half Day (3 hrs)": "$45",
+              "Full Day": "$55"
+          },
+          {
+              "name": "Honda Pioneer ATV",
+              "Max Persons": "4",
+              "Half Day (3 hrs)": "$60",
+              "Full Day": "$80"
+          },
+          {
+              "name": "Jeep Wrangler 4 door with a/c",
+              "Max Persons": "5",
+              "Half Day (3 hrs)": "$85",
+              "Full Day": "$125"
+          },
+          {
+              "name": "Jeep Wrangler 2 door with a/c",
+              "Max Persons": "4",
+              "Half Day (3 hrs)": "$70",
+              "Full Day": "$90"
+          }
+      ]
+  };
+
+  const tbody = document.querySelector("#pricing-table tbody");
+
+  reservationData.Reservation.forEach((reservation, index) => {
+      const walkIn = reservationData["Walk-In"][index];
+
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+          <td>${reservation.name}</td>
+          <td>${reservation["Max Persons"]}</td>
+          <td>${reservation["Half Day (3 hrs)"]}</td>
+          <td>${reservation["Full Day"]}</td>
+          <td>${walkIn.name}</td>
+          <td>${walkIn["Max Persons"]}</td>
+          <td>${walkIn["Half Day (3 hrs)"]}</td>
+          <td>${walkIn["Full Day"]}</td>
+      `;
+      tbody.appendChild(tr);
   });
 });

@@ -48,7 +48,7 @@
     --gradient-bg: linear-gradient(135deg, #61835d, #60a1a9, #dedcda, #b1cfd5);
 }
   
-  /* SCSS Gradient */
+    /* SCSS Gradient */
   $gradient-top: linear-gradient(0deg, #61835dff, #60a1a9ff, #dedcdaff, #b1cfd5ff);
   $gradient-right: linear-gradient(90deg, #61835dff, #60a1a9ff, #dedcdaff, #b1cfd5ff);
   $gradient-bottom: linear-gradient(180deg, #61835dff, #60a1a9ff, #dedcdaff, #b1cfd5ff);
@@ -73,34 +73,57 @@
   }
   
   header {
-    background-color: var(--reseda-green);
-    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* padding: 10px 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color:black;    
 }
 
-nav ul {
+.header-content img{  
+  font-family: "robotoflex";
+  display: grid;
+  
+  margin-right: 1020px;  
+  margin-bottom: 78px;
+}
+
+.navigation ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
+    
 }
 
-nav ul li {
-    margin: 0 10px;
+.navigation ul li {
+    margin: 0 5px;
+    font-size: 1.5rem;
+    color: black;
 }
 
-nav ul li a {
-    color: white;
+.navigation ul li a {
+    color: black;
     text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    
 }
 
-nav ul li a.active {
+.navigation ul li a.active {
     font-weight: bold;
+}
+ a :hover {
+  color:yellow;
 }
 
 .hero {
@@ -132,6 +155,7 @@ nav ul li a.active {
     display: flex;
     justify-content: space-around;
     padding: 20px;
+    margin: 5px;
 }
 
 .rental-type {
@@ -150,7 +174,7 @@ nav ul li a.active {
 
 footer {
     background-color: var(--reseda-green);
-    padding: 4;
+    padding: 10px 20px;
     color: white;
     text-align: center;
 }
@@ -174,6 +198,7 @@ footer {
     color: white;
     padding: 10px;
     text-align: center;
+    font-size: 2rem;
 }
 
 #high-temp-message button {
@@ -181,30 +206,36 @@ footer {
     border: none;
     color: white;
     cursor: pointer;
+    &:hover {
+      background-color:lightskyblue;
+      font-size: 1.5rem;
 }
   
   .button {
-    background-color: rgba(97, 131, 93, 1);;
+    background-color: rgba(97, 131, 93, 1);
     color: white;
     padding: 0.5em 1em;
     border: none;
     border-radius: 0.25em;
     cursor: pointer;
-    font-size: 1em;
-    
+    font-size: 1em;    
     &:hover {
-      background-color: rgba(96, 161, 169, 1);
+      background-color: red;
     }
   }
   
   .footer {
     background-color: rgba(222, 220, 218, 1);
     color:  rgba(97, 131, 93, 1);
-    padding: 1em;
+    padding: 2.5rem;
     text-align: center;
     position: fixed;
     width: 100%;
     bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  }
+  footer p {
+    margin: 0;
   }
    
   social-icons {
@@ -213,15 +244,68 @@ footer {
     color: #fff;
     margin: 0 0.5rem;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
   
   footer .social-icons a{
-    font-size: .5rem;
+    font-size: 1.5rem;
     margin: 0 10px;
-    color: white;
+    color: white;    
   }
   
   .social-icons a:hover {
     opacity: 0.7
   }
+
+  .agreement{
+    padding: 30px;
+  }
+/*CSS for Reservations*/
+
+.reservation-container {
+  display: flex;
+  gap: 20px;
+  padding: 20%;
+}
+
+.agreement,
+.form-container {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.agreement ul {
+  padding-left: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.form-group button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: #0056b3;
+}
