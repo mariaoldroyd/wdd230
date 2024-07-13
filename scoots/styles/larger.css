@@ -1,0 +1,14 @@
+/* Large screens (desktops) */
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .rental-type {
+        max-width: 300px;
+    }
+}

@@ -1,0 +1,28 @@
+
+
+/* Medium screens (tablets) */
+@media (min-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    .header-content {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .nav-links ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .rental-types {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
