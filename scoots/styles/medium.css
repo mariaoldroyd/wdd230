@@ -1,6 +1,6 @@
 
 
-/* Medium screens (tablets) */
+/* For medium screens */
 @media (min-width: 600px) {
     body {
         font-size: 16px;
@@ -8,21 +8,20 @@
 
     .header-content {
         flex-direction: row;
-        text-align: left;
-    }
-
-    .nav-links ul {
-        flex-direction: row;
-        gap: 10px;
-    }
-
-    .hero-text h1 {
-        font-size: 28px;
+        justify-content: space-between;
     }
 
     .rental-types {
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    .rental-type {
+        width: 45%;
+    }
+
+    .weather {
+        padding: 20px;
     }
 }
 

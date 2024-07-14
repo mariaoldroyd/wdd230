@@ -54,8 +54,56 @@
     background: var(--linear-gradient-bg);
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+    color: #333;
     
   }
+
+
+ :root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --header-bg-color: #ffffff;
+    --header-text-color: #000000;
+    --footer-bg-color: #61835d;
+    --footer-text-color: #ffffff;
+    --button-bg-color: lightskyblue;
+    --button-text-color: #000000;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+}
+
+.hero-text button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+header.dark-mode, footer.dark-mode {
+  background-color: #333333;
+}
+
+.nav-links a.dark-mode {
+  color: #ffffff;
+}
+
+.hero img.dark-mode {
+  filter: brightness(30%);
+}
   
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Serif', serif;
@@ -64,14 +112,15 @@
   }
   
   header {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
-    display: flex;  
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 .header-content {
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,14 +129,15 @@
 }
 
 .header-content img{  
-  height: 50px;
+  height: 50px;  
   margin-right: 20px;
 }
 
 .header-content p {
   font-family: 'Noto Serif', serif;
-  font-size: 24px;
+  font-size: 1.5em;
   margin: 0;
+  padding-left: 10px;
 }
 
 
@@ -95,7 +145,6 @@
   list-style: none;
     display: flex;
     gap: 10px;
-    margin: 0;
     padding: 0;
 }
 
@@ -169,25 +218,40 @@
 
 .rentals-summary h2 {
   font-size: 36px;
+  padding-left: 30px;
+  
 }
 
 .rentals-summary p {
   font-size: 18px;
   color: blu;
   font-weight: bold;
+ 
 }
 
 .rental-types {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
+
 .rental-type {
-  margin: 20px;
-  text-align: center;
+  flex: 1 1 300px;
   max-width: 300px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.rental-type h3 {
+  margin-top: 0;
+}
+
+
+
 .rentals-summary p{
   color:blue;
   font-weight: bold;
@@ -329,11 +393,11 @@ footer {
 
 .agreement,
 .form-container {
-  flex: 1;
-  background-color: linear-gradient(135deg, #61835d, #60a1a9, #dedcda, #b1cfd5);
+  flex: 1;  
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: solid 8px #dedcda;
+  background-color: linear-gradient(135deg, #61835d, #60a1a9, #dedcda, #b1cfd5);
 }
 
 .agreement ul {
@@ -364,16 +428,17 @@ footer {
 }
 
 .form-group button {
-  padding: 20px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: solid black 2px;
-  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: var(--button-bg-color);
+  border: none;
+  color: var(--button-text-color);
   cursor: pointer;
+  font-size: 16px;
 }
 
 .form-group button:hover {
   background-color: #0056b3;
+  color: white;
 }
 #pricing-table {
   table, th, td {
@@ -389,25 +454,42 @@ h1, h2 {
   color:navy;
 }
 
-/* Base styles for small screens (mobile) */
+/* For small screens */
+@media (max-width: 600px) {
+  .nav-links ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .rental-types {
+      flex-direction: column;
+      align-items: center;
+  }
 body {
   font-size: 14px;
 }
 
 .header-content {
   flex-direction: column;
-  text-align: center;
+  align-items: flex-start;
 }
 
-.hero-text h1 {
-  font-size: 24px;
-}
-
-.nav-links ul {
-  flex-direction: column;
-  gap: 5px;
+.hero-text {
+  width: 100%;
 }
 
 .rental-types {
   flex-direction: column;
+  align-items: center;
 }
+
+.rental-type {
+  width: 100%;
+  max-width: none;
+  margin: 10px 0;
+}
+
+.weather {
+  padding: 10px;
+}
+

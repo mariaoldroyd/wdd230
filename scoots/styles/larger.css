@@ -1,14 +1,18 @@
-/* Large screens (desktops) */
+/* For large screens */
 @media (min-width: 1024px) {
     body {
         font-size: 18px;
     }
 
-    .hero-text h1 {
-        font-size: 32px;
+    .rental-type {
+        width: 30%;
     }
 
-    .rental-type {
-        max-width: 300px;
+    .hero-text {
+        width: 50%;
+    }
+
+    .weather {
+        padding: 30px;
     }
 }

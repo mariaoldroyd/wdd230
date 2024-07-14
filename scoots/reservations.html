@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>~Scoots~ | Cozumel Scooter Rentals</title>
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/main.css">   
-  <link rel="stylesheet" href="styles/medium.css"> 
-  <link rel="stylesheet" href="styles/larger.css">    
-  <link rel="icon" href="favicon/favicon.ico">  
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:url" content="https://www.facebook.com/robert.oldroyd.923">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>~Scoots~ | Cozumel Scooter Rentals</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/main.css">   
+        <link rel="stylesheet" href="styles/medium.css"> 
+        <link rel="stylesheet" href="styles/larger.css">    
+        <link rel="icon" href="favicon/favicon.ico">  
 </head>
 <body>
   <header>
     <div class="header-content">
-        <img src="images/logoScoots.jpg" alt="Scoots Logo">
+      <img src="images/logoScoots.jpg" alt="Scoots Logo"width="200" height="">
+      <!-- Dark Mode Toggle Button -->
+      <button id="dark-mode-toggle" aria-label="toggle dark mode">Toggle Dark Mode</button>
+</button>
         <nav class="nav-links">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -105,7 +113,16 @@
   </div>
   </main>
   <footer>
-    <p>&copy; 2024 Scoots. All rights reserved.</p>
+    <div class="footer-content">
+      <p>© 2024 ~Scoots~ | Cozumel, Mexico</p>
+      <div class="social-icons">
+          <a href="https://twitter.com/" class="fa fa-twitter" aria-label="Twitter"></a>
+          <a href="https://www.facebook.com/your-facebook-page-url" aria-label="Facebook" class="fa fa-facebook" aria-label="Facebook"></a>
+          <a href="https://www.linkedin.com/" class="fa fa-linkedin" aria-label="LinkedIn"></a>
+          <a href="https://www.instagram.com/" class="fa fa-instagram" aria-label="Instagram"></a>
+      </div>
+  </div>
+  <script src="scripts/darkmode.js"></script>
   </footer>
 </body>
 </html>
