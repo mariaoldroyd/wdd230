@@ -47,6 +47,16 @@
     --light-blue: #b1cfd5;
     --gradient-bg: linear-gradient(135deg, #61835d, #60a1a9, #dedcda, #b1cfd5);
 }
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --header-bg-color: #ffffff;
+  --header-text-color: #000000;
+  --footer-bg-color: #61835d;
+  --footer-text-color: #ffffff;
+  --button-bg-color: lightskyblue;
+  --button-text-color: #000000;
+}
   
    
   body {
@@ -60,21 +70,11 @@
   }
 
 
- :root {
-    --background-color: #ffffff;
-    --text-color: #000000;
-    --header-bg-color: #ffffff;
-    --header-text-color: #000000;
-    --footer-bg-color: #61835d;
-    --footer-text-color: #ffffff;
-    --button-bg-color: lightskyblue;
-    --button-text-color: #000000;
-}
 
-body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-}
+
+ 
+
+
 
 
 footer {
@@ -134,10 +134,13 @@ header.dark-mode, footer.dark-mode {
 }
 
 .header-content p {
-  font-family: 'Noto Serif', serif;
-  font-size: 1.5em;
+  font-family: 'noto serif', san serif;
+  font-weight: 900;
+  
+  font-size: 2.5em;
   margin: 0;
   padding-left: 10px;
+  color:red;
 }
 
 
@@ -167,6 +170,75 @@ header.dark-mode, footer.dark-mode {
 }
  .nav-links a:hover {
   color:orangered;
+}
+
+main {
+  padding: 20px;
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-details {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.map {
+  text-align: center;
+ padding-top: 0px;
+}
+
+#map {
+  width: 100%;  
+  padding: 0px;
+}
+
+.contact-form {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  ;
+}
+
+.contact-form label {
+  text-align: left;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 8px solid var(--reseda-green);
+  border-radius: 5px;
+  
+}
+
+.contact-form button {
+padding: 10px 20px;
+  border: none;
+  background-color: lightskyblue;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 2rem;
+  text-align: center;
+  
+}
+
+.contact-form button:hover {
+  background-color: orangered;
 }
 
 .hero {

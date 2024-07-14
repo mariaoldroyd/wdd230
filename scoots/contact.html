@@ -37,9 +37,63 @@
         <section class="hero">
             <img src="images/Cozumel-Shoreline-767x479.webp" alt="Cozumel Island">
             <div class="hero-text">
-                <h1>Contact</h1>
-               
+                <h1>Contact Us</h1>
+                <p>If you have any questions or need further assistance, please feel free to contact us.</p>
+            <div class="contact-details">
+                <h2>Essential Contact Information</h2>
+                <p>~Scoots~ Cozumel</p>
+                <p>Email: info@scootscozumel.com</p>
+                <p>Phone: +52 987 123 4567</p>
+                <p>Address: Playa del Carmen-Cozumel Ferry Dock, el Centro de Cozumel, Cozumel, Mexico</p>
+                <p>Address: Terminal Puerta Maya, Cozumel, Mexico</p>
             </div>
         </section>
+
+        <section class="map">
+            <h2>Our Locations</h2>
+            <div id="map"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d284410.3573322387!2d-87.3483833270027!3d20.51157403204177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8f4e4339bcdf00d5%3A0x2d7321fc681a735!2sMuelle%20de%20Playa%20del%20Carmen%2C%20Centro%2C%2077710%20Playa%20del%20Carmen%2C%20Q.R.%2C%20Mexico!3m2!1d20.620867699999998!2d-87.0749237!4m5!1s0x8f4e57491a71c81d%3A0x6933058e58e0ee3d!2sPuerta%20Maya%20Cruise%20Ship%20Maritime%20Terminal%2C%2077675%20Cozumel%2C%20Q.R.%2C%20Mexico!3m2!1d20.4765505!2d-86.9734337!5e0!3m2!1sen!2sus!4v1720938873443!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contact Us Form</h2>
+            <form action="submit_contact_form.php" method="post">
+                <label for="first-name"> First Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="last-name"> Last Name:</label>
+                <input type="text" id="lname" name="lname" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone"> Phone:</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" rows="6" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 ~Scoots~ | Cozumel, Mexico</p>
+            <div class="social-icons">
+                <a href="https://twitter.com/" class="fa fa-twitter" aria-label="Twitter"></a>
+                <a href="https://www.facebook.com/your-facebook-page-url" class="fa fa-facebook" aria-label="Facebook"></a>
+                <a href="https://www.linkedin.com/" class="fa fa-linkedin" aria-label="LinkedIn"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram" aria-label="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    </body>
+    </html>
+        
 
        
