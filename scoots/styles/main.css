@@ -186,6 +186,9 @@ main {
   max-width: 600px;
   margin: 0 auto;
 }
+.contact-details h2{
+  color: yellow
+}
 
 .map {
   text-align: center;
