@@ -25,11 +25,11 @@ async function getLinks() {
     weeks.forEach(week => {
         let section = document.createElement('section');
         let heading = document.createElement('h2');
-        heading.textContent = 'Lesson${week.lesson}';
+        heading.textContent = `Lesson${week.lesson}`;
         section.appendChild(heading);
         week.links.forEach(link => {
             let linkElement = document.createElement('a');
-            linkElement.href = `${baseURL}${link.url}`;
+            linkElement.href = `link.url`;
             linkElement.textContent = link.title;
             section.appendChild(linkElement);
 
