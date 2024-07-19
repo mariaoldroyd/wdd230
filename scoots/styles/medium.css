@@ -1,27 +1,58 @@
+/* medium.css */
 
-
-/* For medium screens */
 @media (min-width: 600px) {
-    body {
+    .nav-links {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        transform: none;
+        background: none;
+     }
+
+    #ham-button {
+        display: none;
+    }
+
+    .header-content {
+        justify-content: space-between;
+    }
+
+    .header-content img {
+        margin-left: 20px;
+    }
+
+    .header-content p {
+        flex: 1;
+        text-align: center;
+    }
+
+    .nav-links ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-links ul li a {
         font-size: 16px;
     }
 
     .header-content {
-        flex-direction: row;
+        display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
-    .rental-types {
-        flex-direction: row;
-        flex-wrap: wrap;
+    .header-right {
+        display: flex;
+        gap: 10px;
     }
 
-    .rental-type {
-        width: 45%;
-    }
-
-    .weather {
-        padding: 20px;
+    #ham-button, #dark-mode-toggle {
+        font-size: 24px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 1100;
     }
 }
-

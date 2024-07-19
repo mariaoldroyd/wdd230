@@ -1,18 +1,29 @@
-/* For large screens */
-@media (min-width: 1024px) {
+/* large.css */
+
+@media (min-width: 860px) {
     body {
         font-size: 18px;
     }
 
-    .rental-type {
-        width: 30%;
+    .header-content p {
+        font-size: 2em;
     }
 
-    .hero-text {
-        width: 50%;
+    .nav-links ul li a {
+        font-size: 18px;
     }
 
-    .weather {
-        padding: 30px;
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #ham-button, #dark-mode-toggle {
+        font-size: 24px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 1100;
     }
 }

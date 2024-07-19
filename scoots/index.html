@@ -23,26 +23,26 @@
         <meta property="og:url" content="https://mariaoldroyd.github.io/wdd230/">
         <meta property="og:image" content="images/web.png">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> 
-        <link rel="apple-touch-icon" sizes="180x180" href="https://mariaoldroyd.github.io/wdd230.inex.html/apple-touch-icon-180x180.png">   
-           
-    
-    
+        <link rel="apple-touch-icon" sizes="180x180" href="https://mariaoldroyd.github.io/wdd230.inex.html/apple-touch-icon-180x180.png">      
 </head>
 
 <body>
-    <!-- Closeable message for high temperature -->
+    <!--Closeable message for high temperature-->
     <div id="high-temp-message">
-        <p>Today's High: <span id="high-temp"></span>°F</p>
-        <button onclick="closeMessage()">Close</button>
+        <p>Today's High Temperature is: <span id="high-temp"></span>°F</p>
+        <button id="close-button">&times;</button>FIX BUTTON SIZE and responsive design
     </div>
     
     <header>
         <div class="header-content">
-            <img src="images/logoScoots.jpg" alt="Scoots Logo">
-            <p>Scoots</p>
-            <!-- Dark Mode Toggle Button -->
-            <button id="dark-mode-toggle">Toggle Dark Mode</button>
+            <img src="images/logoScoots.jpg" alt="~Scoots~ Logo" width="250" height="250">
+            <p>~Scoots~ Rentals</p>
 
+            <div class="header-buttons">           
+            <button id="ham-button">☰</button>
+            <button id="dark-mode-toggle">🌙</button>
+        </div>
+    </div>
             <nav class="nav-links">
                 <ul>
                     <li><a href="index.html">Home</a></li> 
@@ -56,12 +56,16 @@
 
     <main>
         <section class="hero">
-            <img src="images/JEEP BEACH-7.webp" alt="Cozumel Island">
+            <picture>
+                <source srcset="images/smallJeepBeach-7.webp" alt="jeeps on beach"media="(max-width: 400px)">
+                <source srcset="images/medJeepBeach-7.webp" alt="jeepson beach" media="(max-width: 800px)">
+                <img src="images/JEEP BEACH-7.webp" alt="Jeeps on beach" loading="lazy">                         
+            </picture>
             <div class="hero-text">
                 <h1>Explore Cozumel with ~Scoots~</h1>
                 <p>Your adventure starts here!</p>
                 <button onclick="window.location.href='reservations.html'">Make a Reservation</button>
-            </div>
+            </div> 
         </section>
 
         <section class="rentals-summary">
