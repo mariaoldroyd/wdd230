@@ -1,29 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-    let darkMode = localStorage.getItem('darkMode');
-    const darkModeToggle = document.querySelector('#dark-mode-toggle');
 
-    const enableDarkMode = () => {
-        document.body.classList.add('dark-mode');
-        localStorage.setItem('darkMode', 'enabled');
-    };
-
-    const disableDarkMode = () => {
-        document.body.classList.remove('dark-mode');
-        localStorage.setItem('darkMode', 'disabled');
-    };
-
-    if (darkMode === 'enabled') {
-        enableDarkMode();
-    }
-
-    darkModeToggle.addEventListener('click', () => {
-        darkMode = localStorage.getItem('darkMode');
-        if (darkMode !== 'enabled') {
-            enableDarkMode();
-        } else {
-            disableDarkMode();
-        }
-    });
 
     // Fetch weather data
     fetch('https://api.openweathermap.org/data/2.5/onecall?lat=20.422983&lon=-86.92234&units=imperial&appid=a16637a06e3819f0078e0bf9f7ff5b09')
@@ -45,15 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error('Error fetching weather data:', error));
 
     // Hamburger menu toggle
-    const burger = document.getElementById('burger');
-        const navLinks = document.getElementById('nav-links');
-        burger.addEventListener('click', () => {
-            navLinks.classList.toggle('open');
-        });
-
-// Close high temperature message
-const closeButton = document.getElementById('close-button');
-const closeableMessage = document.getElementById('closeable-message');
-closeButton.addEventListener('click', () => {
-    closeableMessage.style.display = 'none';
-});
+    const hamButton = document.getElementById('ham-button');
+    const navLinks = document.querySelector('.nav-links');
+    hamButton.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+    });
+ //close high temp
+ function closeMessage() {
+    document.getElementById('high-temp-message').style.display = 'none';
+}

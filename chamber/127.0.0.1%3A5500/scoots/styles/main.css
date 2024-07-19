@@ -41,7 +41,7 @@
   
   /* SCSS Colors */
   :root {
-    /* --reseda-green: #61835d; */
+    --reseda-green: #61835d;
     --moonstone: #60a1a9;
     --platinum: #dedcda;
     --light-blue: #b1cfd5;
@@ -81,6 +81,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: r;
 }
 
 nav ul {
@@ -92,6 +93,7 @@ nav ul {
 
 nav ul li {
     margin: 0 10px;
+    color: ;
 }
 
 nav ul li a {
