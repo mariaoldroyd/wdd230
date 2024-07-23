@@ -1,27 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
-  let darkMode = localStorage.getItem('darkMode');
-  const darkModeToggle = document.querySelector('#dark-mode-toggle');
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    let dark = JSON.parse(localStorage.getItem('animated-icons-darkmode')) || false;
 
-  const enableDarkMode = () => {
-      document.body.classList.add('dark-mode');
-      localStorage.setItem('darkMode', 'enabled');
-  };
+    if (dark) {
+        document.body.classList.add('dark-mode');
+    }
 
-  const disableDarkMode = () => {
-      document.body.classList.remove('dark-mode');
-      localStorage.setItem('darkMode', 'disabled');
-  };
-
-  if (darkMode === 'enabled') {
-      enableDarkMode();
-  }
-
-  darkModeToggle.addEventListener('click', () => {
-      darkMode = localStorage.getItem('darkMode');
-      if (darkMode !== 'enabled') {
-          enableDarkMode();
-      } else {
-          disableDarkMode();
-      }
-  });
+    darkModeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        document.querySelector('header').classList.toggle('dark-mode');
+        document.querySelector('footer').classList.toggle('dark-mode');
+        navLinks.forEach(link => link.classList.toggle('dark-mode'));
+        dark = !dark;
+        localStorage.setItem('animated-icons-darkmode', JSON.stringify(dark));
+    });
 });
+
+function closeMessage() {
+    document.getElementById('high-temp-message').style.display = 'none';
+}

@@ -20,7 +20,7 @@
         gap: 10px;
     }
 
-    #ham-button, #dark-mode-toggle {
+     #dark-mode-toggle {
         font-size: 24px;
         background: transparent;
         border: none;
