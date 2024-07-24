@@ -376,7 +376,7 @@ footer .footer-content ul li {
     font-size: 18px;
 }
 
-footer .footer-content a {
+ .footer-content a {
     color: var(--footer-text-color);
     text-decoration: none;
     font-weight: bold;
