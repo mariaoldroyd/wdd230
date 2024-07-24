@@ -19,13 +19,14 @@
         })
         .catch(error => console.error('Error fetching weather data:', error));
 
-    // Hamburger menu toggle
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-            const navLinks = document.querySelector('.nav-links');
+   // Hamburger menu toggle
+const hamburgerMenu = document.getElementById('hamburger-menu');
+const navLinks = document.querySelector('nav-links');
 
-            hamburgerMenu.addEventListener('click', () => {
-                navLinks.classList.toggle('show');
-            });
+hamburgerMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+});
+ 
  //close high temp
  function closeMessage() {
     document.getElementById('high-temp-message').style.display = 'none';

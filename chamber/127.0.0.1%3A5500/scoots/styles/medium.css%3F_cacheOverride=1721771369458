@@ -11,7 +11,7 @@
         background: none;
      }
 
-    #ham-button {
+    .hamburger-menu {
         display: none;
     }
 
@@ -35,13 +35,13 @@
 
     .nav-links ul li a {
         font-size: 16px;
-        /* color:white; */
+        color:white;
     }
 
     .header-content {
-        /* display: flex; */
-        justify-content: space-between;
-        /* align-items: center; */
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
     }
 
     .header-right {

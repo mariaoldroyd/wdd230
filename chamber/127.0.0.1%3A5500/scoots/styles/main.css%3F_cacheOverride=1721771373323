@@ -84,7 +84,7 @@
   align-items: center;
   width: 100%;
   position: relative;
-  
+  /* background-color: var(--header-bg-color); */
   color: var(--header-text-color);
 }
 
@@ -235,7 +235,7 @@
 .hero img {
     width: 100%;
     height: auto;
-    filter: brightness(80%);
+    filter: brightness(50%);
 }
 
 .hero-text {
@@ -495,11 +495,6 @@ footer .footer-content a:hover {
       color: var(--button-text-color);
   }
 
-  .weather h2 {
-      color: orangered;
-      font-style: oblique;
-  }
-
     #dark-mode-toggle {
       font-size: 24px;
       background: transparent;
@@ -646,6 +641,4 @@ body {
 }
 
 
-/* attributons CSS*/
 
-  
