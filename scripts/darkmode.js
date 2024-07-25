@@ -1,3 +1,4 @@
+// Dark mode toggle
 document.addEventListener('DOMContentLoaded', () => {
     const darkModeToggle = document.getElementById('dark-mode-toggle');
     const navLinks = document.querySelectorAll('.nav-links a');
@@ -5,6 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (dark) {
         document.body.classList.add('dark-mode');
+        document.querySelector('header').classList.add('dark-mode');
+        document.querySelector('footer').classList.add('dark-mode');
+        navLinks.forEach(link => link.classList.add('dark-mode'));
     }
 
     darkModeToggle.addEventListener('click', () => {

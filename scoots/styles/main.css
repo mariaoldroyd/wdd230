@@ -107,6 +107,20 @@
   gap: 10px;
 }
 
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hamburger-menu span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+}
+
+
 .nav-links ul {
   list-style: none;
     display: flex;
@@ -475,6 +489,8 @@ footer .footer-content a:hover {
       --button-bg-color: darkgrey;
       --button-text-color: #ffffff;
   }
+
+
   
   header.dark-mode {
       background-color: var(--header-bg-color);
