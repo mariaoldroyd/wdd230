@@ -271,6 +271,10 @@
   font-size: 1rem;
 }
 
+main .rental-options {
+  padding-left: 30px;
+}
+
 .rentals-summary {
     text-align: center;
     padding: 40px 20px;
